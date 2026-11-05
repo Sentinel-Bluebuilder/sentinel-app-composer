@@ -1,4 +1,6 @@
-import { loadGeneration } from './data-source.js';
+import { loadGeneration, syncOverdue } from './data-source.js';
+import { featureLabels as featureShort, categoryIcons, icon } from './presentation.js';
+import { featureDependencies, qualifiedProof } from './configuration.js';
 
 const state = {
   taxonomy: null,
@@ -60,35 +62,7 @@ const distributionLogos = {
   rocky: "rocky.svg",
 };
 
-const featureShort = {
-  wallet: "Wallet & key custody",
-  device: "Device setup & grant",
-  "server-list": "Server discovery",
-  favourites: "Favourite servers",
-  quality: "Quality & reachability",
-  session: "Connect & disconnect",
-  "auto-connect": "Auto-connect",
-  status: "Connection status",
-  cost: "Cost preview",
-  "top-up": "Deposit top-up",
-  settlement: "Settlement & withdraw",
-  activity: "Activity & history",
-  plans: "Subscription plans",
-  "kill-switch": "Kill switch",
-  "restore-network": "Restore network",
-  dns: "DNS controls",
-  "split-tunnel": "Split tunnelling",
-  "system-proxy": "System proxy",
-  settings: "Settings",
-  diagnostics: "Diagnostics & logs",
-  notifications: "Notifications",
-  tray: "Tray / quick access",
-  autostart: "Start with OS",
-  appearance: "Theme & language",
-  cli: "CLI twin",
-  "app-info": "App info & snapshot",
-  "node-test": "In-app node test",
-};
+
 
 const $ = (selector) => document.querySelector(selector);
 
@@ -146,8 +120,7 @@ function featureById(id) {
 
 function proofFor(featureId) {
   const cell = state.matrix.features?.[featureId]?.cells?.[state.platform];
-  if (!cell) return { state: "untested", evidence: null };
-  return { ...cell, recordedState: cell.state, state: cell.verification === "historical" ? "historical" : cell.state };
+  return qualifiedProof(cell);
 }
 
 function unsupportedReason(featureId) {
@@ -159,13 +132,14 @@ function requiredBy(featureId) {
 }
 
 function addFeature(id, announce = true) {
-  if (unsupportedReason(id)) return;
-  state.optionalFeatures.add(id);
-  const requirement = state.rules.requires?.[id];
-  if (requirement) {
-    requirement.features.forEach((dependency) => state.optionalFeatures.add(dependency));
-    if (announce) showToast(`Added ${featureShort[id] || id} and its required module${requirement.features.length > 1 ? "s" : ""}.`);
+  const dependencies = featureDependencies(id, state.rules);
+  const blocked = dependencies.find(unsupportedReason);
+  if (blocked) {
+    showToast(`${featureShort[blocked] || blocked} is unavailable on this platform.`);
+    return;
   }
+  dependencies.filter(feature => !state.rules.core.includes(feature)).forEach(feature => state.optionalFeatures.add(feature));
+  if (announce && dependencies.length > 1) showToast(`Added ${featureShort[id] || id} with its required modules.`);
 }
 
 function toggleFeature(id) {
@@ -187,7 +161,7 @@ function setPlatform(platformId) {
   state.platform = platformId;
   const os = currentOs();
   const blocked = state.rules.notOn?.[os] || {};
-  const removed = [...state.optionalFeatures].filter((id) => blocked[id]);
+  const removed = [...state.optionalFeatures].filter(id => featureDependencies(id, state.rules).some(dependency => blocked[dependency]));
   removed.forEach((id) => state.optionalFeatures.delete(id));
   if (removed.length) showToast(`Removed ${removed.length} feature${removed.length > 1 ? "s" : ""} not available on ${osMeta[os].label}.`);
   render();
@@ -216,8 +190,10 @@ function renderOsOptions() {
   Object.entries(osMeta).forEach(([id, meta]) => {
     const button = document.createElement("button");
     button.type = "button";
+    button.dataset.focusKey = `os-${id}`;
     button.className = `option-card ${id === selectedOs ? "selected" : ""}`;
     button.setAttribute("aria-pressed", String(id === selectedOs));
+    button.setAttribute('aria-label', meta.label);
     button.innerHTML = `<span class="card-symbol os-mark"><img src="./logos/${themedLogo(meta.logo)}" alt="" width="28" height="28" /></span><strong>${meta.label}</strong>`;
     button.addEventListener("click", () => {
       const first = state.taxonomy.platformVariants.find((platform) => platform.os === id);
@@ -259,10 +235,23 @@ function renderProtocols() {
     const selected = state.protocols.has(protocol.id);
     const button = document.createElement("button");
     button.type = "button";
+    button.dataset.focusKey = `protocol-${protocol.id}`;
     button.className = `option-card protocol-card ${selected ? "selected" : ""}`;
     button.setAttribute("aria-pressed", String(selected));
     button.setAttribute("aria-label", meta.label);
-    button.innerHTML = `<span class="card-symbol protocol-mark">${meta.logo ? `<img src="./protocols/${themedLogo(meta.logo)}" alt="" width="28" height="28" />` : ""}</span><strong>${meta.label}</strong>`;
+    const symbol = document.createElement('span');
+    symbol.className = 'card-symbol protocol-mark';
+    if (meta.logo) {
+      const image = document.createElement('img');
+      image.src = `./protocols/${themedLogo(meta.logo)}`;
+      image.alt = '';
+      image.width = 28;
+      image.height = 28;
+      symbol.append(image);
+    }
+    const label = document.createElement('strong');
+    label.textContent = meta.label;
+    button.append(symbol, label);
     button.addEventListener("click", () => {
       if (selected && state.protocols.size === 1) {
         showToast("A client build needs at least one tunnel protocol.");
@@ -281,6 +270,7 @@ function appendFeatureGroup(container, category, listClass) {
   const heading = document.createElement("h3");
   heading.id = `${container.id}-${category.id}`;
   heading.textContent = category.name;
+  heading.prepend(icon(categoryIcons[category.id]));
   group.setAttribute("aria-labelledby", heading.id);
   const list = document.createElement("div");
   list.className = listClass;
@@ -313,6 +303,7 @@ function renderFeatures() {
     const label = featureShort[feature.id] || feature.id;
     const button = document.createElement("button");
     button.type = "button";
+    button.dataset.focusKey = `feature-${feature.id}`;
     button.className = "feature-card" + (selected ? " selected" : "") + (isCore ? " core" : "");
     button.disabled = Boolean(reason);
     button.setAttribute("aria-pressed", String(selected));
@@ -406,7 +397,7 @@ function renderManifest() {
   let warningText = "";
   if (state.syncStatus?.status !== "synced") {
     warningText = "The latest source sync failed. This configuration uses the last validated catalogue.";
-  } else if (Date.now() - Date.parse(state.syncStatus.checkedAt) > 120 * 60000) {
+  } else if (syncOverdue(state.syncStatus)) {
     warningText = "Source synchronization is overdue. Check Sources & sync for the last validated revisions.";
   } else if (state.platform === "windows-11-home-laptop" && state.optionalFeatures.has("kill-switch")) {
     warningText = "Daily-use laptop rule: do not run live tunnel or kill-switch tests on this machine.";
@@ -486,8 +477,13 @@ async function copyBrief() {
     area.style.opacity = "0";
     document.body.append(area);
     area.select();
-    document.execCommand("copy");
+    let copied = false;
+    try { copied = document.execCommand('copy'); } catch { /* Report unavailable clipboard access below. */ }
     area.remove();
+    if (!copied) {
+      showToast('Clipboard unavailable. Use Download JSON to save your configuration.');
+      return;
+    }
   }
   showToast("Build brief copied.");
 }
@@ -498,8 +494,10 @@ function downloadJson() {
   const link = document.createElement("a");
   link.href = url;
   link.download = `sentinel-build-${state.platform}.json`;
+  document.body.append(link);
   link.click();
-  URL.revokeObjectURL(url);
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
   showToast("Build manifest downloaded.");
 }
 
@@ -570,12 +568,14 @@ function showToast(message) {
 }
 
 function render() {
+  const focusKey = document.activeElement?.dataset.focusKey;
   renderAppTypes();
   renderOsOptions();
   renderRuntime();
   renderProtocols();
   renderFeatures();
   renderManifest();
+  if (focusKey) [...document.querySelectorAll('[data-focus-key]')].find(node => node.dataset.focusKey === focusKey)?.focus({ preventScroll: true });
 }
 
 function bindEvents() {
@@ -618,7 +618,9 @@ function bindEvents() {
   $("#open-evidence").addEventListener("click", openEvidence);
   $("#close-evidence").addEventListener("click", () => $("#evidence-dialog").close());
   $("#evidence-dialog").addEventListener("click", (event) => {
-    if (event.target === $("#evidence-dialog")) $("#evidence-dialog").close();
+    const dialog = $('#evidence-dialog');
+    const bounds = dialog.getBoundingClientRect();
+    if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
   });
 }
 
@@ -637,6 +639,9 @@ async function init() {
   } catch (error) {
     console.error(error);
     document.querySelector(".composer-layout").innerHTML = '<div class="load-error"><h2>Source data is unavailable</h2><p>Reload to try again, or check the latest synchronization.</p><a href="./sources.html">View sources & sync</a></div>';
+  } finally {
+    $('.composer-layout').removeAttribute('inert');
+    $('.composer-layout').setAttribute('aria-busy', 'false');
   }
 }
 

@@ -1,8 +1,9 @@
-import { loadGeneration, readData } from './data-source.js';
+import { loadGeneration, readData, syncOverdue } from './data-source.js';
+import { icon } from './presentation.js';
 
 const $ = selector => document.querySelector(selector);
 const logos = { windows: './logos/windows.svg', linux: './logos/linux.png', macos: './logos/apple.svg', android: './logos/android.svg' };
-const date = value => value ? new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)) : 'Unavailable';
+const date = value => Number.isFinite(Date.parse(value)) ? new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)) : 'Unavailable';
 
 function link(text, url) {
   const element = document.createElement('a');
@@ -29,6 +30,8 @@ function sourceCard(source) {
   card.className = 'source-card';
   const header = document.createElement('header');
   const title = document.createElement('h3');
+  const mark = document.createElement('span');
+  mark.className = 'source-mark';
   if (source.os) {
     const icon = document.createElement('img');
     icon.src = source.os === 'macos' && document.documentElement.dataset.theme === 'light' ? './logos/apple-light.svg' : logos[source.os];
@@ -36,8 +39,9 @@ function sourceCard(source) {
     icon.width = 28;
     icon.height = 28;
     icon.dataset.os = source.os;
-    title.append(icon);
-  }
+    mark.append(icon);
+  } else mark.append(icon(source.kind === 'documentation' ? 'book' : source.kind === 'protocol' ? 'network' : 'terminal'));
+  title.append(mark);
   title.append(link(source.name, source.url));
   const badge = document.createElement('span');
   badge.className = `sync-badge ${source.syncStatus}`;
@@ -73,11 +77,11 @@ function sourceCard(source) {
     details.append(summary, list);
     card.append(details);
   }
-  if (source.changes && !source.changes.initial) {
+  const changeCount = source.changes ? source.changes.added + source.changes.changed + source.changes.removed : 0;
+  if (changeCount && !source.changes.initial) {
     const details = document.createElement('details');
     const summary = document.createElement('summary');
-    const count = source.changes.added + source.changes.changed + source.changes.removed;
-    summary.textContent = `${count} file changes since previous sync`;
+    summary.textContent = `${changeCount} file changes since previous sync`;
     const text = document.createElement('p');
     text.textContent = `${source.changes.added} added · ${source.changes.changed} changed · ${source.changes.removed} removed`;
     details.append(summary, text);
@@ -102,7 +106,15 @@ function renderEvidence(catalogue) {
     name.textContent = platform.id;
     const value = document.createElement('span');
     value.textContent = `${verified} current · ${historical} historical`;
-    row.append(name, value);
+    const meter = document.createElement('div');
+    meter.className = 'coverage-meter';
+    meter.setAttribute('aria-hidden', 'true');
+    for (const count of [verified, historical]) {
+      const segment = document.createElement('i');
+      segment.style.width = `${records.length ? count / records.length * 100 : 0}%`;
+      meter.append(segment);
+    }
+    row.append(name, value, meter);
     $('#evidence-platforms').append(row);
   }
 }
@@ -112,8 +124,7 @@ async function refresh() {
   try {
     // Status remains readable when a first import has failed and no catalogue exists yet.
     const status = await readData('sync-status.json');
-    const age = Date.now() - new Date(status.checkedAt).getTime();
-    const overdue = age > Math.max(120, status.intervalMinutes * 3) * 60000;
+    const overdue = syncOverdue(status);
     const failed = status.status !== 'synced';
     $('#sync-alert').hidden = !failed && !overdue;
     $('#sync-alert').textContent = failed
@@ -121,18 +132,22 @@ async function refresh() {
       : overdue ? 'The scheduled sync is overdue. These revisions reflect the last successful check.' : '';
     $('#sync-time').textContent = `Checked ${date(status.checkedAt)} · Scheduled every ${status.intervalMinutes} minutes`;
     $('#sources-count').textContent = `${status.sources.filter(source => source.revision).length}/${status.sources.length}`;
-    $('#imports-count').textContent = `${status.sources.filter(source => source.importedRevision === source.revision && source.revision && source.kind === 'app').length}/4`;
+    const apps = status.sources.filter(source => source.kind === 'app');
+    $('#imports-count').textContent = `${apps.filter(source => source.importedRevision === source.revision && source.revision).length}/${apps.length}`;
     $('#reviews-count').textContent = status.sources.filter(source => source.reviewStatus !== 'current').length;
     $('#workflow-link').href = status.runUrl || status.workflowUrl;
     $('#app-sources').replaceChildren(...status.sources.filter(source => source.kind === 'app').map(sourceCard));
     $('#support-sources').replaceChildren(...status.sources.filter(source => source.kind !== 'app').map(sourceCard));
     try {
-      const { catalogue, snapshotUrl } = await loadGeneration();
+      const { catalogue, snapshotUrl } = await loadGeneration(status);
       $('#snapshot-link').href = snapshotUrl;
+      $('#snapshot-link').removeAttribute('aria-disabled');
       renderEvidence(catalogue);
     } catch {
       $('#evidence-status').textContent = 'A validated evidence catalogue is currently unavailable.';
       $('#evidence-platforms').replaceChildren();
+      $('#snapshot-link').removeAttribute('href');
+      $('#snapshot-link').setAttribute('aria-disabled', 'true');
     }
   } catch {
     $('#sync-alert').hidden = false;

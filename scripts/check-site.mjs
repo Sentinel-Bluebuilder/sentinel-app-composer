@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
+import path from 'node:path';
+
+for (const filename of fs.readdirSync('dist').filter(name => /\.(html|js|css)$/.test(name))) {
+  const contents = fs.readFileSync(`dist/${filename}`, 'utf8');
+  const references = [
+    ...contents.matchAll(/(?:src|href)=["'](\.\/[^"'#$?]+)["']/g),
+    ...contents.matchAll(/from\s+["'](\.\/[^"']+)["']/g),
+    ...contents.matchAll(/url\(["']?(\.\/[^"')]+)["']?\)/g),
+  ];
+  for (const [, reference] of references) assert(fs.existsSync(path.join('dist', reference)), `${filename} references missing ${reference}`);
+  if (filename.endsWith('.html')) {
+    const ids = [...contents.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+    assert.equal(new Set(ids).size, ids.length, `${filename} has duplicate element IDs`);
+  }
+}
 
 const status = JSON.parse(fs.readFileSync('dist/data/sync-status.json', 'utf8'));
 assert.match(status.catalogueRevision, /^[a-f0-9]{64}$/);

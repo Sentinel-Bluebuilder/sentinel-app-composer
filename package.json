@@ -1,0 +1,10 @@
+{
+  "name": "sentinel-app-composer",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test scripts/*.test.mjs",
+    "check": "node scripts/check-site.mjs"
+  }
+}

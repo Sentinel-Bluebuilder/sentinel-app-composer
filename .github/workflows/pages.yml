@@ -27,6 +27,9 @@ jobs:
           node --check dist/sources.js
           node --check dist/data-source.js
           node --check dist/features.js
+          node --check dist/presentation.js
+          node --check dist/configuration.js
+          node --test scripts/*.test.mjs
           node scripts/check-site.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

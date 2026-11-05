@@ -20,8 +20,11 @@
         <span class="brand-divider" aria-hidden="true"></span><span class="product-name">App Composer</span>
       </a>
       <div class="header-actions">
-        <a class="source-nav" href="./index.html">Composer</a>
-        <a class="source-nav" href="./sources.html">Sources</a>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="./index.html" data-icon="sliders">Composer</a>
+          <a href="./features.html" data-icon="layers" aria-current="page">Features</a>
+          <a href="./sources.html" data-icon="refresh">Sources</a>
+        </nav>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
           <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
           <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
@@ -31,7 +34,7 @@
 
 
     <main class="library-page" id="feature-library">
-      <div class="library-heading"><div><h1>Feature library</h1><p id="library-count" role="status">Loading implementations</p></div><a class="secondary-button" href="./index.html">Configure an app</a></div>
+      <div class="library-heading page-heading"><div><h1>Feature library</h1><p id="library-count" role="status">Loading implementations</p></div><a class="secondary-button" data-icon="arrow" href="./index.html">Configure an app</a></div>
       <details class="verification-guide"><summary>How testing and attribution are verified</summary>
         <p>Each implementation has its own creator declarations, code contributors, source revision, dependencies, and test reports.</p>
         <p>GitHub verifies each registered workflow, job outcome, and source revision. Reviewers declare the test level, platform, protocol scope, and dependency revisions in the registry. Current reports match the synchronized revisions. Source-integrity checks confirm code assembly.</p>
@@ -43,6 +46,7 @@
           <label class="library-search"><span>Search</span><input id="library-search" type="search" placeholder="Feature or creator" autocomplete="off" /></label>
           <label class="library-platform"><span>Platform</span><select id="library-platform"><option value="">All platforms</option><option value="windows">Windows</option><option value="linux">Linux</option><option value="macos">macOS</option><option value="android">Android</option></select></label>
           <nav id="library-features" aria-label="Features"></nav>
+          <label class="library-mobile-feature"><span>Feature</span><select id="library-feature-select"></select></label>
         </aside>
         <section class="library-detail" aria-labelledby="selected-feature">
           <div class="library-feature-heading"><h2 id="selected-feature"></h2><span id="implementation-count" aria-live="polite"></span></div>

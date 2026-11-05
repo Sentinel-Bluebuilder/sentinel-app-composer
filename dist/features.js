@@ -1,4 +1,5 @@
-import { loadGeneration } from './data-source.js';
+import { loadGeneration, syncOverdue } from './data-source.js';
+import { featureLabels, categoryIcons, icon } from './presentation.js';
 
 const $ = selector => document.querySelector(selector);
 const params = new URLSearchParams(location.search);
@@ -42,12 +43,16 @@ function renderAttribution(implementation) {
       row.append(link(`@${creator.github}`, creator.url), link('Creator declaration', creator.declarationUrl));
       node.append(row);
     }
-  } else node.append(element('p', 'Creator declaration pending', 'attribution-pending'));
+  }
   if (implementation.attribution.contributors.length) {
     const contributors = element('div', undefined, 'contributor-list');
-    for (const contributor of implementation.attribution.contributors) contributors.append(link(`@${contributor.github}`, contributor.url));
-    node.append(contributors, element('p', 'GitHub-linked contributors to mapped files', 'scope-note'));
-  } else node.append(element('p', 'Code contributor attribution unavailable', 'scope-note'));
+    for (const contributor of implementation.attribution.contributors) {
+      const account = link(`@${contributor.github}`, contributor.url);
+      account.prepend(icon('user'));
+      contributors.append(account);
+    }
+    node.append(contributors, element('p', implementation.creators.length ? 'GitHub contributors to mapped files' : 'GitHub contributors · Creator declaration pending', 'scope-note'));
+  } else node.append(element('p', implementation.creators.length ? 'Code contributor attribution unavailable' : 'Creator and contributor attribution pending', 'scope-note'));
   const history = details('Attribution sources');
   const attribution = implementation.attribution;
   if (attribution.observedRevision) history.append(link(`History indexed at ${attribution.observedRevision.slice(0, 8)}`, `${implementation.repository}/commit/${attribution.observedRevision}`));
@@ -74,13 +79,15 @@ function renderTesting(implementation) {
     const term = element('dt', level.name);
     const value = element('dd');
     value.append(badge(level.state));
-    for (const scope of level.scopes) value.append(element('small', `${scope.platformIds.join(', ')}${scope.protocols.length ? ` · ${scope.protocols.join(', ')}` : ''}`, 'test-scope'));
+    for (const scope of level.scopes) value.append(element('small', `${scope.platformIds.join(', ')}${scope.protocols.length ? ` · ${scope.protocols.join(', ')}` : ''} · ${stateNames[scope.result] || scope.result}`, 'test-scope'));
     row.append(term, value);
     list.append(row);
   }
   node.append(list);
   const integrity = element('div', undefined, 'implementation-integrity');
-  integrity.append(element('span', 'Source integrity'), badge(implementation.integrity.status));
+  const integrityLabel = element('span', 'Source integrity');
+  integrityLabel.prepend(icon('shield'));
+  integrity.append(integrityLabel, badge(implementation.integrity.status));
   node.append(integrity);
   if (implementation.integrity.platforms.length) node.append(element('p', implementation.integrity.platforms.join(' · '), 'scope-note'));
   if (implementation.integrity.url) node.append(link('View source validation', implementation.integrity.url));
@@ -116,6 +123,7 @@ function renderTesting(implementation) {
 function implementationCard(implementation) {
   const card = element('article', undefined, 'implementation-card');
   const header = element('header');
+  const mark = element('span', undefined, 'implementation-mark');
   if (logos[implementation.os]) {
     const image = element('img');
     image.src = implementation.os === 'macos' && document.documentElement.dataset.theme === 'light' ? './logos/apple-light.svg' : logos[implementation.os];
@@ -123,18 +131,21 @@ function implementationCard(implementation) {
     image.alt = '';
     image.width = 28;
     image.height = 28;
-    header.append(image);
-  }
-  header.append(element('h3', implementation.title));
+    mark.append(image);
+  } else mark.append(icon('code'));
+  const title = element('div');
+  title.append(element('h3', implementation.reference ? names[implementation.os] || implementation.title : implementation.title));
+  title.append(element('p', implementation.reference ? 'Reference integration' : 'Independent implementation', 'implementation-kind'));
+  header.append(mark, title);
   card.append(header);
-  const owner = element('p', undefined, 'implementation-owner');
-  owner.append('Repository owner ', link(`@${implementation.repositoryOwner}`, `https://github.com/${implementation.repositoryOwner}`));
-  card.append(owner);
   const revision = element('div', undefined, 'implementation-revision');
-  revision.append(link(new URL(implementation.repository).pathname.slice(1), implementation.repository),
+  revision.append(link(new URL(implementation.repository).pathname.split('/').pop(), implementation.repository),
     link(implementation.revision.slice(0, 8), `${implementation.repository}/commit/${implementation.revision}`));
   card.append(revision, renderAttribution(implementation), renderTesting(implementation));
   const code = details(`Code & scope (${implementation.files.length} mapped files)`);
+  const owner = element('p', undefined, 'implementation-owner');
+  owner.append('Repository owner ', link(`@${implementation.repositoryOwner}`, `https://github.com/${implementation.repositoryOwner}`));
+  code.append(owner);
   code.append(element('p', `${implementation.kind === 'client-integration' ? 'Client integration' : 'Component'} · ${implementation.platforms.join(', ')}`, 'scope-note'));
   if (!implementation.files.length) code.append(element('p', 'Code mapping needs review.'));
   const files = element('ul');
@@ -153,10 +164,11 @@ function implementationCard(implementation) {
 }
 
 function render() {
+  const focusedFeature = document.activeElement?.dataset.feature;
   const query = $('#library-search').value.trim().toLowerCase();
   const os = $('#library-platform').value;
   const platformOs = new Map(catalogue.taxonomy.platformVariants.map(platform => [platform.id, platform.os]));
-  const featureNames = new Map(catalogue.taxonomy.featureCategories.flatMap(group => group.features.map(feature => [feature.id, feature.name])));
+  const featureNames = new Map(catalogue.taxonomy.featureCategories.flatMap(group => group.features.map(feature => [feature.id, featureLabels[feature.id] || feature.name])));
   const visible = implementations.filter(implementation => {
     const text = [implementation.id, featureNames.get(implementation.featureId), implementation.title, implementation.repositoryOwner,
       ...implementation.creators.map(creator => creator.github), ...implementation.attribution.contributors.map(contributor => contributor.github)].join(' ').toLowerCase();
@@ -166,32 +178,47 @@ function render() {
   if (!available.has(selectedFeature)) selectedFeature = catalogue.taxonomy.featureCategories.flatMap(group => group.features).find(feature => available.has(feature.id))?.id || '';
   const navigation = $('#library-features');
   navigation.replaceChildren();
+  const featureSelect = $('#library-feature-select');
+  featureSelect.replaceChildren();
   for (const category of catalogue.taxonomy.featureCategories) {
     const features = category.features.filter(feature => available.has(feature.id));
     if (!features.length) continue;
     const group = element('div', undefined, 'library-feature-group');
-    group.append(element('h2', category.name));
+    const optionGroup = element('optgroup');
+    optionGroup.label = category.name;
+    const heading = element('h2', category.name);
+    heading.prepend(icon(categoryIcons[category.id]));
+    group.append(heading);
     for (const feature of features) {
       const button = element('button');
       button.type = 'button';
+      button.dataset.feature = feature.id;
       button.className = selectedFeature === feature.id ? 'active' : '';
       button.setAttribute('aria-pressed', String(selectedFeature === feature.id));
       button.title = feature.name;
-      button.append(element('span', feature.name.split(/[(:]/)[0].trim()), element('small', String(visible.filter(item => item.featureId === feature.id).length)));
+      button.append(element('span', featureNames.get(feature.id)), element('small', String(visible.filter(item => item.featureId === feature.id).length)));
       button.addEventListener('click', () => { selectedFeature = feature.id; render(); });
       group.append(button);
+      const option = element('option', featureNames.get(feature.id));
+      option.value = feature.id;
+      option.selected = selectedFeature === feature.id;
+      optionGroup.append(option);
     }
     navigation.append(group);
+    featureSelect.append(optionGroup);
   }
+  featureSelect.disabled = available.size === 0;
   const selected = visible.filter(implementation => implementation.featureId === selectedFeature);
-  $('#selected-feature').textContent = featureNames.get(selectedFeature)?.split(/[(:]/)[0].trim() || 'No matching features';
+  $('#selected-feature').textContent = featureNames.get(selectedFeature) || 'No matching features';
   $('#implementation-count').textContent = `${selected.length} implementation${selected.length === 1 ? '' : 's'}`;
   $('#implementation-cards').replaceChildren(...selected.map(implementationCard));
   $('#library-empty').hidden = selected.length > 0;
   const url = new URL(location.href);
   if (selectedFeature) url.searchParams.set('feature', selectedFeature); else url.searchParams.delete('feature');
   if (os) url.searchParams.set('platform', os); else url.searchParams.delete('platform');
+  if (query) url.searchParams.set('q', $('#library-search').value.trim()); else url.searchParams.delete('q');
   history.replaceState(null, '', url);
+  if (focusedFeature) [...navigation.querySelectorAll('button')].find(button => button.dataset.feature === focusedFeature)?.focus({ preventScroll: true });
 }
 
 async function init() {
@@ -204,12 +231,14 @@ async function init() {
     $('#library-count').textContent = `${featureCount} features · ${implementations.length} implementations`;
     const platform = params.get('platform');
     if (names[platform]) $('#library-platform').value = platform;
+    $('#library-search').value = params.get('q') || '';
     $('#library-search').addEventListener('input', render);
     $('#library-platform').addEventListener('change', render);
+    $('#library-feature-select').addEventListener('change', event => { selectedFeature = event.target.value; render(); });
     if (generation.status.status !== 'synced') {
       $('#library-alert').hidden = false;
       $('#library-alert').textContent = 'The latest synchronization failed. Showing the last validated implementation registry.';
-    } else if (Date.now() - Date.parse(generation.status.checkedAt) > 120 * 60000) {
+    } else if (syncOverdue(generation.status)) {
       $('#library-alert').hidden = false;
       $('#library-alert').textContent = 'Source synchronization is overdue. Check Sources for the last validated revisions.';
     }
