@@ -1,10 +1,13 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
 
 const status = JSON.parse(fs.readFileSync('dist/data/sync-status.json', 'utf8'));
 assert.match(status.catalogueRevision, /^[a-f0-9]{64}$/);
 const catalogue = JSON.parse(fs.readFileSync(`dist/data/revisions/${status.catalogueRevision}.json`, 'utf8'));
 assert.equal(catalogue.revision, status.catalogueRevision);
+const { revision, ...payload } = catalogue;
+assert.equal(crypto.createHash('sha256').update(JSON.stringify(payload)).digest('hex'), revision);
 const features = catalogue.taxonomy.featureCategories.flatMap(category => category.features.map(feature => feature.id));
 assert.equal(new Set(features).size, features.length);
 for (const id of catalogue.rules.core) assert(features.includes(id));

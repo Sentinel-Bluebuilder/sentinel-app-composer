@@ -45,7 +45,7 @@ function sourceCard(source) {
   header.append(title, badge);
   const subtitle = document.createElement('p');
   subtitle.className = 'source-repository';
-  subtitle.textContent = `${source.repository} · ${source.branch}`;
+  subtitle.textContent = `${source.repository} · ${source.branch}${source.private ? ' · Private' : ''}`;
   const revisions = document.createElement('dl');
   revisions.className = 'source-revisions';
   revisions.append(revisionRow('GitHub', source.revision, source));
