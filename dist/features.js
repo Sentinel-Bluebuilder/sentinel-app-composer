@@ -243,10 +243,13 @@ async function init() {
       $('#library-alert').textContent = 'Source synchronization is overdue. Check Sources for the last validated revisions.';
     }
     render();
+    $('.library-sidebar').removeAttribute('inert');
   } catch {
     $('#library-count').textContent = 'Implementation records are unavailable';
     $('#library-alert').hidden = false;
     $('#library-alert').textContent = 'Check Sources for synchronization status, then reload to try again.';
+  } finally {
+    $('.library-layout').setAttribute('aria-busy', 'false');
   }
 }
 document.addEventListener('themechange', () => {
