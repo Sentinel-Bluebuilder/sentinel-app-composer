@@ -1,0 +1,44 @@
+{
+  "apple-light.svg": {
+    "source": "apple.svg",
+    "changes": "Monochrome fill changed to #0d1224 for light surfaces."
+  },
+  "ubuntu-light.svg": {
+    "source": "ubuntu.svg",
+    "changes": "Circle of Friends filled with Ubuntu orange #E95420 for light surfaces."
+  },
+  "../brand/sentinel-logo-light.svg": {
+    "source": "../brand/sentinel-logo.svg",
+    "changes": "White wordmark paths filled with #0d1224 for light surfaces."
+  },
+  "../protocols/amneziawg-on-light.svg": { "source": "../protocols/amneziawg-on-dark.svg", "changes": "Existing light variant from the local app protocol bundle, GPL-3.0 repository." },
+  "../protocols/openvpn-on-light.svg": { "source": "https://openvpn.net/branding/", "changes": "Official light-background variant from the local app protocol bundle." },
+  "../protocols/xray-on-light.svg": { "source": "https://github.com/XTLS/Xray-docs-next/blob/main/docs/public/logo-light.svg", "attribution": "Project X, CC-BY-SA-4.0. Copied unchanged from the local protocol bundle." },
+  "../protocols/hysteria2-on-light.svg": { "source": "https://github.com/apernet/hysteria-website/blob/master/docs/assets/logo.svg", "attribution": "apernet, MIT. Existing light-scheme variant from the local protocol bundle." },
+  "windows.svg": {
+    "source": "runner/deck-working/recovery-audit/sdk-ecosystem-logos/windows11.svg",
+    "changes": "Local Windows 11 vector, filled with Windows blue #0078D4."
+  },
+  "apple.svg": {
+    "source": "runner-console/public/brands/apple.svg",
+    "changes": "Local white Apple mark, copied unchanged."
+  },
+  "android.svg": {
+    "source": "runner/deck-working/recovery-audit/sdk-ecosystem-logos/android.svg",
+    "changes": "Local Android vector, filled with Android green #3DDC84."
+  },
+  "linux.png": { "source": "https://www.kernel.org/theme/images/logos/tux.png" },
+  "ubuntu.svg": { "source": "https://assets.ubuntu.com/v1/82818827-CoF_white.svg" },
+  "debian.svg": { "source": "https://www.debian.org/logos/openlogo-nd.svg" },
+  "fedora.ico": { "source": "https://fedoraproject.org/favicon.ico" },
+  "rocky.svg": { "source": "https://raw.githubusercontent.com/rocky-linux/brand-kit/main/Logomark.svg" },
+  "electron.svg": { "source": "https://raw.githubusercontent.com/electron/website/main/static/assets/img/logo.svg" },
+  "csharp.svg": { "source": "https://raw.githubusercontent.com/dotnet/brand/main/logo/language-icons/csharp-72.svg" },
+  "dotnet.svg": { "source": "https://raw.githubusercontent.com/dotnet/brand/main/logo/dotnet-logo.svg" },
+  "../protocols/wireguard.png": { "source": "https://www.wireguard.com/img/icons/favicon-256.png", "attribution": "WireGuard is a registered trademark of Jason A. Donenfeld." },
+  "../protocols/openvpn-on-dark.svg": { "source": "https://openvpn.net/branding/", "attribution": "OpenVPN is a registered trademark of OpenVPN Inc." },
+  "../protocols/amneziawg-on-dark.svg": { "source": "https://github.com/amnezia-vpn/amnezia-client/blob/master/client/images/controls/amnezia.svg", "attribution": "Amnezia VPN, GPL-3.0 repository." },
+  "../protocols/v2ray.png": { "source": "https://github.com/v2fly/v2fly-github-io/blob/master/docs/.vuepress/public/readme-logo.png", "attribution": "V2Fly community, CC-BY-SA-4.0. Copied unchanged from the local protocol bundle." },
+  "../protocols/xray-on-dark.svg": { "source": "https://github.com/XTLS/Xray-docs-next/blob/main/docs/public/logo-dark.svg", "attribution": "Project X, CC-BY-SA-4.0. Copied unchanged from the local protocol bundle." },
+  "../protocols/hysteria2-on-dark.svg": { "source": "https://github.com/apernet/hysteria-website/blob/master/docs/assets/logo.svg", "attribution": "apernet, MIT. Local bundle fixes the upstream dark-scheme fill to white." }
+}
