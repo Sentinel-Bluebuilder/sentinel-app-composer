@@ -6,11 +6,11 @@ import path from 'node:path';
 for (const filename of fs.readdirSync('dist').filter(name => /\.(html|js|css)$/.test(name))) {
   const contents = fs.readFileSync(`dist/${filename}`, 'utf8');
   const references = [
-    ...contents.matchAll(/(?:src|href)=["'](\.\/[^"'#$?]+)["']/g),
+    ...contents.matchAll(/(?:src|href)=["'](\.\/[^"'#$]+)["']/g),
     ...contents.matchAll(/from\s+["'](\.\/[^"']+)["']/g),
     ...contents.matchAll(/url\(["']?(\.\/[^"')]+)["']?\)/g),
   ];
-  for (const [, reference] of references) assert(fs.existsSync(path.join('dist', reference)), `${filename} references missing ${reference}`);
+  for (const [, reference] of references) assert(fs.existsSync(path.join('dist', reference.split('?')[0])), `${filename} references missing ${reference}`);
   if (filename.endsWith('.html')) {
     const ids = [...contents.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
     assert.equal(new Set(ids).size, ids.length, `${filename} has duplicate element IDs`);
