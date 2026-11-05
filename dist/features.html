@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse Sentinel feature implementations, code contributors, source revisions, and testing evidence." />
+    <meta name="theme-color" content="#060608" />
+    <title>Feature library · Sentinel</title>
+    <link rel="icon" href="./brand/sentinel-shield.svg" type="image/svg+xml" />
+    <script src="./theme.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./brand.css" />
+    <link rel="stylesheet" href="./features.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#feature-library">Skip to feature library</a>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Sentinel App Composer home">
+        <img class="sentinel-logo" src="./brand/sentinel-logo.svg" data-dark-src="./brand/sentinel-logo.svg" data-light-src="./brand/sentinel-logo-light.svg" width="110" height="31" alt="Sentinel" />
+        <span class="brand-divider" aria-hidden="true"></span><span class="product-name">App Composer</span>
+      </a>
+      <div class="header-actions">
+        <a class="source-nav" href="./index.html">Composer</a>
+        <a class="source-nav" href="./sources.html">Sources</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+        </button>
+      </div>
+    </header>
+
+
+    <main class="library-page" id="feature-library">
+      <div class="library-heading"><div><h1>Feature library</h1><p id="library-count" role="status">Loading implementations</p></div><a class="secondary-button" href="./index.html">Configure an app</a></div>
+      <details class="verification-guide"><summary>How testing and attribution are verified</summary>
+        <p>Each implementation has its own creator declarations, code contributors, source revision, dependencies, and test reports.</p>
+        <p>GitHub verifies each registered workflow, job outcome, and source revision. Reviewers declare the test level, platform, protocol scope, and dependency revisions in the registry. Current reports match the synchronized revisions. Source-integrity checks confirm code assembly.</p>
+        <p>Earlier evidence keeps its original citation. “No report” means a verified report has yet to be registered for that test level. Creator declarations include an attribution source. Code contributors come from GitHub-linked authors in mapped file histories. Shared files can include contributions to other features.</p>
+      </details>
+      <div id="library-alert" class="sync-alert" role="status" hidden></div>
+      <div class="library-layout">
+        <aside class="library-sidebar" aria-label="Feature filters">
+          <label class="library-search"><span>Search</span><input id="library-search" type="search" placeholder="Feature or creator" autocomplete="off" /></label>
+          <label class="library-platform"><span>Platform</span><select id="library-platform"><option value="">All platforms</option><option value="windows">Windows</option><option value="linux">Linux</option><option value="macos">macOS</option><option value="android">Android</option></select></label>
+          <nav id="library-features" aria-label="Features"></nav>
+        </aside>
+        <section class="library-detail" aria-labelledby="selected-feature">
+          <div class="library-feature-heading"><h2 id="selected-feature"></h2><span id="implementation-count" aria-live="polite"></span></div>
+          <div id="implementation-cards" class="implementation-grid"></div>
+          <p id="library-empty" class="library-empty" hidden>No implementations match these filters.</p>
+        </section>
+      </div>
+    </main>
+    <footer><a href="./sources.html">Source synchronization →</a></footer>
+    <script type="module" src="./features.js"></script>
+  </body>
+</html>

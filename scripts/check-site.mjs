@@ -21,4 +21,17 @@ for (const feature of Object.values(catalogue.matrix.features)) {
     assert(['current', 'historical', 'missing'].includes(feature.cells[platform.id].verification));
   }
 }
+if (catalogue.library) {
+  const ids = new Set();
+  for (const implementation of catalogue.library.implementations) {
+    assert(!ids.has(implementation.id));
+    ids.add(implementation.id);
+    assert(features.includes(implementation.featureId));
+    assert.match(implementation.revision, /^[a-f0-9]{40}$/);
+    assert.equal(implementation.testing.length, catalogue.library.testingLevels.length);
+    assert(Array.isArray(implementation.creators));
+    assert(Array.isArray(implementation.attribution.contributors));
+    for (const report of implementation.reports) assert(report.url.startsWith('https://github.com/'));
+  }
+}
 console.log(`Validated ${features.length} features and catalogue ${catalogue.revision.slice(0, 12)}.`);

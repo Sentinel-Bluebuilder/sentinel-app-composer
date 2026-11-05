@@ -464,7 +464,7 @@ footer { display: flex; justify-content: flex-end; max-width: 1300px; margin: 0 
   .sources-heading p { font-size: 11px; }
   .sources-heading button { min-width: auto; padding: 10px; }
 }
-@media (max-width: 440px) { .product-name { display: none; } .brand-divider { display: none; } }
+@media (max-width: 440px) { .product-name { display: none; } .brand-divider { display: none; } .sentinel-logo { width: 96px; height: 27px; } }
 @media (max-width: 1050px) {
   .composer-section { padding: 36px 24px 48px; }
   .composer-layout { grid-template-columns: minmax(0, 1fr) 280px; gap: 20px; }

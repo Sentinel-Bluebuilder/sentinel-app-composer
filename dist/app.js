@@ -545,6 +545,12 @@ function renderEvidence() {
       link.textContent = entry.evidenceUrl ? "View test evidence" : "View source revision";
       item.append(link);
     }
+    const implementationLink = document.createElement("a");
+    implementationLink.href = `./features.html?feature=${encodeURIComponent(entry.id)}&platform=${encodeURIComponent(currentOs())}`;
+    implementationLink.textContent = "Creators & testing";
+    const implementationRow = document.createElement("p");
+    implementationRow.append(implementationLink);
+    item.append(implementationRow);
     list.append(item);
   });
 }
