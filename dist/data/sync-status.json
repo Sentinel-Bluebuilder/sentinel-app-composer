@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-05T20:15:24.654Z",
-  "lastSuccessfulSync": "2026-11-05T20:15:24.654Z",
+  "checkedAt": "2026-11-05T20:18:31.645Z",
+  "lastSuccessfulSync": "2026-11-05T20:18:31.645Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42101658189",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42102105524",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-05T20:15:49.525Z"
+    "testedAt": "2026-11-05T20:18:54.310Z"
   },
   "sources": [
     {
@@ -33,11 +33,11 @@
       "pushedAt": "2026-11-05T20:12:17Z",
       "indexedRevision": "ea032e6c4db5d5efb28d60af48b885123f2aec31",
       "importedRevision": "ea032e6c4db5d5efb28d60af48b885123f2aec31",
-      "previousRevision": "001d687c0b28e5398d28bfa2d02f25c2e1f9cc30",
+      "previousRevision": "ea032e6c4db5d5efb28d60af48b885123f2aec31",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 2060,
       "documents": [
         {
@@ -303,12 +303,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     },
     {
@@ -325,11 +323,11 @@
       "pushedAt": "2026-11-05T20:12:20Z",
       "indexedRevision": "bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06",
       "importedRevision": "bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06",
-      "previousRevision": "19d493d3f1781c5571973d0f09e4ce8a67f58042",
+      "previousRevision": "bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -555,12 +553,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     },
     {
@@ -577,11 +573,11 @@
       "pushedAt": "2026-11-05T20:12:23Z",
       "indexedRevision": "deef130da46c2878716ecfc58e945393c71197f1",
       "importedRevision": "deef130da46c2878716ecfc58e945393c71197f1",
-      "previousRevision": "0cb7658adc3bb944f502aa335109eb3a2b8e54ea",
+      "previousRevision": "deef130da46c2878716ecfc58e945393c71197f1",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 525,
       "documents": [
         {
@@ -727,12 +723,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     },
     {
@@ -749,11 +743,11 @@
       "pushedAt": "2026-11-05T20:12:25Z",
       "indexedRevision": "980e8c5190559697ae603cc605b8fdc9252ca507",
       "importedRevision": "980e8c5190559697ae603cc605b8fdc9252ca507",
-      "previousRevision": "44bced953a4d3425897660b9d8d73997ce76c5d4",
+      "previousRevision": "980e8c5190559697ae603cc605b8fdc9252ca507",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 1058,
       "documents": [
         {
@@ -899,12 +893,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     },
     {
@@ -920,11 +912,11 @@
       "pushedAt": "2026-11-05T20:12:28Z",
       "indexedRevision": "f4f2556506924c09530024f172bb5b5e269b4bb2",
       "importedRevision": null,
-      "previousRevision": "d04908d6167bb8de531fb6414220214b3fa27ccd",
+      "previousRevision": "f4f2556506924c09530024f172bb5b5e269b4bb2",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1190,12 +1182,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     },
     {
@@ -1211,21 +1201,19 @@
       "pushedAt": "2026-11-05T20:12:32Z",
       "indexedRevision": "05a122846881561346286db4f508da7f1e3c1e97",
       "importedRevision": null,
-      "previousRevision": "d20f5cb8e995dc99357c474bea55e616f8e31552",
+      "previousRevision": "05a122846881561346286db4f508da7f1e3c1e97",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     },
     {
@@ -1241,11 +1229,11 @@
       "pushedAt": "2026-11-05T20:12:34Z",
       "indexedRevision": "6089fc3d19ef6135d3856330f15cd32d45c63dce",
       "importedRevision": null,
-      "previousRevision": "3b0a810242fe381c1ee5516182427ad3e51d71e4",
+      "previousRevision": "6089fc3d19ef6135d3856330f15cd32d45c63dce",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 255,
       "documents": [
         {
@@ -1286,12 +1274,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     },
     {
@@ -1307,11 +1293,11 @@
       "pushedAt": "2026-11-05T20:12:37Z",
       "indexedRevision": "08a294f6fd6dd195b7c8d5efe9f61f5efcf44237",
       "importedRevision": null,
-      "previousRevision": "ddc3838e48024d0358962a32974571187d258146",
+      "previousRevision": "08a294f6fd6dd195b7c8d5efe9f61f5efcf44237",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 68,
       "documents": [
         {
@@ -1337,12 +1323,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     },
     {
@@ -1358,11 +1342,11 @@
       "pushedAt": "2026-11-05T20:12:40Z",
       "indexedRevision": "c0b15fa9c22b842e797c3cc66f84b6f3a379a9b7",
       "importedRevision": null,
-      "previousRevision": "c50fedf311b415e1cbae015585d432627b08cdb3",
+      "previousRevision": "c0b15fa9c22b842e797c3cc66f84b6f3a379a9b7",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-05T20:15:24.654Z",
+      "checkedAt": "2026-11-05T20:18:31.645Z",
       "fileCount": 234,
       "documents": [
         {
@@ -1388,12 +1372,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
+        "added": 0,
         "changed": 0,
         "removed": 0,
-        "paths": [
-          ".github/workflows/notify-builder-sync.yml"
-        ]
+        "paths": []
       }
     }
   ],
