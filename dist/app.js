@@ -1,6 +1,7 @@
 import { loadGeneration, syncOverdue } from './data-source.js';
 import { featureLabels as featureShort, categoryIcons, icon } from './presentation.js';
 import { featureDependencies, qualifiedProof } from './configuration.js';
+import { configurationReadiness } from './readiness.js';
 
 const state = {
   taxonomy: null,
@@ -15,6 +16,7 @@ const state = {
   catalogueRevision: null,
   snapshotUrl: null,
   syncStatus: null,
+  library: null,
 };
 
 const appTypeLabels = {
@@ -346,12 +348,27 @@ function proofSummary() {
   return { entries, counts, score };
 }
 
+function selectedImplementations() {
+  const sourceId = `${currentOs()}-app`;
+  return selectedFeatureIds().map(featureId => state.library?.implementations.find(implementation =>
+    implementation.featureId === featureId && implementation.sourceId === sourceId && implementation.reference && implementation.platforms.includes(state.platform)) || null);
+}
+
+function readinessSummary() {
+  return configurationReadiness(selectedImplementations(), {
+    platformId: state.platform,
+    protocols: [...state.protocols],
+    appShell: currentOs() === 'android' ? 'android' : 'electron',
+  });
+}
+
 function renderManifest() {
   const os = currentOs();
   const runtime = runtimeFor(os);
   const selected = selectedFeatureIds();
   const optional = new Set(state.optionalFeatures);
   const proof = proofSummary();
+  const readiness = readinessSummary();
   const source = state.provenance?.sources[`${os}-app`];
   $("#build-provenance").textContent = source
     ? `Source ${source.revision.slice(0, 8)} · ${proof.counts.historical ? "Evidence needs review" : "View source status"}`
@@ -361,6 +378,12 @@ function renderManifest() {
   $("#manifest-platform").textContent = platformLabels[state.platform] || state.platform;
   $("#manifest-runtime").textContent = runtime.manifest;
   $("#manifest-feature-count").textContent = selected.length;
+  $("#manifest-readiness-score").textContent = `${readiness.score}/100`;
+  $("#manifest-readiness-status").textContent = readiness.status === 'ready' ? 'Release gates passed' : 'Build candidate';
+  $("#manifest-readiness").className = `manifest-readiness ${readiness.status}`;
+  $("#manifest-readiness-missing").textContent = readiness.status === 'ready'
+    ? 'Every required gate has current, configuration-matched evidence.'
+    : `${readiness.missing.length} gate${readiness.missing.length === 1 ? '' : 's'} still need current proof.`;
 
   const protocols = $("#manifest-protocols");
   protocols.replaceChildren();
@@ -403,6 +426,8 @@ function renderManifest() {
     warningText = "Daily-use laptop rule: do not run live tunnel or kill-switch tests on this machine.";
   } else if (state.platform === "macos-apple-silicon") {
     warningText = "Apple silicon is built but not live-proven in the current matrix.";
+  } else if (readiness.status !== 'ready') {
+    warningText = `This configuration is a ${readiness.score}/100 build candidate, not a release-ready app.`;
   } else if (proof.counts.untested + proof.counts.no > proof.entries.length / 2) {
     warningText = "Most selected modules still need platform-specific live proof for this variant.";
   }
@@ -414,11 +439,14 @@ function buildPayload() {
   const os = currentOs();
   const runtime = runtimeFor(os);
   const proof = proofSummary();
+  const readiness = readinessSummary();
+  const implementations = selectedImplementations();
   return {
-    schema: 2,
+    schema: 3,
     catalogueRevision: state.catalogueRevision,
     snapshotUrl: state.snapshotUrl,
     provenance: state.provenance,
+    sourcePins: Object.fromEntries(Object.entries(state.provenance.sources).map(([id, source]) => [id, source.revision])),
     appTypes: Object.keys(appTypeLabels).filter((id) => state.appTypes.has(id)),
     platform: {
       id: state.platform,
@@ -435,8 +463,10 @@ function buildPayload() {
       recordedProof: proofFor(id).recordedState,
       evidence: proofFor(id).evidence,
       testedRevision: proofFor(id).testedRevision,
+      implementationId: implementations.find(implementation => implementation?.featureId === id)?.id || null,
     })),
     proof: { score: proof.score, counts: proof.counts },
+    readiness,
   };
 }
 
@@ -457,9 +487,11 @@ function buildBrief() {
     `Core modules: ${core.join(", ")}`,
     `Optional modules: ${optional.length ? optional.join(", ") : "none"}`,
     `Current evidence: ${payload.proof.counts.proven} proven, ${payload.proof.counts.partial} partial, ${payload.proof.counts.historical} historical results requiring review, ${payload.proof.counts.untested + payload.proof.counts.no} untested/unavailable`,
+    `Release readiness: ${payload.readiness.score}/100 (${payload.readiness.status})`,
     payload.platform.note ? `Platform note: ${payload.platform.note}` : "",
     "",
     "Build requirements:",
+    `- Run: npm run build:config -- <this-config.json> --out <new-app-folder>`,
     "- Resolve every selected feature through the composer rules before generating files.",
     "- Carry platform-specific evidence and outstanding test work into TESTING.md.",
     "- Run full-tunnel and kill-switch tests only on a disposable VM, namespace, or emulator.",
@@ -634,6 +666,7 @@ async function init() {
     state.taxonomy = catalogue.taxonomy;
     state.matrix = catalogue.matrix;
     state.rules = catalogue.rules;
+    state.library = catalogue.library;
     bindEvents();
     render();
   } catch (error) {

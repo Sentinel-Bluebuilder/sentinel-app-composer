@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
 import { featureDependencies, qualifiedProof } from '../dist/configuration.js';
+import { configurationReadiness, implementationReadiness, readinessGates } from '../dist/readiness.js';
 
 globalThis.location = new URL('http://127.0.0.1:4173/');
 const { loadGeneration, readData, syncOverdue } = await import('../dist/data-source.js');
@@ -64,4 +65,32 @@ test('catalogue loading rejects mismatched revisions and invalid pointers', asyn
 test('data loading reports HTTP failures', async t => {
   t.mock.method(globalThis, 'fetch', async () => ({ ok: false, status: 503 }));
   await assert.rejects(readData('sync-status.json'), /HTTP 503/);
+});
+
+function readyImplementation() {
+  const levels = ['unit', 'integration', 'ui', 'live', 'security'];
+  return {
+    id: 'example/kill', featureId: 'kill-switch', files: [{ path: 'kill.ts', sha: 'a'.repeat(40) }], codeFingerprint: 'b'.repeat(64),
+    attribution: { status: 'indexed', contributors: [{ github: 'alice' }], files: [{ status: 'indexed' }] },
+    integrity: { status: 'passed', platforms: ['linux'] },
+    contract: { integration: { documentationUrl: 'https://github.com/example/app/blob/main/integration.md', entryPoints: ['kill.ts'], license: 'MIT', appShells: ['electron'] },
+      tests: levels.map(id => ({ id: `${id}-test`, level: id })), reviews: [{ decision: 'approved', relationship: 'contributor', testIds: levels.map(id => `${id}-test`) }] },
+    testing: levels.map(id => ({ id, scopes: [{ testId: `${id}-test`, platformIds: ['linux'], protocols: ['wireguard'], result: 'passed' }] })),
+  };
+}
+
+test('readiness requires every weighted gate for the exact platform and protocol', () => {
+  assert.equal(readinessGates.reduce((sum, gate) => sum + gate.weight, 0), 100);
+  const item = readyImplementation();
+  assert.equal(implementationReadiness(item, { platformId: 'linux', protocols: ['wireguard'], appShell: 'electron' }).score, 100);
+  item.testing.find(level => level.id === 'live').scopes[0].protocols = ['openvpn'];
+  assert.equal(implementationReadiness(item, { platformId: 'linux', protocols: ['wireguard'], appShell: 'electron' }).score, 85);
+});
+
+test('configuration readiness cannot average away a weak component', () => {
+  const strong = readyImplementation();
+  const weak = readyImplementation();
+  weak.id = 'example/dns';
+  weak.testing.find(level => level.id === 'security').scopes = [];
+  assert.equal(configurationReadiness([strong, weak], { platformId: 'linux', protocols: ['wireguard'], appShell: 'electron' }).score, 90);
 });

@@ -58,6 +58,10 @@ html[data-theme="light"] .theme-moon { display: block; }
 .manifest-chips span { display: inline-flex; align-items: center; gap: 6px; }
 .manifest-chips img, .manifest-chips svg { width: 16px; height: 16px; flex-shrink: 0; object-fit: contain; }
 .manifest-actions { display: grid; gap: 10px; }
+.manifest-readiness { display: flex; align-items: center; justify-content: space-between; gap: 14px; text-decoration: none; }
+.manifest-readiness > span { display: grid; gap: 3px; }
+.manifest-readiness small { display: block; }
+.manifest-readiness strong { flex: 0 0 auto; }
 .full { width: 100%; }
 .evidence-link { display: flex; align-items: center; justify-content: space-between; width: 100%; text-align: left; }
 .evidence-dialog { width: min(850px, calc(100% - 32px)); max-height: calc(100dvh - 48px); padding: 0; }

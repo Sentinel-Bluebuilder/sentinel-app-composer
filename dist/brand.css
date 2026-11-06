@@ -255,6 +255,13 @@ input::placeholder { color: var(--text-dim); opacity: .8; }
 .manifest-feature-groups h3 { font-size: 10px; margin-bottom: 8px; }
 .manifest-feature-list span { padding: 4px 7px; background: var(--bg-input); color: var(--text-dim); border-radius: 5px; font-size: 10px; }
 .manifest-feature-list .optional { color: var(--accent-bright); background: var(--accent-dim); }
+.manifest-readiness { margin: 15px 0 0; padding: 13px 14px; color: var(--text); background: var(--bg-input); border: 1px solid var(--border); border-radius: 10px; }
+.manifest-readiness:hover { border-color: var(--border-strong); }
+.manifest-readiness > span > span { font-size: 11px; }
+.manifest-readiness small { color: var(--text-dim); font: 400 8px/1.5 var(--mono); }
+.manifest-readiness strong { color: var(--yellow-bright); font: 700 15px/1 var(--mono); }
+.manifest-readiness.ready { background: rgb(42 207 133 / 7%); border-color: rgb(42 207 133 / 28%); }
+.manifest-readiness.ready strong { color: var(--green-bright); }
 .evidence-link { padding: 16px 0 10px; border: 0; color: var(--text); background: transparent; font-size: 12px; }
 .evidence-link span { color: var(--accent-bright); }
 .evidence-link:hover { color: var(--accent-bright); }

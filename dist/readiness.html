@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The evidence-backed readiness score for building and releasing a Sentinel dVPN app." />
+    <meta name="theme-color" content="#060608" />
+    <title>Readiness · Sentinel App Composer</title>
+    <link rel="icon" href="./brand/sentinel-shield.svg" type="image/svg+xml" />
+    <script src="./theme.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./brand.css?v=readiness1" />
+    <link rel="stylesheet" href="./readiness.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#readiness">Skip to readiness report</a>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Sentinel App Composer home">
+        <img class="sentinel-logo" src="./brand/sentinel-logo.svg" data-dark-src="./brand/sentinel-logo.svg" data-light-src="./brand/sentinel-logo-light.svg" width="110" height="31" alt="Sentinel" />
+        <span class="brand-divider" aria-hidden="true"></span><span class="product-name">App Composer</span>
+      </a>
+      <div class="header-actions">
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="./index.html" data-icon="sliders">Composer</a>
+          <a href="./features.html" data-icon="layers">Features</a>
+          <a href="./sources.html" data-icon="refresh">Sources</a>
+          <a href="./contribute.html" data-icon="code">Contributors</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="readiness-page" id="readiness">
+      <section class="readiness-hero">
+        <div><p class="eyebrow">System assessment</p><h1>dVPN builder readiness</h1><p>Reference apps can be configured and reproduced. Current release proof is still incomplete.</p></div>
+        <div class="system-score" aria-label="System readiness score 61 out of 100"><strong>61</strong><span>/100</span></div>
+      </section>
+
+      <section aria-labelledby="score-title">
+        <div class="section-heading"><h2 id="score-title">Why 61</h2><p>Points are earned only for capabilities available now.</p></div>
+        <div id="system-dimensions" class="dimension-grid"></div>
+      </section>
+
+      <section class="evidence-snapshot" aria-labelledby="evidence-title">
+        <div class="section-heading"><h2 id="evidence-title">Current evidence</h2><a href="./sources.html">Open source registry →</a></div>
+        <div class="metric-grid">
+          <article><strong id="metric-implementations">—</strong><span>Implementations</span></article>
+          <article><strong id="metric-current-reports">—</strong><span>Current reports</span></article>
+          <article><strong id="metric-current-cells">—</strong><span>Current proof cells</span></article>
+          <article><strong id="metric-historical-cells">—</strong><span>Historical cells</span></article>
+          <article><strong id="metric-missing-cells">—</strong><span>Missing cells</span></article>
+          <article><strong id="metric-reviews">—</strong><span>Current reviews</span></article>
+        </div>
+        <p id="evidence-revision" class="revision-line">Loading the current catalogue</p>
+      </section>
+
+      <section aria-labelledby="hundred-title">
+        <div class="section-heading"><h2 id="hundred-title">What 100 means</h2><p>Every claim is bound to the exact source and dependency revisions.</p></div>
+        <div class="hundred-grid">
+          <article><span>01</span><h3>Every component passes</h3><p>Source mapping, attribution, integration contract, source integrity, unit, integration, UI, live-network, security, and non-creator review gates.</p></article>
+          <article><span>02</span><h3>The app reproduces cleanly</h3><p>A downloaded configuration resolves one pinned implementation per feature and produces the same source tree in a clean environment.</p></article>
+          <article><span>03</span><h3>The release is proven</h3><p>Packaging, signing, notarization where required, install, upgrade, uninstall, rollback, and clean-device smoke tests pass for the selected OS.</p></article>
+        </div>
+      </section>
+
+      <section class="work-queue" aria-labelledby="queue-title">
+        <div class="section-heading"><h2 id="queue-title">Remaining 39 points</h2><p>No gate can be bypassed by an average score.</p></div>
+        <ol>
+          <li><strong>15</strong><span>Register current assertion-level unit, integration, and UI evidence from the four reference apps.</span></li>
+          <li><strong>10</strong><span>Add current security reviews and non-creator approvals for each implementation contract.</span></li>
+          <li><strong>7</strong><span>Run live-network coverage for every supported OS and protocol combination on disposable devices.</span></li>
+          <li><strong>7</strong><span>Prove signed packaging, install, upgrade, uninstall, rollback, and clean-machine reproduction.</span></li>
+        </ol>
+      </section>
+    </main>
+    <footer><a href="./index.html">Configure an app →</a></footer>
+    <script type="module" src="./readiness-page.js"></script>
+  </body>
+</html>

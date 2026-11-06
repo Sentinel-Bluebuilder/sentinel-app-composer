@@ -154,13 +154,18 @@
               <div id="manifest-features" class="manifest-feature-groups"></div>
             </details>
 
+            <a class="manifest-readiness" id="manifest-readiness" href="./readiness.html">
+              <span><span id="manifest-readiness-status">Build candidate</span><small id="manifest-readiness-missing">Checking release gates</small></span>
+              <strong id="manifest-readiness-score">0/100</strong>
+            </a>
+
             <button class="evidence-link" id="open-evidence" type="button">Test coverage <span aria-hidden="true">↗</span></button>
             <a class="build-provenance" id="build-provenance" href="./sources.html">Loading source revisions</a>
 
             <div id="manifest-warning" class="manifest-warning" hidden></div>
             <div class="manifest-actions">
-              <button class="primary-button full" id="copy-brief" type="button" data-icon="copy">Copy build brief</button>
-              <button class="secondary-button full" id="download-json" type="button" data-icon="download">Download JSON</button>
+              <button class="primary-button full" id="copy-brief" type="button" data-icon="copy">Copy build plan</button>
+              <button class="secondary-button full" id="download-json" type="button" data-icon="download">Download build config</button>
             </div>
             <button class="reset-button" id="reset-build" type="button">Reset configuration</button>
           </aside>

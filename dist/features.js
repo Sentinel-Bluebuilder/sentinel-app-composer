@@ -144,11 +144,23 @@ function implementationCard(implementation) {
   title.append(element('h3', implementation.reference ? names[implementation.os] || implementation.title : implementation.title));
   title.append(element('p', implementation.reference ? 'Reference integration' : 'Independent implementation', 'implementation-kind'));
   header.append(mark, title);
+  if (implementation.readiness) {
+    const score = element('a', `${implementation.readiness.score}/100`, `implementation-readiness ${implementation.readiness.status}`);
+    score.href = './readiness.html';
+    score.title = 'Conservative readiness across every declared platform';
+    header.append(score);
+  }
   card.append(header);
   const revision = element('div', undefined, 'implementation-revision');
   revision.append(link(new URL(implementation.repository).pathname.split('/').pop(), implementation.repository),
     link(implementation.revision.slice(0, 8), `${implementation.repository}/commit/${implementation.revision}`));
   card.append(revision, renderAttribution(implementation), renderTesting(implementation));
+  if (implementation.readiness) {
+    const readiness = details(`Readiness · ${implementation.readiness.score}/100`);
+    for (const gate of implementation.readiness.gates) readiness.append(element('p', `${gate.passed ? 'Passed' : 'Missing'} · ${gate.label} (${gate.weight})`, `readiness-gate ${gate.passed ? 'passed' : 'missing'}`));
+    readiness.append(element('p', 'This conservative score covers every declared platform. Configure an app for the exact OS and protocol score.', 'scope-note'));
+    card.append(readiness);
+  }
   if (implementation.contract) card.append(renderContract(implementation.contract));
   const code = details(`Code & scope (${implementation.files.length} mapped files)`);
   const owner = element('p', undefined, 'implementation-owner');
