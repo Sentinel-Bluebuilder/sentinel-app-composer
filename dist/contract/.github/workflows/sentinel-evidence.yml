@@ -1,0 +1,28 @@
+name: Sentinel feature evidence
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  dns-unit:
+    name: DNS validation
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node sentinel/validate.mjs
+      - run: node tests/dns-input.mjs
+      - name: Record evidence
+        if: always()
+        run: node sentinel/record-evidence.mjs dns-unit sentinel-output/results.json sentinel-output/artifact
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sentinel-evidence-dns-unit-${{ github.run_attempt }}
+          path: sentinel-output/artifact/
+          if-no-files-found: error
+          retention-days: 90

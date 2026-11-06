@@ -79,7 +79,8 @@ function renderTesting(implementation) {
     const term = element('dt', level.name);
     const value = element('dd');
     value.append(badge(level.state));
-    for (const scope of level.scopes) value.append(element('small', `${scope.platformIds.join(', ')}${scope.protocols.length ? ` · ${scope.protocols.join(', ')}` : ''} · ${stateNames[scope.result] || scope.result}`, 'test-scope'));
+    for (const scope of level.scopes) value.append(element('small', `${scope.testId ? `${scope.testId} · ` : ''}${scope.platformIds.join(', ')}${scope.protocols.length ? ` · ${scope.protocols.join(', ')}` : ''} · ${stateNames[scope.result] || scope.result}`, 'test-scope'));
+    for (const id of level.pendingTests || []) value.append(element('small', `${id} · Awaiting current evidence`, 'test-scope'));
     row.append(term, value);
     list.append(row);
   }
@@ -101,6 +102,12 @@ function renderTesting(implementation) {
       record.append(element('p', `${report.workflowPath} · ${report.jobName}`, 'scope-note'));
       for (const [sourceId, revision] of Object.entries(report.revisions)) record.append(element('p', `${sourceId} · ${revision.slice(0, 8)}`, 'scope-note'));
       if (report.testedAt) record.append(element('p', new Date(report.testedAt).toLocaleString(), 'scope-note'));
+      if (report.evidence?.counts) {
+        const counts = report.evidence.counts;
+        record.append(element('p', `${counts.passed} passed · ${counts.failed} failed · ${counts.skipped} skipped · ${counts.missing} missing`, 'scope-note'));
+        record.append(link('Assertion evidence', report.evidence.url));
+        record.append(element('p', `${report.evidence.environment.os} · ${report.evidence.environment.architecture}`, 'scope-note'));
+      } else if (report.evidence?.reason) record.append(element('p', report.evidence.reason, 'scope-note'));
       record.append(link('Open GitHub test run', report.url));
       reports.append(record);
     }
@@ -142,6 +149,7 @@ function implementationCard(implementation) {
   revision.append(link(new URL(implementation.repository).pathname.split('/').pop(), implementation.repository),
     link(implementation.revision.slice(0, 8), `${implementation.repository}/commit/${implementation.revision}`));
   card.append(revision, renderAttribution(implementation), renderTesting(implementation));
+  if (implementation.contract) card.append(renderContract(implementation.contract));
   const code = details(`Code & scope (${implementation.files.length} mapped files)`);
   const owner = element('p', undefined, 'implementation-owner');
   owner.append('Repository owner ', link(`@${implementation.repositoryOwner}`, `https://github.com/${implementation.repositoryOwner}`));
@@ -161,6 +169,35 @@ function implementationCard(implementation) {
   code.append(element('p', `Implementation ID · ${implementation.id}`, 'scope-note'));
   card.append(code);
   return card;
+}
+
+function renderContract(contract) {
+  const node = section('Integration & review');
+  node.append(link('Integration instructions', contract.integration.documentationUrl));
+  node.append(element('p', `${contract.integration.appShells.join(' · ')} · ${contract.integration.license}`, 'scope-note'));
+  const specifications = details(`Declared tests (${contract.tests.length})`);
+  for (const spec of contract.tests) {
+    const entry = element('article', undefined, 'implementation-report');
+    entry.append(element('strong', `${spec.id} · ${spec.level}`), element('p', spec.command, 'scope-note'));
+    for (const assertion of spec.assertions) entry.append(element('p', assertion.description));
+    specifications.append(entry);
+  }
+  node.append(specifications);
+  const reviews = details(`Commit reviews (${contract.reviews.length})`);
+  if (!contract.reviews.length) reviews.append(element('p', 'Review pending for this revision.'));
+  for (const review of contract.reviews) {
+    const entry = element('article', undefined, 'implementation-report');
+    entry.append(element('strong', `${review.decision === 'approved' ? 'Approved' : 'Changes requested'} · @${review.reviewer}`));
+    entry.append(element('p', review.summary), element('p', `${review.relationship} review · ${review.testIds.length} test specifications inspected`, 'scope-note'));
+    for (const finding of review.findings) entry.append(element('p', finding));
+    entry.append(link('Read review', review.url));
+    reviews.append(entry);
+  }
+  if (!contract.reviewsAvailable) reviews.append(element('p', 'Review discovery is incomplete. Check the source commit.'));
+  node.append(reviews, element('p', `Discovery covers the latest ${contract.discovery.runLimit} runs per workflow.`, 'scope-note'));
+  for (const issue of contract.discovery.issues) node.append(element('p', issue, 'scope-note'));
+  node.append(link('Repository contract', contract.manifestUrl));
+  return node;
 }
 
 function render() {

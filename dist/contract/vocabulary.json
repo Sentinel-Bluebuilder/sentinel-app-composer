@@ -1,0 +1,234 @@
+{
+  "features": [
+    {
+      "id": "wallet",
+      "name": "Wallet: create, import, back up, send, receive, log out"
+    },
+    {
+      "id": "device",
+      "name": "Device setup, spending permission (grant), device SOL top-up"
+    },
+    {
+      "id": "server-list",
+      "name": "Server list: discovery, probe, country, protocols, prices, sort / freeze"
+    },
+    {
+      "id": "favourites",
+      "name": "Favourite servers"
+    },
+    {
+      "id": "quality",
+      "name": "Quality: exit IP, speed test, reachability, SOCKS check"
+    },
+    {
+      "id": "session",
+      "name": "Connect, disconnect, switch, reuse a deposit"
+    },
+    {
+      "id": "auto-connect",
+      "name": "Auto-connect"
+    },
+    {
+      "id": "status",
+      "name": "Status phases, exit-IP check, coverage"
+    },
+    {
+      "id": "cost",
+      "name": "Cost preview, prices, basis"
+    },
+    {
+      "id": "top-up",
+      "name": "Top up a deposit"
+    },
+    {
+      "id": "settlement",
+      "name": "Settlement queue and withdraw"
+    },
+    {
+      "id": "activity",
+      "name": "Activity, spend, history, export"
+    },
+    {
+      "id": "plans",
+      "name": "Plans: list, verified roster, subscribe, ticket connect, renewal"
+    },
+    {
+      "id": "kill-switch",
+      "name": "Kill switch: off / on / persist, allow LAN"
+    },
+    {
+      "id": "restore-network",
+      "name": "Restore network: leftover tunnels and blocks"
+    },
+    {
+      "id": "dns",
+      "name": "DNS: presets, live check, pin, revert"
+    },
+    {
+      "id": "split-tunnel",
+      "name": "Split tunnelling: apps / ranges, lanes"
+    },
+    {
+      "id": "system-proxy",
+      "name": "System proxy for SOCKS protocols"
+    },
+    {
+      "id": "settings",
+      "name": "Settings: app and VPN service"
+    },
+    {
+      "id": "diagnostics",
+      "name": "Diagnostics, log, drivers, doctor"
+    },
+    {
+      "id": "notifications",
+      "name": "Notifications"
+    },
+    {
+      "id": "tray",
+      "name": "Tray / close to tray (Android: quick tile)"
+    },
+    {
+      "id": "autostart",
+      "name": "Start with the OS"
+    },
+    {
+      "id": "appearance",
+      "name": "Theme and language"
+    },
+    {
+      "id": "cli",
+      "name": "CLI twin of every control, in-app terminal"
+    },
+    {
+      "id": "app-info",
+      "name": "App info, snapshot, links, copy"
+    },
+    {
+      "id": "node-test",
+      "name": "In-app node test"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "windows-11-x64",
+      "os": "windows"
+    },
+    {
+      "id": "windows-11-arm64",
+      "os": "windows"
+    },
+    {
+      "id": "windows-11-home-laptop",
+      "os": "windows",
+      "note": "daily-use machine: no tunnels or kill-switch tests"
+    },
+    {
+      "id": "ubuntu-22.04",
+      "os": "linux"
+    },
+    {
+      "id": "ubuntu-24.04",
+      "os": "linux",
+      "note": "kernel 6.8 and 7.0 differ (AmneziaWG)"
+    },
+    {
+      "id": "debian-12",
+      "os": "linux"
+    },
+    {
+      "id": "fedora-44",
+      "os": "linux"
+    },
+    {
+      "id": "rocky-9",
+      "os": "linux"
+    },
+    {
+      "id": "linux-arm64",
+      "os": "linux",
+      "note": "fill from the Linux ARM / distro coverage session"
+    },
+    {
+      "id": "macos-intel",
+      "os": "macos"
+    },
+    {
+      "id": "macos-apple-silicon",
+      "os": "macos",
+      "note": "built, not live-proven"
+    },
+    {
+      "id": "android-emulator",
+      "os": "android"
+    },
+    {
+      "id": "android-device",
+      "os": "android"
+    }
+  ],
+  "protocols": [
+    {
+      "id": "wireguard",
+      "name": "WireGuard"
+    },
+    {
+      "id": "amneziawg",
+      "name": "AmneziaWG"
+    },
+    {
+      "id": "openvpn",
+      "name": "OpenVPN"
+    },
+    {
+      "id": "v2ray",
+      "name": "V2Ray (vmess / vless; tls / ws / grpc)"
+    },
+    {
+      "id": "xray",
+      "name": "Xray (incl. REALITY)"
+    },
+    {
+      "id": "hysteria2",
+      "name": "Hysteria2"
+    }
+  ],
+  "sources": [
+    {
+      "id": "windows-app",
+      "repository": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn"
+    },
+    {
+      "id": "linux-app",
+      "repository": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux"
+    },
+    {
+      "id": "macos-app",
+      "repository": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac"
+    },
+    {
+      "id": "android-app",
+      "repository": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android"
+    },
+    {
+      "id": "protocol-docs",
+      "repository": "https://github.com/Sentinel-Bluebuilder/sentinel-solana"
+    },
+    {
+      "id": "protocol",
+      "repository": "https://github.com/Sentinel-Bluebuilder/sentinel-official"
+    },
+    {
+      "id": "node-tester",
+      "repository": "https://github.com/Sentinel-Bluebuilder/sentinel-node-tester-solana"
+    },
+    {
+      "id": "plan-manager",
+      "repository": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana"
+    },
+    {
+      "id": "node-manager",
+      "repository": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana"
+    }
+  ]
+}

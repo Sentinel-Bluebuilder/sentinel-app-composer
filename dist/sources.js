@@ -62,6 +62,19 @@ function sourceCard(source) {
   pushed.className = 'source-date';
   pushed.textContent = `Last push ${date(source.pushedAt)}`;
   card.append(header, subtitle, revisions, status, pushed);
+  if (source.contract) {
+    const contract = document.createElement('p');
+    contract.className = 'source-review';
+    if (source.contract.status === 'valid') {
+      contract.classList.add('current');
+      contract.append(link(`Contributor contract · ${source.contract.implementations} implementations`, source.contract.url));
+    } else {
+      const labels = { 'not-adopted': 'Contributor contract not adopted', missing: 'Required contributor contract missing', invalid: 'Contributor contract invalid' };
+      contract.textContent = labels[source.contract.status] || 'Checking contributor contract';
+      if (source.contract.message) contract.append(` · ${source.contract.message}`);
+    }
+    card.append(contract);
+  }
 
   if (source.documents?.length) {
     const details = document.createElement('details');

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "implementations": [
+    {
+      "id": "dns-input-validation",
+      "featureId": "dns",
+      "title": "DNS IPv4 input validation example",
+      "paths": ["src/dns-input.mjs"],
+      "platforms": ["ubuntu-24.04"],
+      "dependencies": [],
+      "creators": [{ "github": "your-github-handle", "declarationPath": "AUTHORS.md" }],
+      "integration": {
+        "documentation": "docs/integration.md",
+        "appShells": ["electron"],
+        "entryPoints": ["src/dns-input.mjs"],
+        "license": "MIT"
+      },
+      "tests": [
+        {
+          "id": "dns-unit",
+          "level": "unit",
+          "workflowPath": ".github/workflows/sentinel-evidence.yml",
+          "jobName": "DNS validation",
+          "command": "node tests/dns-input.mjs",
+          "platformIds": ["ubuntu-24.04"],
+          "protocols": [],
+          "assertions": [
+            { "id": "accept-valid-ipv4", "description": "Accept a syntactically valid IPv4 resolver address" },
+            { "id": "reject-invalid-ipv4", "description": "Reject malformed, out-of-range and non-string resolver addresses" }
+          ]
+        }
+      ]
+    }
+  ]
+}

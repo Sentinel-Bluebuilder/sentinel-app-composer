@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#060608" />
+    <meta name="description" content="The repository contract for contributing Sentinel features, test evidence and reviews." />
+    <title>For Contributors · Sentinel</title>
+    <link rel="icon" href="./brand/sentinel-shield.svg" type="image/svg+xml" />
+    <script src="./theme.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./brand.css?v=contract1" />
+    <link rel="stylesheet" href="./contribute.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contribute">Skip to contribution guide</a>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Sentinel App Composer home">
+        <img class="sentinel-logo" src="./brand/sentinel-logo.svg" data-dark-src="./brand/sentinel-logo.svg" data-light-src="./brand/sentinel-logo-light.svg" width="110" height="31" alt="Sentinel" />
+        <span class="brand-divider" aria-hidden="true"></span><span class="product-name">App Composer</span>
+      </a>
+      <div class="header-actions">
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="./index.html" data-icon="sliders">Composer</a>
+          <a href="./features.html" data-icon="layers">Features</a>
+          <a href="./sources.html" data-icon="refresh">Sources</a>
+          <a href="./contribute.html" data-icon="code" aria-current="page">Contributors</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">
+          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+        </button>
+      </div>
+    </header>
+    <main class="sources-page" id="contribute">
+      <div class="page-heading"><div><h1>For Contributors</h1><p>The structure every implementation and agent should follow.</p></div><a class="primary-button" data-icon="download" href="./contract/sentinel-contributor-starter.zip" download>Download starter</a></div>
+      <nav class="contribution-nav" aria-label="Contribution guide"><a href="#structure">Repository structure</a><a href="#requirements">Required fields</a><a href="#testing">Test evidence</a><a href="#reviews">Reviews</a><a href="#registration">Connect a repo</a></nav>
+      <div class="contribution-layout">
+        <section class="source-card contribution-intro" id="structure">
+          <h2>Repository structure</h2>
+          <p>Follow the contract in your repository. Register its URL. The platform discovers your implementations and imports their CI evidence and reviews on each sync.</p>
+          <pre aria-label="Repository structure">sentinel/manifest.json
+src/
+tests/
+docs/integration.md
+AUTHORS.md
+.github/workflows/</pre>
+          <nav class="contract-resources" aria-label="Contributor resources">
+            <a href="./contract/README.md">Full specification ↗</a>
+            <a href="./contract/AGENTS.md">Agent instructions ↗</a>
+            <a href="./contract/vocabulary.json">Feature & platform IDs ↗</a>
+          </nav>
+        </section>
+        <div class="contribution-steps">
+          <section class="source-card"><h2 data-icon="code">Declare your implementation</h2><p>Map the feature to its source files, creators, supported platforms, dependencies, license and integration instructions. Each alternative implementation gets its own ID.</p></section>
+          <section class="source-card"><h2 data-icon="shield">Publish test evidence</h2><p>Define the assertions and environment. Run them in your CI and upload the report with its evidence. The starter includes the validator, recorder, workflow and a working input-validation example.</p></section>
+          <section class="source-card"><h2 data-icon="book">Review the exact commit</h2><p>Agents record findings in a structured GitHub commit comment. The library shows the reviewer, decision and test specifications inspected.</p></section>
+        </div>
+      </div>
+      <section class="source-card registration" id="requirements"><h2>What every feature must declare</h2>
+        <div class="contract-table"><table><thead><tr><th>Field</th><th>Requirement</th></tr></thead><tbody>
+          <tr><td>Implementation ID</td><td>A stable local ID for this implementation. Alternatives use different IDs, even when they implement the same feature.</td></tr>
+          <tr><td>Feature ID</td><td>A category from the published vocabulary, such as kill-switch, dns or appearance.</td></tr>
+          <tr><td>Source files</td><td>Exact paths to the code and entry points in the repository.</td></tr>
+          <tr><td>Creators</td><td>Each creator’s GitHub account and a file declaring their contribution.</td></tr>
+          <tr><td>Compatibility</td><td>Supported platforms, app shells, dependency source IDs and license.</td></tr>
+          <tr><td>Integration</td><td>Installation, interfaces, configuration, privileges, conflicts, rollback and host-app validation in docs/integration.md.</td></tr>
+          <tr><td>Tests</td><td>Test IDs, commands, workflow paths, exact job names, platform/protocol scope and falsifiable assertions. Pending tests use an empty array.</td></tr>
+        </tbody></table></div>
+        <p>Use <a href="./contract/manifest.schema.json">manifest.schema.json</a> for validation and <a href="./contract/vocabulary.json">vocabulary.json</a> for accepted IDs. The starter includes a complete manifest example.</p>
+      </section>
+      <section class="source-card registration" id="testing"><h2>Testing agent handoff</h2>
+        <p>Run each declared assertion in the specified environment. Record one result for every assertion, platform and protocol combination. Include the actual dependency commit SHAs and preserve failed and skipped results.</p>
+        <div class="contract-table"><table><thead><tr><th>Level</th><th>Expected evidence</th></tr></thead><tbody>
+          <tr><td>Unit</td><td>Assertions against the implementation’s individual functions and failure cases.</td></tr>
+          <tr><td>Integration</td><td>Behaviour across the declared components and pinned dependencies.</td></tr>
+          <tr><td>UI / end-to-end</td><td>User flows and their outcomes in the declared app environment.</td></tr>
+          <tr><td>Live network</td><td>Measured network behaviour for each claimed protocol on a disposable test environment.</td></tr>
+          <tr><td>Security</td><td>Explicit security properties, attack or failure scenarios, and observed results.</td></tr>
+        </tbody></table></div>
+        <details class="contract-detail"><summary>Assertion result format</summary><pre><code>{
+  "dependencies": { "protocol": "FULL_40_CHARACTER_COMMIT_SHA" },
+  "cases": [{
+    "assertionId": "blocks-traffic-on-disconnect",
+    "platformId": "ubuntu-24.04",
+    "protocol": "wireguard",
+    "result": "passed"
+  }]
+}</code></pre><p>Results may be passed, failed or skipped. Use null for a protocol-independent assertion. Include every dependency declared by the implementation.</p></details>
+        <p>Run the recorder in CI after the tests, including failed runs.</p>
+        <pre><code>node sentinel/record-evidence.mjs TEST_ID RESULTS_JSON OUTPUT_DIRECTORY</code></pre>
+        <p>Upload the output as <code>sentinel-evidence-TEST_ID-RUN_ATTEMPT</code>. The recorder adds the source commit, run identity, contract hash, runner environment and evidence hashes. The importer checks these against GitHub and calculates assertion counts. Reports and attached files must fit within 10 MiB and 200 ZIP entries. Remove credentials before upload.</p>
+        <p class="section-followup">The starter retains artifacts for 90 days. Expired evidence becomes unverified until a new valid report is available. Each alternative implementation carries its own evidence history.</p>
+      </section>
+      <section class="source-card registration" id="reviews"><h2>Review agent handoff</h2>
+        <p>Inspect the exact source commit, integration instructions, tests and evidence. Check that assertions establish the claimed behaviour. Record the test IDs inspected, findings and decision in a GitHub commit comment.</p>
+        <details class="contract-detail"><summary>Review record format</summary><pre><code>```sentinel-review
+{
+  "schema": 1,
+  "implementationId": "my-kill-switch",
+  "contractHash": "FULL_64_CHARACTER_CONTRACT_HASH",
+  "decision": "changes-requested",
+  "summary": "WireGuard disconnect coverage inspected",
+  "testIds": ["kill-switch-live"],
+  "findings": ["Add reconnect coverage before approval"]
+}
+```</code></pre><p>Use approved when the inspected scope meets its requirements. Compute the contract hash using the command in the <a href="./contract/README.md">full specification</a>.</p></details>
+        <p>The platform reads the reviewer account and commit from GitHub. Creator reviews are labelled. Each reviewer’s findings stay visible. A new source revision requires a new review.</p>
+      </section>
+      <section class="source-card registration" id="registration"><h2>Connect the repository</h2><p>The platform maintainer runs this once in the sync project, then validates and publishes the configuration.</p><pre><code>npm run source:add -- https://github.com/OWNER/REPOSITORY
+npm test
+npm run sync</code></pre><p>Private repositories require access for the sync account. Future code, CI results and reviews arrive through scheduled sync.</p></section>
+      <section class="contribution-states" aria-label="Evidence rules">
+        <div><h3>Passed</h3><p>Matching revision and job, complete passing assertions, verified evidence hashes.</p></div>
+        <div><h3>Incomplete</h3><p>Skipped assertions or missing declared scope remain visible.</p></div>
+        <div><h3>Historical</h3><p>Earlier source or dependency revisions retain their own results.</p></div>
+        <div><h3>Unverified</h3><p>Missing, expired or mismatched evidence awaits a valid report.</p></div>
+      </section>
+      <p class="contribution-note">Discovery covers the latest 20 runs per workflow. Integration into a host app follows the implementation’s instructions and requires tests against that app.</p>
+    </main>
+    <footer><a href="./features.html">Explore implementations →</a></footer>
+    <script type="module" src="./presentation.js"></script>
+  </body>
+</html>

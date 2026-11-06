@@ -9,7 +9,7 @@
     <link rel="icon" href="./brand/sentinel-shield.svg" type="image/svg+xml" />
     <script src="./theme.js"></script>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./brand.css" />
+    <link rel="stylesheet" href="./brand.css?v=contract1" />
     <link rel="stylesheet" href="./features.css" />
   </head>
   <body>
@@ -24,6 +24,7 @@
           <a href="./index.html" data-icon="sliders">Composer</a>
           <a href="./features.html" data-icon="layers" aria-current="page">Features</a>
           <a href="./sources.html" data-icon="refresh">Sources</a>
+          <a href="./contribute.html" data-icon="code">Contributors</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
           <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
@@ -37,7 +38,7 @@
       <div class="library-heading page-heading"><div><h1>Feature library</h1><p id="library-count" role="status">Loading implementations</p></div><a class="secondary-button" data-icon="arrow" href="./index.html">Configure an app</a></div>
       <details class="verification-guide"><summary>How testing and attribution are verified</summary>
         <p>Each implementation has its own creator declarations, code contributors, source revision, dependencies, and test reports.</p>
-        <p>GitHub verifies each registered workflow, job outcome, and source revision. Reviewers declare the test level, platform, protocol scope, and dependency revisions in the registry. Current reports match the synchronized revisions. Source-integrity checks confirm code assembly.</p>
+        <p>Contributor repositories declare their implementations and test assertions in a versioned contract. The sync checks CI job metadata, assertion results, evidence hashes and dependency revisions. Commit reviews identify the reviewer and inspected test specifications. Current reports match the synchronized revisions. Source-integrity checks confirm code assembly.</p>
         <p>Earlier evidence keeps its original citation. “No report” means a verified report has yet to be registered for that test level. Creator declarations include an attribution source. Code contributors come from GitHub-linked authors in mapped file histories. Shared files can include contributions to other features.</p>
       </details>
       <div id="library-alert" class="sync-alert" role="status" hidden></div>
@@ -55,7 +56,7 @@
         </section>
       </div>
     </main>
-    <footer><a href="./sources.html">Source synchronization →</a></footer>
-    <script type="module" src="./features.js?v=7405be3"></script>
+    <footer><a href="./contribute.html">Contribute a feature →</a></footer>
+    <script type="module" src="./features.js?v=contract1"></script>
   </body>
 </html>

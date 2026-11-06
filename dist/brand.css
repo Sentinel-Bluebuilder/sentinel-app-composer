@@ -419,3 +419,15 @@ footer a:hover { color: var(--accent-bright); }
 @media (prefers-reduced-transparency: reduce) {
   .site-header { background: var(--bg-card-solid); backdrop-filter: none; }
 }
+@media (max-width: 650px) {
+  .primary-nav a { padding: 7px 6px; font-size: 10px; }
+  .primary-nav .ui-icon { display: none; }
+}
+@media (min-width: 651px) and (max-width: 900px) {
+  .primary-nav a { padding: 8px 10px; font-size: 11px; }
+  .primary-nav .ui-icon { display: none; }
+}
+@media (max-width: 370px) {
+  .primary-nav { display: grid; grid-template-columns: 1fr 1fr; }
+  html { scroll-padding-top: 185px; }
+}

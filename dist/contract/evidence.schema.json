@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "implementationId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,79}$"
+    },
+    "testId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,79}$"
+    },
+    "contractHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "repository": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "runId": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "runAttempt": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{40}$"
+      }
+    },
+    "environment": {
+      "type": "object",
+      "properties": {
+        "os": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "architecture": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "runner": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "os",
+        "architecture",
+        "runner"
+      ],
+      "additionalProperties": false
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "assertionId": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]{0,79}$"
+          },
+          "platformId": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$"
+          },
+          "protocol": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$"
+              },
+              {
+                "const": null
+              }
+            ]
+          },
+          "result": {
+            "enum": [
+              "passed",
+              "failed",
+              "skipped"
+            ]
+          }
+        },
+        "required": [
+          "assertionId",
+          "platformId",
+          "protocol",
+          "result"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 200,
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.?(?:/|$))[A-Za-z0-9_.@/-]+$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 200,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema",
+    "implementationId",
+    "testId",
+    "contractHash",
+    "repository",
+    "revision",
+    "runId",
+    "runAttempt",
+    "dependencies",
+    "environment",
+    "cases",
+    "evidence"
+  ],
+  "additionalProperties": false
+}

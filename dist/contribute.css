@@ -1,0 +1,31 @@
+.contribution-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.contribution-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; }
+.contribution-nav a { padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; color: var(--text-dim); text-decoration: none; font-size: 12px; }
+.contribution-nav a:hover { color: var(--accent-bright); background: var(--accent-dim); }
+.contract-table { overflow-x: auto; margin: 22px 0; }
+.contract-table table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
+.contract-table th { color: var(--text); padding: 12px 16px; background: var(--bg-input); }
+.contract-table td { padding: 15px 16px; border-bottom: 1px solid var(--border); color: var(--text-dim); line-height: 1.7; vertical-align: top; }
+.contract-table td:first-child { color: var(--text); width: 170px; }
+.registration a { color: var(--accent-bright); }
+.registration code { font-family: var(--mono); font-size: 12px; overflow-wrap: anywhere; }
+.contract-detail { margin: 20px 0; border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; }
+.contract-detail summary { color: var(--accent-bright); font-size: 13px; }
+.registration .section-followup { margin-top: 16px; }
+.contribution-intro { padding: 32px; border-top-color: var(--accent); }
+.contribution-layout h2, .registration h2 { display: flex; gap: 10px; align-items: center; margin: 0 0 16px; font-size: 23px; letter-spacing: -.025em; }
+.contribution-layout h2 .ui-icon { color: var(--accent-bright); }
+.contribution-layout p, .registration p { color: var(--text-dim); font-size: 14px; line-height: 1.8; margin: 0; }
+.contribution-layout pre, .registration pre { padding: 22px; margin: 24px 0; overflow: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-card-solid); color: var(--accent-bright); font: 400 12px/2 var(--mono); }
+.contract-resources { display: grid; gap: 12px; }
+.contract-resources a { color: var(--accent-bright); font-size: 13px; }
+.contribution-steps { display: grid; gap: 18px; }
+.contribution-steps .source-card { padding: 26px; }
+.contribution-steps h2 { font-size: 19px; margin-bottom: 12px; }
+.registration { margin-top: 28px; padding: 28px 32px; }
+.registration pre { margin: 18px 0; }
+.contribution-states { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin: 34px 0 24px; }
+.contribution-states h3 { font-size: 15px; margin: 0 0 8px; }
+.contribution-states p, .contribution-note { font-size: 12px; color: var(--text-dim); line-height: 1.8; margin: 0; }
+@media (max-width: 850px) { .contribution-layout { grid-template-columns: 1fr; } .contribution-states { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 650px) { .contribution-intro, .registration, .contribution-steps .source-card { padding: 22px; } .contribution-layout h2 { font-size: 21px; } .contribution-layout pre, .registration pre { padding: 16px; font-size: 11px; } }
