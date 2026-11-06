@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-06T07:58:18.089Z",
-  "lastSuccessfulSync": "2026-11-06T07:58:18.089Z",
+  "checkedAt": "2026-11-06T09:42:25.176Z",
+  "lastSuccessfulSync": "2026-11-06T09:42:25.176Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42184356358",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42197017923",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-06T07:58:46.376Z"
+    "testedAt": "2026-11-06T09:42:49.240Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 2060,
       "documents": [
         {
@@ -307,6 +307,9 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     },
     {
@@ -327,7 +330,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -557,6 +560,9 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     },
     {
@@ -577,7 +583,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 525,
       "documents": [
         {
@@ -727,6 +733,9 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     },
     {
@@ -747,7 +756,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 1058,
       "documents": [
         {
@@ -897,6 +906,9 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     },
     {
@@ -916,7 +928,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1186,6 +1198,9 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     },
     {
@@ -1205,7 +1220,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1214,6 +1229,9 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     },
     {
@@ -1233,7 +1251,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 255,
       "documents": [
         {
@@ -1278,6 +1296,9 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     },
     {
@@ -1297,7 +1318,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 68,
       "documents": [
         {
@@ -1327,6 +1348,9 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     },
     {
@@ -1346,7 +1370,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-06T07:58:18.089Z",
+      "checkedAt": "2026-11-06T09:42:25.176Z",
       "fileCount": 234,
       "documents": [
         {
@@ -1376,9 +1400,12 @@
         "changed": 0,
         "removed": 0,
         "paths": []
+      },
+      "contract": {
+        "status": "not-adopted"
       }
     }
   ],
   "failures": [],
-  "catalogueRevision": "97b7067ef95b87acab3352464914afa3f8e1e587cabbf38d6f9adf793324a242"
+  "catalogueRevision": "3d073cbd5e17056f5e2933392ee6945c069683eb67d944ea8513cd35fe8692c7"
 }
