@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-07T19:26:43.664Z",
-  "lastSuccessfulSync": "2026-11-07T19:26:43.664Z",
+  "checkedAt": "2026-11-07T19:28:42.728Z",
+  "lastSuccessfulSync": "2026-11-07T19:28:42.728Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42406198306",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42406385558",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-07T19:27:07.166Z"
+    "testedAt": "2026-11-07T19:29:09.342Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 2068,
       "documents": [
         {
@@ -335,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 525,
       "documents": [
         {
@@ -757,11 +757,11 @@
       "pushedAt": "2026-11-07T19:25:20Z",
       "indexedRevision": "3190f4ef264b870d7f6e5185934da4ec7f84c72f",
       "importedRevision": "3190f4ef264b870d7f6e5185934da4ec7f84c72f",
-      "previousRevision": "8c49bd35069eb399b86d650f66bb4272f9aa9c86",
+      "previousRevision": "3190f4ef264b870d7f6e5185934da4ec7f84c72f",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 1066,
       "documents": [
         {
@@ -908,12 +908,9 @@
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 2,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "src/cli/commands.ts",
-          "src/main/dev/ui-scenario.ts"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -936,7 +933,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1228,7 +1225,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1259,7 +1256,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 264,
       "documents": [
         {
@@ -1332,7 +1329,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 70,
       "documents": [
         {
@@ -1384,7 +1381,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:26:43.664Z",
+      "checkedAt": "2026-11-07T19:28:42.728Z",
       "fileCount": 239,
       "documents": [
         {
@@ -1426,5 +1423,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "f8a8d27c3a03d0cee658457abc1a24762f97514d437f71f997817d0ae30aa264"
+  "catalogueRevision": "ded5a28c5910f8b53c8dff56b6c0fe7a568ab38ce670d1dd247873fa7b658b1f"
 }
