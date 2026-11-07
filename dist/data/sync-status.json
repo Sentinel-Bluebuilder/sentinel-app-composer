@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-07T17:38:20.184Z",
-  "lastSuccessfulSync": "2026-11-07T17:38:20.184Z",
+  "checkedAt": "2026-11-07T17:39:08.461Z",
+  "lastSuccessfulSync": "2026-11-07T17:39:08.461Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42397246041",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42397322512",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-07T17:38:48.409Z"
+    "testedAt": "2026-11-07T17:39:32.048Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 2068,
       "documents": [
         {
@@ -335,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 525,
       "documents": [
         {
@@ -761,7 +761,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 1058,
       "documents": [
         {
@@ -933,7 +933,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1225,7 +1225,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1256,7 +1256,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 255,
       "documents": [
         {
@@ -1323,7 +1323,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 70,
       "documents": [
         {
@@ -1394,11 +1394,11 @@
       "pushedAt": "2026-11-07T17:37:34Z",
       "indexedRevision": "c22e0e884bda886fe486ce336eb5d45dbc979737",
       "importedRevision": null,
-      "previousRevision": "11f969981b204e706d7a9414b4ea44e39a171b3a",
+      "previousRevision": "c22e0e884bda886fe486ce336eb5d45dbc979737",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:38:20.184Z",
+      "checkedAt": "2026-11-07T17:39:08.461Z",
       "fileCount": 239,
       "documents": [
         {
@@ -1430,12 +1430,9 @@
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 2,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "docs/CB33-PORT-MAP.md",
-          "tests/e2e/cli-e2e.mjs"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1443,5 +1440,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "9d999aeafdb96a79e7e5ee707de9e7f4b3dc58eeec265bc55c3925700be56e1f"
+  "catalogueRevision": "9edeb8b2330ad1e1c6cb0c13bfac34b94df877150dddcfb915adbd75a3f810f5"
 }
