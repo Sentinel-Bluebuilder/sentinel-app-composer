@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-07T18:39:11.383Z",
-  "lastSuccessfulSync": "2026-11-07T18:39:11.383Z",
+  "checkedAt": "2026-11-07T18:40:13.225Z",
+  "lastSuccessfulSync": "2026-11-07T18:40:13.225Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42402325510",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42402378691",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-07T18:39:35.580Z"
+    "testedAt": "2026-11-07T18:40:33.697Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 2068,
       "documents": [
         {
@@ -335,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 525,
       "documents": [
         {
@@ -761,7 +761,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 1065,
       "documents": [
         {
@@ -961,7 +961,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1253,7 +1253,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1284,7 +1284,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 262,
       "documents": [
         {
@@ -1342,45 +1342,49 @@
       "kind": "tool",
       "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana",
       "private": true,
-      "revision": "f9bc62273c4704d1462a94207e401631382e09f9",
-      "commitDate": "2026-11-07T18:36:24Z",
-      "pushedAt": "2026-11-07T18:36:28Z",
-      "indexedRevision": "f9bc62273c4704d1462a94207e401631382e09f9",
+      "revision": "987203bbf82991a24a753810e903ea89341854b9",
+      "commitDate": "2026-11-07T18:40:01Z",
+      "pushedAt": "2026-11-07T18:40:05Z",
+      "indexedRevision": "987203bbf82991a24a753810e903ea89341854b9",
       "importedRevision": null,
       "previousRevision": "f9bc62273c4704d1462a94207e401631382e09f9",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 70,
       "documents": [
         {
           "path": "CLAUDE.md",
           "sha": "bc0da2164aee1a1f7cbaebac6a7ec8c869ca5012",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana/blob/f9bc62273c4704d1462a94207e401631382e09f9/CLAUDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana/blob/987203bbf82991a24a753810e903ea89341854b9/CLAUDE.md"
         },
         {
           "path": "README.md",
           "sha": "15557db967c426ea7ab9f2d24de20544ff982c43",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana/blob/f9bc62273c4704d1462a94207e401631382e09f9/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana/blob/987203bbf82991a24a753810e903ea89341854b9/README.md"
         },
         {
           "path": "docs/COVERAGE.md",
           "sha": "fa363e8fe04f90c6169e4076118260e42da391dc",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana/blob/f9bc62273c4704d1462a94207e401631382e09f9/docs/COVERAGE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana/blob/987203bbf82991a24a753810e903ea89341854b9/docs/COVERAGE.md"
         },
         {
           "path": "docs/FUNCTIONS.md",
           "sha": "e2fd424439436a230824a822ff97e66c7743a476",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana/blob/f9bc62273c4704d1462a94207e401631382e09f9/docs/FUNCTIONS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-plan-manager-solana/blob/987203bbf82991a24a753810e903ea89341854b9/docs/FUNCTIONS.md"
         }
       ],
       "changes": {
         "initial": false,
-        "added": 0,
-        "changed": 0,
-        "removed": 0,
-        "paths": []
+        "added": 1,
+        "changed": 1,
+        "removed": 1,
+        "paths": [
+          ".gitleaks.toml",
+          "memory/handoff-plans-solana.md",
+          ".gitleaksignore"
+        ]
       },
       "contract": {
         "status": "not-adopted"
@@ -1403,7 +1407,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T18:39:11.383Z",
+      "checkedAt": "2026-11-07T18:40:13.225Z",
       "fileCount": 239,
       "documents": [
         {
@@ -1445,5 +1449,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "0ad47e24b4e67dfa2b90464b8141dcd7f0563e0d35c2f440d48f1125b8f7e607"
+  "catalogueRevision": "8b95a372775f2887f484f3027dd1c671c00414c97264cde56cd3336a5ed0b104"
 }
