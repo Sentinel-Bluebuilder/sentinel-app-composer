@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-07T19:50:34.021Z",
-  "lastSuccessfulSync": "2026-11-07T19:50:34.021Z",
+  "checkedAt": "2026-11-07T19:51:19.626Z",
+  "lastSuccessfulSync": "2026-11-07T19:51:19.626Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42408141810",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42408179486",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-07T19:50:55.644Z"
+    "testedAt": "2026-11-07T19:51:43.604Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 2068,
       "documents": [
         {
@@ -335,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 525,
       "documents": [
         {
@@ -761,7 +761,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 1066,
       "documents": [
         {
@@ -933,7 +933,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1225,7 +1225,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1256,7 +1256,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 264,
       "documents": [
         {
@@ -1323,7 +1323,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 70,
       "documents": [
         {
@@ -1368,14 +1368,14 @@
       "private": true,
       "revision": "0c86d72ce6ebc6b129a61a383f6e5b1fa7115952",
       "commitDate": "2026-11-07T19:50:41Z",
-      "pushedAt": "2026-11-07T19:50:17Z",
+      "pushedAt": "2026-11-07T19:50:47Z",
       "indexedRevision": "0c86d72ce6ebc6b129a61a383f6e5b1fa7115952",
       "importedRevision": null,
       "previousRevision": "36b69cfd8e5d1eee735842eaa11060372a83672f",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T19:50:34.021Z",
+      "checkedAt": "2026-11-07T19:51:19.626Z",
       "fileCount": 239,
       "documents": [
         {
@@ -1420,5 +1420,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "c3a6ec95bb63885f84c6460f40f2e6421502e3228390203c74f67b87a76060fa"
+  "catalogueRevision": "c8fde6242981d84ce644af58fdb653a9a6fd98213d7832c9b2987fe855ce4347"
 }
