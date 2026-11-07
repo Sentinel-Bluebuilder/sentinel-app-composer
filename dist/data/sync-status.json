@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-07T14:23:49.496Z",
-  "lastSuccessfulSync": "2026-11-07T14:23:49.496Z",
+  "checkedAt": "2026-11-07T14:56:02.251Z",
+  "lastSuccessfulSync": "2026-11-07T14:56:02.251Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42381390981",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42383893624",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-07T14:24:15.123Z"
+    "testedAt": "2026-11-07T14:56:30.821Z"
   },
   "sources": [
     {
@@ -33,11 +33,11 @@
       "pushedAt": "2026-11-07T14:23:29Z",
       "indexedRevision": "310bcec5dde24396042bace263a8313e65259753",
       "importedRevision": "310bcec5dde24396042bace263a8313e65259753",
-      "previousRevision": "ea032e6c4db5d5efb28d60af48b885123f2aec31",
+      "previousRevision": "310bcec5dde24396042bace263a8313e65259753",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 2066,
       "documents": [
         {
@@ -308,19 +308,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 6,
-        "changed": 2,
+        "added": 0,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "docs/evidence/harness-replay-1107/README.md",
-          "docs/evidence/harness-replay-1107/cases.tsv",
-          "docs/evidence/harness-replay-1107/replay-output.txt",
-          "docs/evidence/harness-replay-1107/replay.py",
-          "docs/evidence/harness-replay-1107/sp-old.log",
-          "docs/evidence/harness-replay-1107/sp.log",
-          "memory/handoff-devnet-dvpn.md",
-          "memory/handoff-win-rc.md"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -344,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -597,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 525,
       "documents": [
         {
@@ -770,7 +761,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 1058,
       "documents": [
         {
@@ -942,7 +933,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1227,14 +1218,14 @@
       "private": true,
       "revision": "05a122846881561346286db4f508da7f1e3c1e97",
       "commitDate": "2026-11-05T20:12:31Z",
-      "pushedAt": "2026-11-05T20:12:32Z",
+      "pushedAt": "2026-11-07T14:49:35Z",
       "indexedRevision": "05a122846881561346286db4f508da7f1e3c1e97",
       "importedRevision": null,
       "previousRevision": "05a122846881561346286db4f508da7f1e3c1e97",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1265,7 +1256,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 255,
       "documents": [
         {
@@ -1332,7 +1323,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 68,
       "documents": [
         {
@@ -1384,7 +1375,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T14:23:49.496Z",
+      "checkedAt": "2026-11-07T14:56:02.251Z",
       "fileCount": 234,
       "documents": [
         {
@@ -1421,5 +1412,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "49322a57c171ff77715309fbd156e95fd8e2ec75a4104fe8ecabd58231aa4427"
+  "catalogueRevision": "37ca45f79c754dfdfe8ee86ad9716b0b67987da2e339ddffa00fa703f7ded322"
 }
