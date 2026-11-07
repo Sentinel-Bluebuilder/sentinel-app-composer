@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-07T17:39:08.461Z",
-  "lastSuccessfulSync": "2026-11-07T17:39:08.461Z",
+  "checkedAt": "2026-11-07T17:42:01.046Z",
+  "lastSuccessfulSync": "2026-11-07T17:42:01.046Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42397322512",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42397578013",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-07T17:39:32.048Z"
+    "testedAt": "2026-11-07T17:42:21.329Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 2068,
       "documents": [
         {
@@ -335,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 525,
       "documents": [
         {
@@ -761,7 +761,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 1058,
       "documents": [
         {
@@ -933,7 +933,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1225,7 +1225,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1256,7 +1256,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 255,
       "documents": [
         {
@@ -1319,11 +1319,11 @@
       "pushedAt": "2026-11-07T17:38:33Z",
       "indexedRevision": "dfae2b41892fb1f2cc6deb7a53e118158a3242c5",
       "importedRevision": null,
-      "previousRevision": "08a294f6fd6dd195b7c8d5efe9f61f5efcf44237",
+      "previousRevision": "dfae2b41892fb1f2cc6deb7a53e118158a3242c5",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 70,
       "documents": [
         {
@@ -1349,33 +1349,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 2,
-        "changed": 20,
+        "added": 0,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          ".gitleaksignore",
-          "scripts/sim-ix.mjs",
-          "chain/idl/dvpn.devnet.json",
-          "chain/idl/dvpn.source.json",
-          "lib/errors.js",
-          "lib/nodeapi.js",
-          "lib/solana/errors.js",
-          "lib/solana/idl.js",
-          "lib/solana/program.js",
-          "memory/handoff-plans-solana.md",
-          "proto/daemon.proto",
-          "public/index.html",
-          "routes/misc.js",
-          "routes/nodes.js",
-          "routes/plans.js",
-          "routes/provider.js",
-          "scripts/cli-e2e.mjs",
-          "scripts/dev/wsl-up.sh",
-          "scripts/doctor.mjs",
-          "scripts/patch-idl.mjs",
-          "scripts/test-unit.mjs",
-          "test/fixtures/devnet-accounts.json"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1389,50 +1366,52 @@
       "kind": "tool",
       "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana",
       "private": true,
-      "revision": "c22e0e884bda886fe486ce336eb5d45dbc979737",
-      "commitDate": "2026-11-07T17:37:31Z",
-      "pushedAt": "2026-11-07T17:37:34Z",
-      "indexedRevision": "c22e0e884bda886fe486ce336eb5d45dbc979737",
+      "revision": "21ba4677a20175c7bfd9fbf016f11672cb317a2e",
+      "commitDate": "2026-11-07T17:41:40Z",
+      "pushedAt": "2026-11-07T17:41:43Z",
+      "indexedRevision": "21ba4677a20175c7bfd9fbf016f11672cb317a2e",
       "importedRevision": null,
       "previousRevision": "c22e0e884bda886fe486ce336eb5d45dbc979737",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-07T17:39:08.461Z",
+      "checkedAt": "2026-11-07T17:42:01.046Z",
       "fileCount": 239,
       "documents": [
         {
           "path": "CLAUDE.md",
           "sha": "e056230d790faa72bb3d3078b7682a3b8feb534f",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/c22e0e884bda886fe486ce336eb5d45dbc979737/CLAUDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/21ba4677a20175c7bfd9fbf016f11672cb317a2e/CLAUDE.md"
         },
         {
           "path": "README.md",
           "sha": "63bc6ce461e1073853566ee06c676425d4e20948",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/c22e0e884bda886fe486ce336eb5d45dbc979737/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/21ba4677a20175c7bfd9fbf016f11672cb317a2e/README.md"
         },
         {
           "path": "docs/CB33-PORT-MAP.md",
           "sha": "4ef6b5ffc56df10efdd439d2d2f57995fec30883",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/c22e0e884bda886fe486ce336eb5d45dbc979737/docs/CB33-PORT-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/21ba4677a20175c7bfd9fbf016f11672cb317a2e/docs/CB33-PORT-MAP.md"
         },
         {
           "path": "docs/COVERAGE.md",
           "sha": "7a2d503f18515bb35f4bbca137993a7ff36280ef",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/c22e0e884bda886fe486ce336eb5d45dbc979737/docs/COVERAGE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/21ba4677a20175c7bfd9fbf016f11672cb317a2e/docs/COVERAGE.md"
         },
         {
           "path": "docs/SOLANA-MAPPING.md",
           "sha": "e2040a41ae83987d6d40eb925187858a46ec6e01",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/c22e0e884bda886fe486ce336eb5d45dbc979737/docs/SOLANA-MAPPING.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/21ba4677a20175c7bfd9fbf016f11672cb317a2e/docs/SOLANA-MAPPING.md"
         }
       ],
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 0,
+        "changed": 1,
         "removed": 0,
-        "paths": []
+        "paths": [
+          "memory/handoff-node-manager-solana.md"
+        ]
       },
       "contract": {
         "status": "not-adopted"
@@ -1440,5 +1419,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "9edeb8b2330ad1e1c6cb0c13bfac34b94df877150dddcfb915adbd75a3f810f5"
+  "catalogueRevision": "0dd597fc70b9c957e0ad23649d2d1e89000cbabf6d7e950e3109a521aa73a74a"
 }
