@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-08T02:27:00.326Z",
-  "lastSuccessfulSync": "2026-11-08T02:27:00.326Z",
+  "checkedAt": "2026-11-08T02:32:56.761Z",
+  "lastSuccessfulSync": "2026-11-08T02:32:56.761Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42438577273",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42439003069",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-08T02:27:21.463Z"
+    "testedAt": "2026-11-08T02:33:20.765Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 2068,
       "documents": [
         {
@@ -335,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 525,
       "documents": [
         {
@@ -761,7 +761,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 1088,
       "documents": [
         {
@@ -933,7 +933,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1225,7 +1225,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1256,7 +1256,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 269,
       "documents": [
         {
@@ -1323,7 +1323,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 72,
       "documents": [
         {
@@ -1371,11 +1371,11 @@
       "pushedAt": "2026-11-08T02:26:44Z",
       "indexedRevision": "4067fac415fe578e04b9b0e139216292674260fd",
       "importedRevision": null,
-      "previousRevision": "77099666d46d52ce401748e39ff65bdde4182851",
+      "previousRevision": "4067fac415fe578e04b9b0e139216292674260fd",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:27:00.326Z",
+      "checkedAt": "2026-11-08T02:32:56.761Z",
       "fileCount": 242,
       "documents": [
         {
@@ -1407,11 +1407,9 @@
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 1,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "memory/handoff-node-manager-solana.md"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1419,5 +1417,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "cbe6f74df2143c47754886450201b3551cb7e38a3611ff58dffbb6b91cb6aaf2"
+  "catalogueRevision": "3f845229a31a885a67e5606e5582d696ef20c54d8694b2da3a8b8f4e83743c34"
 }
