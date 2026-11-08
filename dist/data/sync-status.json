@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-08T02:07:33.188Z",
-  "lastSuccessfulSync": "2026-11-08T02:07:33.188Z",
+  "checkedAt": "2026-11-08T02:08:09.549Z",
+  "lastSuccessfulSync": "2026-11-08T02:08:09.549Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42437135370",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42437164238",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-08T02:07:52.519Z"
+    "testedAt": "2026-11-08T02:08:32.388Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 2068,
       "documents": [
         {
@@ -335,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 525,
       "documents": [
         {
@@ -761,7 +761,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 1088,
       "documents": [
         {
@@ -933,7 +933,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1225,7 +1225,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1252,11 +1252,11 @@
       "pushedAt": "2026-11-08T02:07:19Z",
       "indexedRevision": "54ef50ffcc1b9cdee4377c37e87cc5f12d000a5a",
       "importedRevision": null,
-      "previousRevision": "57e95312c5c3b82a837839cb6e56f6a3888701b0",
+      "previousRevision": "c89796229b6b63c3d8849d5102afdbaf71824603",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 269,
       "documents": [
         {
@@ -1298,13 +1298,10 @@
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 4,
+        "changed": 1,
         "removed": 0,
         "paths": [
-          "audit/session-runner.js",
-          "memory/handoff-node-tester-solana.md",
-          "scripts/bwlab/ab-client.sh",
-          "scripts/test-unit.mjs"
+          "memory/handoff-node-tester-solana.md"
         ]
       },
       "contract": {
@@ -1328,7 +1325,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 72,
       "documents": [
         {
@@ -1376,11 +1373,11 @@
       "pushedAt": "2026-11-08T02:06:57Z",
       "indexedRevision": "6e006002664db39e5b6f67271cf0a48236930d3c",
       "importedRevision": null,
-      "previousRevision": "91a1a759b8eedc7a4762383bb29f44148f9a0aec",
+      "previousRevision": "6e006002664db39e5b6f67271cf0a48236930d3c",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T02:07:33.188Z",
+      "checkedAt": "2026-11-08T02:08:09.549Z",
       "fileCount": 241,
       "documents": [
         {
@@ -1412,12 +1409,9 @@
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 2,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "docker/dvpnd-cb33.Dockerfile",
-          "docker/dvpnd.Dockerfile"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1425,5 +1419,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "4e0bff6a5751a2d3b03fe62044d7b305bb64a91de0a52c137138303ae2b79bfd"
+  "catalogueRevision": "c48a9532cabdc4bebee82db092427c8992b83f6eafcee5794361b339f334988d"
 }
