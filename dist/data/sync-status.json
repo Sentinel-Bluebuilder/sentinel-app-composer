@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-08T19:28:28.806Z",
-  "lastSuccessfulSync": "2026-11-08T19:28:28.806Z",
+  "checkedAt": "2026-11-08T20:47:31.107Z",
+  "lastSuccessfulSync": "2026-11-08T20:47:31.107Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42515202129",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42521893477",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-08T19:28:50.097Z"
+    "testedAt": "2026-11-08T20:47:52.011Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 2068,
       "documents": [
         {
@@ -335,7 +335,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +588,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 525,
       "documents": [
         {
@@ -761,7 +761,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 1095,
       "documents": [
         {
@@ -933,7 +933,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1225,7 +1225,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1256,7 +1256,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1319,11 +1319,11 @@
       "pushedAt": "2026-11-08T19:28:13Z",
       "indexedRevision": "2ecd7bf244b49a8ef5b547d014da0833cfe4629e",
       "importedRevision": null,
-      "previousRevision": "404aa11acfd31b9a77d4b61ad1151e00e987f1a0",
+      "previousRevision": "2ecd7bf244b49a8ef5b547d014da0833cfe4629e",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1350,11 +1350,9 @@
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 1,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "memory/handoff-plans-solana.md"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1373,11 +1371,11 @@
       "pushedAt": "2026-11-08T19:23:09Z",
       "indexedRevision": "4f3bbfe51b9420840157bf6d69c1dbd6c181b4bf",
       "importedRevision": null,
-      "previousRevision": "c149245ebd4a76e36403bf4763411b9815678045",
+      "previousRevision": "4f3bbfe51b9420840157bf6d69c1dbd6c181b4bf",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-08T19:28:28.806Z",
+      "checkedAt": "2026-11-08T20:47:31.107Z",
       "fileCount": 245,
       "documents": [
         {
@@ -1409,11 +1407,9 @@
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 1,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "memory/handoff-node-manager-solana.md"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1421,5 +1417,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "c8ffe4b99a8ddd312c9486de31f97be5f9728fec250cc034e82a973f434701c3"
+  "catalogueRevision": "4b7bb46c3981dd6c6767644c2f5f96b6fe5309d189dac67c41e6c03e711d740b"
 }
