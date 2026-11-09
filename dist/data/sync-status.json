@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-09T00:57:51.248Z",
-  "lastSuccessfulSync": "2026-11-09T00:57:51.248Z",
+  "checkedAt": "2026-11-09T07:50:12.450Z",
+  "lastSuccessfulSync": "2026-11-09T07:50:12.450Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42542984611",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42581804990",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-09T00:58:16.782Z"
+    "testedAt": "2026-11-09T07:50:36.901Z"
   },
   "sources": [
     {
@@ -28,290 +28,336 @@
       "os": "windows",
       "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn",
       "private": true,
-      "revision": "528d2b8747eb3986f63bdc6ff3c308ee17af5f9b",
-      "commitDate": "2026-11-07T17:30:07Z",
-      "pushedAt": "2026-11-07T17:30:14Z",
-      "indexedRevision": "528d2b8747eb3986f63bdc6ff3c308ee17af5f9b",
-      "importedRevision": "528d2b8747eb3986f63bdc6ff3c308ee17af5f9b",
+      "revision": "2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b",
+      "commitDate": "2026-11-09T07:48:13Z",
+      "pushedAt": "2026-11-09T07:49:56Z",
+      "indexedRevision": "2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b",
+      "importedRevision": "2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b",
       "previousRevision": "528d2b8747eb3986f63bdc6ff3c308ee17af5f9b",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
-      "fileCount": 2068,
+      "checkedAt": "2026-11-09T07:50:12.450Z",
+      "fileCount": 2087,
       "documents": [
         {
           "path": "CLAUDE.md",
           "sha": "74e987dc46e43eb9ec0547b4392057d80c724e80",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/CLAUDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/CLAUDE.md"
         },
         {
           "path": "README.md",
-          "sha": "e93dbc1b0c23623f427fae3ab34145e9ea08daa0",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/README.md"
+          "sha": "67e6050747bc3291249b78975b8cca96917339a2",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/README.md"
         },
         {
           "path": "docs/ARCHITECTURE.md",
           "sha": "130ab669866671a4fb4a2e520d2292398864b388",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/ARCHITECTURE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/ARCHITECTURE.md"
         },
         {
           "path": "docs/ASSETS.md",
           "sha": "3ff92a87a6c24746fbf1654768af6e3c75e565e7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/ASSETS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/ASSETS.md"
         },
         {
           "path": "docs/BOX-RIG.md",
           "sha": "9d09b028a4f5863bdc5bfbf54846f5a232435084",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/BOX-RIG.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/BOX-RIG.md"
         },
         {
           "path": "docs/CLI.md",
-          "sha": "02ced7ca17ce499a9689e7bfe06b7f559bd18e2f",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/CLI.md"
+          "sha": "39b64d44b2d1419428740db57a2bf34474b4877c",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/CLI.md"
         },
         {
           "path": "docs/COSMOS-LESSONS.md",
           "sha": "b07ae7569a0b08d7a78459ea0c3af478368f2b7e",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/COSMOS-LESSONS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/COSMOS-LESSONS.md"
         },
         {
           "path": "docs/DESIGN.md",
           "sha": "640cbb3ffdc75710b21ac486bae69d6f35b24cf3",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/DESIGN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/DESIGN.md"
         },
         {
           "path": "docs/ERROR-INVENTORY.md",
           "sha": "88943954e1756b24a8fbed2d4ac602c8c37dff3b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/ERROR-INVENTORY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/ERROR-INVENTORY.md"
         },
         {
           "path": "docs/ERROR-STANDARDS.md",
           "sha": "3fadad4af44c6a6821c20689dcef23ab5be72e1b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/ERROR-STANDARDS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/ERROR-STANDARDS.md"
         },
         {
           "path": "docs/FEATURE-PLAN.md",
           "sha": "9d67377db3a2defd6f2fbcae6c741c17e63ae7b6",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/FEATURE-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/FEATURE-PLAN.md"
         },
         {
           "path": "docs/INSTALLER.md",
           "sha": "b8be0695b8dca24ba76fd1ff8b6ac552659643f6",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/INSTALLER.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/INSTALLER.md"
         },
         {
           "path": "docs/MANIFESTO.md",
           "sha": "d4f0d7e2232ff56ca731ec6dcdcd12059f66ec3b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/MANIFESTO.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/MANIFESTO.md"
         },
         {
           "path": "docs/NETWORK-SAFETY.md",
           "sha": "8f2323dfd1aae9f48bbabf896e0a2b9888bb61ef",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/NETWORK-SAFETY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/NETWORK-SAFETY.md"
+        },
+        {
+          "path": "docs/OPENVPN-SELFBUILD.md",
+          "sha": "8754243611ed8b484164b655e5189b20e8700224",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/OPENVPN-SELFBUILD.md"
         },
         {
           "path": "docs/PLATFORM-MATRIX.md",
           "sha": "9c0de79cdc6c99ec6c13dc45bc681a59fd33bb2c",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/PLATFORM-MATRIX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/PLATFORM-MATRIX.md"
         },
         {
           "path": "docs/PROTOCOL-MATRIX.md",
           "sha": "0a84be435ee64a7e8492385a454a6ced6b62f404",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/PROTOCOL-MATRIX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/PROTOCOL-MATRIX.md"
         },
         {
           "path": "docs/RELEASE-TEST-PLAN.md",
           "sha": "4a43e963584f749bc6e34c9f3061c910adf49f31",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/RELEASE-TEST-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/RELEASE-TEST-PLAN.md"
         },
         {
           "path": "docs/REUSE-MAP.md",
           "sha": "1cd83e4aa5e17d96b92d1321b910a6c232333fb7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/REUSE-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/REUSE-MAP.md"
         },
         {
           "path": "docs/SETTINGS-MAP.md",
           "sha": "ae4dc16f1d1e49c75517bca7a635a3e9f4afc099",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/SETTINGS-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/SETTINGS-MAP.md"
         },
         {
           "path": "docs/SPLIT-TUNNEL-CONTRACT.md",
           "sha": "e79dacad7cded42db2c1b6b4465aa75b9cb939c4",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/SPLIT-TUNNEL-CONTRACT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/SPLIT-TUNNEL-CONTRACT.md"
         },
         {
           "path": "docs/STACK-DECISION.md",
           "sha": "bb79b7a46b9b9f094b68a63ae158b2a77a478067",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/STACK-DECISION.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/STACK-DECISION.md"
         },
         {
           "path": "docs/STANDARDS-TRACE.md",
           "sha": "112656ace22599cb2df26edad0ff572244d8a770",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/STANDARDS-TRACE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/STANDARDS-TRACE.md"
         },
         {
           "path": "docs/TEST-PLAN.md",
           "sha": "02c037e5b2e57dfb16823e94676ebbac15bca536",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/TEST-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/TEST-PLAN.md"
         },
         {
           "path": "docs/UI-CONTROLS.md",
-          "sha": "ad5909041898e329b90df38fb257b22ea6102426",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/UI-CONTROLS.md"
+          "sha": "9dca528f62a74d450193b2db67d7049f74fb0512",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/UI-CONTROLS.md"
         },
         {
           "path": "docs/UI-STANDARDS-RESEARCH.md",
           "sha": "67d50d4dfd802d31e8330ba518d909d0a201785b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/UI-STANDARDS-RESEARCH.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/UI-STANDARDS-RESEARCH.md"
         },
         {
           "path": "docs/UPSTREAM-GAPS.md",
-          "sha": "98dd80d6ebc123a615f361bcc4c24742b28c00f0",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/UPSTREAM-GAPS.md"
+          "sha": "393b5f6032f1eac2c166d82044666294ddc3e397",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/UPSTREAM-GAPS.md"
         },
         {
           "path": "docs/WIN11-RIG.md",
           "sha": "2587067ba39e145a64fdd8727cf8f24eac741783",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/WIN11-RIG.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/WIN11-RIG.md"
         },
         {
           "path": "docs/evidence/2026-10-22/INDEX-evening.md",
           "sha": "ca1b11f7992a95e68cb6a20673a4627f9ffe92cf",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/2026-10-22/INDEX-evening.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/2026-10-22/INDEX-evening.md"
         },
         {
           "path": "docs/evidence/2026-10-24/gate28-x64-t1/README.md",
           "sha": "c4a361da7d87d4ccc31f6a56f2e63c14779bcdfe",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/2026-10-24/gate28-x64-t1/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/2026-10-24/gate28-x64-t1/README.md"
         },
         {
           "path": "docs/evidence/2026-10-24/phase8-win-e/README.md",
           "sha": "17242e1b6face4b7ab487ba9ba4a784d14627737",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/2026-10-24/phase8-win-e/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/2026-10-24/phase8-win-e/README.md"
         },
         {
           "path": "docs/evidence/2026-10-24/ui-p7-inst28/README.md",
           "sha": "07a5a4bf09610c7195d6391c8c16130045bb1d03",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/2026-10-24/ui-p7-inst28/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/2026-10-24/ui-p7-inst28/README.md"
         },
         {
           "path": "docs/evidence/2026-10-24/ui-p7-inst30/README.md",
           "sha": "e257229fdcded711c8296cff75927b3535972934",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/2026-10-24/ui-p7-inst30/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/2026-10-24/ui-p7-inst30/README.md"
         },
         {
           "path": "docs/evidence/2026-10-24/ui-p7-inst31/README.md",
           "sha": "2048a1f9396a90b2857e71c60beb8d322653e385",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/2026-10-24/ui-p7-inst31/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/2026-10-24/ui-p7-inst31/README.md"
         },
         {
           "path": "docs/evidence/2026-10-24/ui-p7-inst34/README.md",
           "sha": "6efcccd942388ba1c1013f4a71e94464bca741d1",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/2026-10-24/ui-p7-inst34/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/2026-10-24/ui-p7-inst34/README.md"
         },
         {
           "path": "docs/evidence/INDEX.md",
           "sha": "03f281e603e57f8f440e91575a10acf5e1e0a462",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/INDEX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/INDEX.md"
         },
         {
           "path": "docs/evidence/harness-replay-1107/README.md",
           "sha": "6d9ffd46b7ea10d6de303781ab75946f6b9b4828",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/harness-replay-1107/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/harness-replay-1107/README.md"
         },
         {
           "path": "docs/evidence/installers/README.md",
           "sha": "c7140f2478599071cfbe756391c567cdbab05399",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/installers/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/installers/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/q0202/README.md",
           "sha": "7cb62be9e7da0ca2cf50df61fd51c9c4a6acd10f",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/q0202/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/q0202/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/q0206/README.md",
           "sha": "059078b0a765398c3bc68970e69e310414173a41",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/q0206/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/q0206/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/q0229/README.md",
           "sha": "f768614d0e047dba000e7adc8dd0c998ad77ad22",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/q0229/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/q0229/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/q0274/README.md",
           "sha": "682d3ef9cab3bdcadcc2c601a377261363b3ae1f",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/q0274/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/q0274/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/q0290/README.md",
           "sha": "ae9cbd878f98cd803c15c1ae04c6cdf66f1faa78",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/q0290/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/q0290/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/q0324/README.md",
           "sha": "87862f7fc464e40415a077d37052b5fc8bfe3466",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/q0324/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/q0324/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/q0368-modeB/README.md",
           "sha": "4532b12b36284202650cf45f990f8d9d9b473870",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/q0368-modeB/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/q0368-modeB/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/reboot-off-amneziawg/README.md",
           "sha": "969e3b6c12583b6931d5b0034c32234afc64511d",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/reboot-off-amneziawg/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/reboot-off-amneziawg/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/reboot-off-wireguard/README.md",
           "sha": "92cc9b52cbe27197270ef1cc7213406eb0f3704a",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/reboot-off-wireguard/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/reboot-off-wireguard/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/reboot-persist-wireguard/README.md",
           "sha": "f3e818ee88c561075bd7d1a4a0319978e8955de1",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/reboot-persist-wireguard/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/reboot-persist-wireguard/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/second-nic/README.md",
           "sha": "67933803734f20d9cbf97e313d917c70e739aa40",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/second-nic/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/second-nic/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/swcu-amneziawg/README.md",
           "sha": "08413c09a1ab127b0ae2f2cc7e81dbbe818e681d",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/swcu-amneziawg/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/swcu-amneziawg/README.md"
         },
         {
           "path": "docs/evidence/windows-lab-arm64/swcu-xray/README.md",
           "sha": "b87d08c993ab086bf5a05d7a0abd5433169515fd",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-lab-arm64/swcu-xray/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-lab-arm64/swcu-xray/README.md"
         },
         {
           "path": "docs/evidence/windows-rc-x64/ui/SUMMARY.md",
           "sha": "c09e4f361f2433fa06bfe8ca8d34e9d96cb888aa",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-rc-x64/ui/SUMMARY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-rc-x64/ui/SUMMARY.md"
         },
         {
           "path": "docs/evidence/windows-rc2/PROOF-PLAN.md",
           "sha": "4d03dbab93f9e9c863443737bb30c5817f26c172",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-rc2/PROOF-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-rc2/PROOF-PLAN.md"
         },
         {
           "path": "docs/evidence/windows-rc2/ctl-rc1/README.md",
           "sha": "c8f45dfeddb6dc7c2b51ce413fe07901ee3babcc",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/528d2b8747eb3986f63bdc6ff3c308ee17af5f9b/docs/evidence/windows-rc2/ctl-rc1/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn/blob/2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b/docs/evidence/windows-rc2/ctl-rc1/README.md"
         }
       ],
       "changes": {
         "initial": false,
-        "added": 0,
-        "changed": 0,
+        "added": 19,
+        "changed": 53,
         "removed": 0,
-        "paths": []
+        "paths": [
+          "docs/OPENVPN-SELFBUILD.md",
+          "docs/evidence/openvpn-selfbuild/diff-vs-I002.txt",
+          "docs/evidence/openvpn-selfbuild/version-diff-vs-I002.txt",
+          "resources/bin/go-sqlite3-wasm-LICENSE.txt",
+          "resources/scripts/setup-daemon.Tests.ps1",
+          "scripts/e2e/laptop/win-cb33-build.sh",
+          "src/core/daemon/layout.ts",
+          "src/core/daemon/migrate-home.ts",
+          "src/main/daemon/migrate-run.ts",
+          "src/main/ks-title-wire.ts",
+          "tests/fixtures/cb33-c0-config.toml",
+          "tests/unit/daemon-layout.test.ts",
+          "tests/unit/daemon-proto-wire.test.ts",
+          "tests/unit/daemon-rpc-redact.test.ts",
+          "tests/unit/migrate-home.test.ts",
+          "tests/unit/migrate-run.test.ts",
+          "tests/unit/protocol-bits.test.ts",
+          "tests/unit/reconnecting-ks-off.test.ts",
+          "tests/unit/rpc-deadline.test.ts",
+          "README.md",
+          "build/deps.lock.json",
+          "build/installer.nsh",
+          "docs/CLI.md",
+          "docs/UI-CONTROLS.md",
+          "docs/UPSTREAM-GAPS.md",
+          "memory/handoff-devnet-dvpn.md",
+          "package-lock.json",
+          "package.json",
+          "resources/daemon.proto",
+          "resources/scripts/apply-daemon-config.ps1",
+          "resources/scripts/install-deps.ps1",
+          "resources/scripts/lock-daemon-home.ps1",
+          "resources/scripts/migrate-daemon-config.ps1",
+          "resources/scripts/service-user-start.ps1",
+          "resources/scripts/setup-daemon.ps1",
+          "resources/scripts/uninstall-cleanup.ps1",
+          "scripts/fetch-deps.mjs",
+          "scripts/release-win.mjs",
+          "src/cli/catalogue.ts",
+          "src/cli/commands.ts"
+        ]
       },
       "contract": {
         "status": "not-adopted"
@@ -335,7 +381,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
+      "checkedAt": "2026-11-09T07:50:12.450Z",
       "fileCount": 2141,
       "documents": [
         {
@@ -588,7 +634,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
+      "checkedAt": "2026-11-09T07:50:12.450Z",
       "fileCount": 525,
       "documents": [
         {
@@ -761,7 +807,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
+      "checkedAt": "2026-11-09T07:50:12.450Z",
       "fileCount": 1095,
       "documents": [
         {
@@ -933,7 +979,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
+      "checkedAt": "2026-11-09T07:50:12.450Z",
       "fileCount": 378,
       "documents": [
         {
@@ -1225,7 +1271,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
+      "checkedAt": "2026-11-09T07:50:12.450Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1256,7 +1302,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
+      "checkedAt": "2026-11-09T07:50:12.450Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1323,7 +1369,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
+      "checkedAt": "2026-11-09T07:50:12.450Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1375,7 +1421,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T00:57:51.248Z",
+      "checkedAt": "2026-11-09T07:50:12.450Z",
       "fileCount": 245,
       "documents": [
         {
@@ -1417,5 +1463,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "96eaee38394256ee454102ea1b45c63026ae789a7117e2dd6b3ca6705e06796e"
+  "catalogueRevision": "b60cfc7660ef32b06183c7d389ac835cff0227ee01a1ca72c6fcef4547de14c0"
 }
