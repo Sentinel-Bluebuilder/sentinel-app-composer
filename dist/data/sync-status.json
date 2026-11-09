@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-09T20:34:08.612Z",
-  "lastSuccessfulSync": "2026-11-09T20:34:08.612Z",
+  "checkedAt": "2026-11-09T20:35:45.702Z",
+  "lastSuccessfulSync": "2026-11-09T20:35:45.702Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42694157202",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42694172868",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-09T20:34:36.145Z"
+    "testedAt": "2026-11-09T20:36:08.500Z"
   },
   "sources": [
     {
@@ -33,11 +33,11 @@
       "pushedAt": "2026-11-09T20:32:35Z",
       "indexedRevision": "621a46404c289800da16c01108281a154725eb8b",
       "importedRevision": "621a46404c289800da16c01108281a154725eb8b",
-      "previousRevision": "2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b",
+      "previousRevision": "621a46404c289800da16c01108281a154725eb8b",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 2096,
       "documents": [
         {
@@ -313,32 +313,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 9,
-        "changed": 12,
+        "added": 0,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "docs/evidence/windows-final-x64/winrows/inst.log",
-          "docs/evidence/windows-final-x64/winrows/q0265-a.log",
-          "docs/evidence/windows-final-x64/winrows/q0265-b.log",
-          "docs/evidence/windows-final-x64/winrows/q0281.log",
-          "docs/evidence/windows-final-x64/winrows/q0319.log",
-          "docs/evidence/windows-final-x64/winrows/q1378-live.log",
-          "docs/evidence/windows-final-x64/winrows/r1378.log",
-          "docs/evidence/windows-final-x64/winrows/unit-1378.log",
-          "tests/unit/stored-rpc-apply.test.ts",
-          "build/deps.lock.json",
-          "memory/handoff-devnet-dvpn.md",
-          "package-lock.json",
-          "package.json",
-          "resources/scripts/setup-daemon.ps1",
-          "src/core/daemon/config.ts",
-          "src/core/session/state.ts",
-          "src/main/daemon/settings.ts",
-          "src/main/system/elevate.ts",
-          "tests/unit/main-services.test.ts",
-          "tests/unit/ps-scripts.test.ts",
-          "tests/unit/tunnel-check-copy.test.ts"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -362,7 +340,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 2198,
       "documents": [
         {
@@ -615,7 +593,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 535,
       "documents": [
         {
@@ -788,7 +766,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 1314,
       "documents": [
         {
@@ -1001,7 +979,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1293,7 +1271,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1324,7 +1302,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1393,7 +1371,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1447,7 +1425,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T20:34:08.612Z",
+      "checkedAt": "2026-11-09T20:35:45.702Z",
       "fileCount": 245,
       "documents": [
         {
@@ -1491,5 +1469,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "e1d7773f24f76fc46da3b1e3a0651b1214781bd2fca139c8e598bfbf08508a18"
+  "catalogueRevision": "6811f5028056d19013d3c8f9ab0f01817b7777a5ca48f2520f9220bdfa327662"
 }
