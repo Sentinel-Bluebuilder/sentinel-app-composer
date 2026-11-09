@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-09T07:50:12.450Z",
-  "lastSuccessfulSync": "2026-11-09T07:50:12.450Z",
+  "checkedAt": "2026-11-09T07:56:51.648Z",
+  "lastSuccessfulSync": "2026-11-09T07:56:51.648Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42581804990",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42582496165",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-09T07:50:36.901Z"
+    "testedAt": "2026-11-09T07:57:20.472Z"
   },
   "sources": [
     {
@@ -33,11 +33,11 @@
       "pushedAt": "2026-11-09T07:49:56Z",
       "indexedRevision": "2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b",
       "importedRevision": "2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b",
-      "previousRevision": "528d2b8747eb3986f63bdc6ff3c308ee17af5f9b",
+      "previousRevision": "2c1bed3fcbeff0eee5a63cad5f1b75d4a216ca8b",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
+      "checkedAt": "2026-11-09T07:56:51.648Z",
       "fileCount": 2087,
       "documents": [
         {
@@ -313,51 +313,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 19,
-        "changed": 53,
+        "added": 0,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "docs/OPENVPN-SELFBUILD.md",
-          "docs/evidence/openvpn-selfbuild/diff-vs-I002.txt",
-          "docs/evidence/openvpn-selfbuild/version-diff-vs-I002.txt",
-          "resources/bin/go-sqlite3-wasm-LICENSE.txt",
-          "resources/scripts/setup-daemon.Tests.ps1",
-          "scripts/e2e/laptop/win-cb33-build.sh",
-          "src/core/daemon/layout.ts",
-          "src/core/daemon/migrate-home.ts",
-          "src/main/daemon/migrate-run.ts",
-          "src/main/ks-title-wire.ts",
-          "tests/fixtures/cb33-c0-config.toml",
-          "tests/unit/daemon-layout.test.ts",
-          "tests/unit/daemon-proto-wire.test.ts",
-          "tests/unit/daemon-rpc-redact.test.ts",
-          "tests/unit/migrate-home.test.ts",
-          "tests/unit/migrate-run.test.ts",
-          "tests/unit/protocol-bits.test.ts",
-          "tests/unit/reconnecting-ks-off.test.ts",
-          "tests/unit/rpc-deadline.test.ts",
-          "README.md",
-          "build/deps.lock.json",
-          "build/installer.nsh",
-          "docs/CLI.md",
-          "docs/UI-CONTROLS.md",
-          "docs/UPSTREAM-GAPS.md",
-          "memory/handoff-devnet-dvpn.md",
-          "package-lock.json",
-          "package.json",
-          "resources/daemon.proto",
-          "resources/scripts/apply-daemon-config.ps1",
-          "resources/scripts/install-deps.ps1",
-          "resources/scripts/lock-daemon-home.ps1",
-          "resources/scripts/migrate-daemon-config.ps1",
-          "resources/scripts/service-user-start.ps1",
-          "resources/scripts/setup-daemon.ps1",
-          "resources/scripts/uninstall-cleanup.ps1",
-          "scripts/fetch-deps.mjs",
-          "scripts/release-win.mjs",
-          "src/cli/catalogue.ts",
-          "src/cli/commands.ts"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -372,245 +331,286 @@
       "os": "linux",
       "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux",
       "private": true,
-      "revision": "bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06",
-      "commitDate": "2026-11-05T20:12:20Z",
-      "pushedAt": "2026-11-05T20:12:20Z",
-      "indexedRevision": "bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06",
-      "importedRevision": "bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06",
+      "revision": "95071d3e015d34ce97c10cf3ac345f25f2b2ab06",
+      "commitDate": "2026-11-09T07:52:00Z",
+      "pushedAt": "2026-11-09T07:53:31Z",
+      "indexedRevision": "95071d3e015d34ce97c10cf3ac345f25f2b2ab06",
+      "importedRevision": "95071d3e015d34ce97c10cf3ac345f25f2b2ab06",
       "previousRevision": "bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
-      "fileCount": 2141,
+      "checkedAt": "2026-11-09T07:56:51.648Z",
+      "fileCount": 2198,
       "documents": [
         {
           "path": "CLAUDE.md",
-          "sha": "411ac7822ced79917c97627163b4654c9960fcf5",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/CLAUDE.md"
+          "sha": "477a2743b6559936c6ea99390f423d2e66a764cd",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/CLAUDE.md"
         },
         {
           "path": "README.md",
-          "sha": "035a76e8055bae530d75f792f49c04b1fd6b4efa",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/README.md"
+          "sha": "3c037950db764987a75525a0b65faca28c94468d",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/README.md"
         },
         {
           "path": "docs/ARCHITECTURE.md",
           "sha": "7d567509ba4ec6045924a48432925192f5f9b90b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/ARCHITECTURE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/ARCHITECTURE.md"
         },
         {
           "path": "docs/ASSETS.md",
           "sha": "3ff92a87a6c24746fbf1654768af6e3c75e565e7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/ASSETS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/ASSETS.md"
         },
         {
           "path": "docs/BOX-RIG.md",
           "sha": "29338748289b8563464230423fefacc5c19aed99",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/BOX-RIG.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/BOX-RIG.md"
         },
         {
           "path": "docs/CLI.md",
           "sha": "54f1d6e5986da32b6ad9b9acc8e21d7c2a9de08a",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/CLI.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/CLI.md"
         },
         {
           "path": "docs/DESIGN.md",
           "sha": "640cbb3ffdc75710b21ac486bae69d6f35b24cf3",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/DESIGN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/DESIGN.md"
         },
         {
           "path": "docs/ERROR-INVENTORY.md",
           "sha": "fc2e2c5d4fcd9bcc0f8f8cc8228f38e0a5e8ef88",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/ERROR-INVENTORY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/ERROR-INVENTORY.md"
         },
         {
           "path": "docs/ERROR-STANDARDS.md",
           "sha": "d21d0ed9b05d4b7cb862b55c0ea2c10ca648ad00",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/ERROR-STANDARDS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/ERROR-STANDARDS.md"
         },
         {
           "path": "docs/FEATURE-PLAN.md",
           "sha": "9738ce2468fbc9bc363ef0b8a215f1de9d202e0f",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/FEATURE-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/FEATURE-PLAN.md"
         },
         {
           "path": "docs/FINAL-PASS-LINUX.md",
           "sha": "93af336d30414314f77eb442eeff46046fdcaa13",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/FINAL-PASS-LINUX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/FINAL-PASS-LINUX.md"
         },
         {
           "path": "docs/INSTALLER.md",
           "sha": "b764b2064f2791b083371d7e3a791b764c5d9c95",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/INSTALLER.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/INSTALLER.md"
         },
         {
           "path": "docs/KS-REBOOT-CELLS.md",
           "sha": "eec68b96c0c4b22c41f22fe3a8bcf8c83d52ba86",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/KS-REBOOT-CELLS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/KS-REBOOT-CELLS.md"
         },
         {
           "path": "docs/LINUX-PARITY.md",
-          "sha": "8584a6d5e35fa2626546add99582d8a8bd825d71",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/LINUX-PARITY.md"
+          "sha": "c99aecf53b676f7c3132220b08cfbc4119a5db93",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/LINUX-PARITY.md"
         },
         {
           "path": "docs/LINUX-PORT.md",
           "sha": "38ea1832e0edafc18b214f98d7c25dc7d5ea4872",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/LINUX-PORT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/LINUX-PORT.md"
         },
         {
           "path": "docs/MANIFESTO.md",
           "sha": "d4f0d7e2232ff56ca731ec6dcdcd12059f66ec3b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/MANIFESTO.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/MANIFESTO.md"
         },
         {
           "path": "docs/NETWORK-SAFETY.md",
           "sha": "1c85ebfed7bb91fdf0c59dbf1163600ce6ee38ab",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/NETWORK-SAFETY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/NETWORK-SAFETY.md"
         },
         {
           "path": "docs/PROTOCOL-MATRIX.md",
           "sha": "6499f66f9c7579eb3ff3072830227c01a9a7cd9c",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/PROTOCOL-MATRIX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/PROTOCOL-MATRIX.md"
         },
         {
           "path": "docs/RELEASE-TEST-PLAN.md",
           "sha": "8f535e18dc647dec1e7ffc6e50bdb544fcfedfa7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/RELEASE-TEST-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/RELEASE-TEST-PLAN.md"
         },
         {
           "path": "docs/REUSE-MAP.md",
           "sha": "88048d7f21818bee039f68c69702076b3172a5d6",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/REUSE-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/REUSE-MAP.md"
         },
         {
           "path": "docs/SETTINGS-MAP.md",
           "sha": "433f3b4db3f81896132c785c7e78608718614153",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/SETTINGS-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/SETTINGS-MAP.md"
         },
         {
           "path": "docs/STACK-DECISION.md",
-          "sha": "ff7e4059348cb1f25b8954957f68b87e90003796",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/STACK-DECISION.md"
+          "sha": "f613cda986f479e1edadf97f846057cbe01b6cc1",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/STACK-DECISION.md"
         },
         {
           "path": "docs/STANDARDS-TRACE.md",
           "sha": "d775c2b1c5201b0e57b0e6783e87093f85132615",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/STANDARDS-TRACE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/STANDARDS-TRACE.md"
         },
         {
           "path": "docs/TEST-PLAN.md",
           "sha": "46cfee6f80bb8d8ab89b8574c517e5ff39a16a4d",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/TEST-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/TEST-PLAN.md"
         },
         {
           "path": "docs/UI-CONTROLS.md",
-          "sha": "bc23149e1d96cb78a2e5f5f2573f8d8d9dafdd81",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/UI-CONTROLS.md"
+          "sha": "e2f5364d3eee4e750fd0cccbabc7dccdb841ef2b",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/UI-CONTROLS.md"
         },
         {
           "path": "docs/UI-STANDARDS-RESEARCH.md",
           "sha": "161ed05d1f0ff72c19ce3692fd4ab4bb684b8842",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/UI-STANDARDS-RESEARCH.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/UI-STANDARDS-RESEARCH.md"
         },
         {
           "path": "docs/UPSTREAM-GAPS.md",
-          "sha": "8a1d919cb0e8bec83e21888e1035ee8d04c95819",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/UPSTREAM-GAPS.md"
+          "sha": "47504b9ca26d03b7516cdebb0c1726bf15382c4a",
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/UPSTREAM-GAPS.md"
         },
         {
           "path": "docs/evidence/INDEX.md",
           "sha": "b8452f4bdc9be1993e8dd4154205da082d1addf9",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/INDEX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/INDEX.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/ARM-ARCH.md",
           "sha": "13ba4db1d724a5d24151ab59d1a9678c530c4d0e",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/ARM-ARCH.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/ARM-ARCH.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/EL-RUN5.md",
           "sha": "e596d53faecb0e5218945eb7eae9b8ba8e9729e5",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/EL-RUN5.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/EL-RUN5.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/EL-RUN6.md",
           "sha": "846ea384c08f7c41ca600037d1d62a24ae343088",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/EL-RUN6.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/EL-RUN6.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/el-container-e5a351af/README.md",
           "sha": "b61379ce2f357ea1e300e299862657f8e0d57769",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/el-container-e5a351af/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/el-container-e5a351af/README.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/final-16.30/build-pkg5/README.md",
           "sha": "f8f5cfd9dc70aa2d190767118ef14de0c6bfdcbc",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/final-16.30/build-pkg5/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/final-16.30/build-pkg5/README.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/final-16.30/composed/README.md",
           "sha": "342cca2d4bf8cffb5526be922621998ac8b1aeb7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/final-16.30/composed/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/final-16.30/composed/README.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/final-16.30/composed/rerun-498f2969/README.md",
           "sha": "ac42484e702d4017fe972cd532f5f4fdde3ec1ad",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/final-16.30/composed/rerun-498f2969/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/final-16.30/composed/rerun-498f2969/README.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/final-16.30/rig/matrix-T2/plan-rerun/README.md",
           "sha": "7a30193116f56290bdd59e15e2ce759ab6d826fb",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/final-16.30/rig/matrix-T2/plan-rerun/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/final-16.30/rig/matrix-T2/plan-rerun/README.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/final-16.30/u2204c/Q1-invalid-order/README.md",
           "sha": "2122d5a2e3f0d03dbc861f23f5f239525e8d2227",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/final-16.30/u2204c/Q1-invalid-order/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/final-16.30/u2204c/Q1-invalid-order/README.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/final-16.30/u2204c/Q1b/README.md",
           "sha": "6c6d720f787158e5c0756e3d1b78bc0def393572",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/final-16.30/u2204c/Q1b/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/final-16.30/u2204c/Q1b/README.md"
         },
         {
           "path": "docs/evidence/linux-cf4c372/rocky9/run6-16.30/t3-36998cde/README.md",
           "sha": "c0ccbbb48dc3871b8b6841b56efc57db2a969338",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-cf4c372/rocky9/run6-16.30/t3-36998cde/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-cf4c372/rocky9/run6-16.30/t3-36998cde/README.md"
         },
         {
           "path": "docs/evidence/linux-rc-0.1.8/arm64-deb12-azure-ddvlnx2/README.md",
           "sha": "35ac9f0998f0c8d34a60f806233f4db376e27879",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-rc-0.1.8/arm64-deb12-azure-ddvlnx2/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-rc-0.1.8/arm64-deb12-azure-ddvlnx2/README.md"
         },
         {
           "path": "docs/evidence/linux-rc-0.1.8/arm64-u2404-azure-ddvlnx1/SUMMARY.md",
           "sha": "bbb83b7de111cd0900918826734115e8062b5742",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-rc-0.1.8/arm64-u2404-azure-ddvlnx1/SUMMARY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-rc-0.1.8/arm64-u2404-azure-ddvlnx1/SUMMARY.md"
         },
         {
           "path": "docs/evidence/linux-rc-0.1.8/arm64-u2404-azure-ddvlnx1/rc/RC-MANIFEST.md",
           "sha": "9757055ba1477e5dee459bf61dd2c8ed87d4d880",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-rc-0.1.8/arm64-u2404-azure-ddvlnx1/rc/RC-MANIFEST.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-rc-0.1.8/arm64-u2404-azure-ddvlnx1/rc/RC-MANIFEST.md"
         },
         {
           "path": "docs/evidence/linux-rc2/ddv-plat-rocky9/SUMMARY.md",
           "sha": "9dc9fa2754438bdaf78fe83ebadf997315ebd7ff",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-rc2/ddv-plat-rocky9/SUMMARY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-rc2/ddv-plat-rocky9/SUMMARY.md"
         },
         {
           "path": "docs/evidence/linux-rc2/ddvt-u24b/SUMMARY.md",
           "sha": "3ca6ec8881510ef3beac99a4136a0b1cbe8fda8d",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/bac97d1d7d34a6ba4a3b7d5c3f960b066f911d06/docs/evidence/linux-rc2/ddvt-u24b/SUMMARY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-linux/blob/95071d3e015d34ce97c10cf3ac345f25f2b2ab06/docs/evidence/linux-rc2/ddvt-u24b/SUMMARY.md"
         }
       ],
       "changes": {
         "initial": false,
-        "added": 0,
-        "changed": 0,
-        "removed": 0,
-        "paths": []
+        "added": 58,
+        "changed": 96,
+        "removed": 1,
+        "paths": [
+          ".gitleaks.toml",
+          "build/licenses/dvpnd-THIRD-PARTY-NOTICES.txt",
+          "build/licenses/go-sqlite3-wasm.txt",
+          "oneoff/tlx-q0372-diag.sh",
+          "scripts/e2e/linux/oneoff/tlx-air-ab.sh",
+          "scripts/e2e/linux/oneoff/tlx-az3-base.sh",
+          "scripts/e2e/linux/oneoff/tlx-cb33-fresh.sh",
+          "scripts/e2e/linux/oneoff/tlx-distro-matrix.sh",
+          "scripts/e2e/linux/oneoff/tlx-fs36-idle-ab.sh",
+          "scripts/e2e/linux/oneoff/tlx-g2-ipv6-refuse.sh",
+          "scripts/e2e/linux/oneoff/tlx-g21-ab.sh",
+          "scripts/e2e/linux/oneoff/tlx-g21-cmp.sh",
+          "scripts/e2e/linux/oneoff/tlx-g21-final.sh",
+          "scripts/e2e/linux/oneoff/tlx-g30-cut.sh",
+          "scripts/e2e/linux/oneoff/tlx-kshold-cb33.sh",
+          "scripts/e2e/linux/oneoff/tlx-ksrestart-cb33.sh",
+          "scripts/e2e/linux/oneoff/tlx-netlost-ab.sh",
+          "scripts/e2e/linux/oneoff/tlx-node-path-probe.sh",
+          "scripts/e2e/linux/oneoff/tlx-q0247-cb33.sh",
+          "scripts/e2e/linux/oneoff/tlx-q0247sharp-cb33.sh",
+          "scripts/e2e/linux/oneoff/tlx-q0247v3.sh",
+          "scripts/e2e/linux/oneoff/tlx-q0372-cb33.sh",
+          "scripts/e2e/linux/oneoff/tlx-q0430-proof.sh",
+          "scripts/e2e/linux/oneoff/tlx-q0434-hy2-reset.sh",
+          "scripts/e2e/linux/oneoff/tlx-q0434b-v6.sh",
+          "scripts/e2e/linux/oneoff/tlx-q426-q430.sh",
+          "scripts/e2e/linux/oneoff/tlx-q431.sh",
+          "scripts/e2e/linux/oneoff/tlx-set-rpc-lane.sh",
+          "scripts/e2e/linux/oneoff/tlx-soak-app.sh",
+          "scripts/e2e/linux/oneoff/tlx2-az3-base.sh",
+          "scripts/go-modules.d.mts",
+          "scripts/go-modules.mjs",
+          "scripts/ip-leak-scan.sh",
+          "scripts/payload-secret-scan.d.mts",
+          "scripts/payload-secret-scan.mjs",
+          "scripts/public-ip-allow.txt",
+          "scripts/public-snapshot.sh",
+          "scripts/repin-dvpnd.mjs",
+          "src/cli/action-hint.ts",
+          "src/core/daemon/layout.ts"
+        ]
       },
       "contract": {
         "status": "not-adopted"
@@ -634,7 +634,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
+      "checkedAt": "2026-11-09T07:56:51.648Z",
       "fileCount": 525,
       "documents": [
         {
@@ -807,7 +807,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
+      "checkedAt": "2026-11-09T07:56:51.648Z",
       "fileCount": 1095,
       "documents": [
         {
@@ -970,285 +970,326 @@
       "kind": "documentation",
       "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana",
       "private": true,
-      "revision": "f4f2556506924c09530024f172bb5b5e269b4bb2",
-      "commitDate": "2026-11-05T20:12:28Z",
-      "pushedAt": "2026-11-05T20:12:28Z",
-      "indexedRevision": "f4f2556506924c09530024f172bb5b5e269b4bb2",
+      "revision": "b467c5d7a37eb63e99b0c9d47fde9e000e4eedda",
+      "commitDate": "2026-11-09T07:55:40Z",
+      "pushedAt": "2026-11-09T07:56:32Z",
+      "indexedRevision": "b467c5d7a37eb63e99b0c9d47fde9e000e4eedda",
       "importedRevision": null,
       "previousRevision": "f4f2556506924c09530024f172bb5b5e269b4bb2",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
-      "fileCount": 378,
+      "checkedAt": "2026-11-09T07:56:51.648Z",
+      "fileCount": 435,
       "documents": [
         {
           "path": "README.md",
           "sha": "332851d46aff35630b1154d4ce5be76cd057f24e",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/README.md"
         },
         {
           "path": "docs/00-MANIFESTO.md",
           "sha": "1ad993999f85de2890a81388b30a7614e92dfcdf",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/00-MANIFESTO.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/00-MANIFESTO.md"
         },
         {
           "path": "docs/01-ARCHITECTURE.md",
           "sha": "7576835ca4e36812b528592f7b3a1fa26d90f7eb",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/01-ARCHITECTURE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/01-ARCHITECTURE.md"
         },
         {
           "path": "docs/02-BUILD.md",
           "sha": "e66186cb3e62fdc7c63e1b0d42f2e56fe3b686d4",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/02-BUILD.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/02-BUILD.md"
         },
         {
           "path": "docs/03-PROGRAM-REFERENCE.md",
           "sha": "952af7e7be4376992baaa60066c0b5bb6bd49220",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/03-PROGRAM-REFERENCE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/03-PROGRAM-REFERENCE.md"
         },
         {
           "path": "docs/04-CLIENT-GUIDE.md",
           "sha": "eed45501be8ea5391f643210d8ba5a67ec9b8f2f",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/04-CLIENT-GUIDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/04-CLIENT-GUIDE.md"
         },
         {
           "path": "docs/05-BUILDABILITY-SCORECARD.md",
           "sha": "caba6540e8dc64f00473ab7b252715871a054da6",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/05-BUILDABILITY-SCORECARD.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/05-BUILDABILITY-SCORECARD.md"
         },
         {
           "path": "docs/06-AGENT-QUICKSTART.md",
           "sha": "f7c5cdf9a3f259c789ad917dd5221b36fcb04737",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/06-AGENT-QUICKSTART.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/06-AGENT-QUICKSTART.md"
         },
         {
           "path": "docs/07-VOUCHER-DRIFT-FIX.md",
           "sha": "d4d866b67b70deeb56345bbb7b25f94e32032bc8",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/07-VOUCHER-DRIFT-FIX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/07-VOUCHER-DRIFT-FIX.md"
         },
         {
           "path": "docs/08-ORIENTATION.md",
           "sha": "9806772b11e3f11aa07b490cd48518d03b29dde0",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/08-ORIENTATION.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/08-ORIENTATION.md"
         },
         {
           "path": "docs/09-TROUBLESHOOTING.md",
           "sha": "287a36fae4a9ca045671067f4b06add823a3dd13",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/09-TROUBLESHOOTING.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/09-TROUBLESHOOTING.md"
         },
         {
           "path": "docs/10-EVENT-REFERENCE.md",
           "sha": "2cb4bcbd30aa271c3a151cace1e0f2d6144ecff9",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/10-EVENT-REFERENCE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/10-EVENT-REFERENCE.md"
         },
         {
           "path": "docs/11-API-REFERENCE.md",
           "sha": "11551bc43ad5207ecf520e645025c67c5f7e5bda",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/11-API-REFERENCE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/11-API-REFERENCE.md"
         },
         {
           "path": "docs/12-DISTRIBUTOR-REFERENCE.md",
           "sha": "98f23834d468741cb40921126f6911d2695f842a",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/12-DISTRIBUTOR-REFERENCE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/12-DISTRIBUTOR-REFERENCE.md"
         },
         {
           "path": "docs/13-DEVNET-VERIFICATION.md",
           "sha": "badccda75f403f7da68928e7b6007e6b45d78461",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/13-DEVNET-VERIFICATION.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/13-DEVNET-VERIFICATION.md"
         },
         {
           "path": "docs/14-DEVNET-LAYOUT-COMPAT.md",
           "sha": "c23e7f54d186e02a3f11ab3bd6bbe07c69c7058f",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/14-DEVNET-LAYOUT-COMPAT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/14-DEVNET-LAYOUT-COMPAT.md"
         },
         {
           "path": "docs/15-TESTING-CHECKLIST.md",
           "sha": "12ba3eb9ab4d9ec2286603ed658a012b85ddfc81",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/15-TESTING-CHECKLIST.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/15-TESTING-CHECKLIST.md"
         },
         {
           "path": "docs/16-COVERAGE-SCAN.md",
           "sha": "76975c79e8d0d6504cd6a9519f57959310d98e55",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/16-COVERAGE-SCAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/16-COVERAGE-SCAN.md"
         },
         {
           "path": "docs/17-SESSION-STATE-MACHINE.md",
           "sha": "be877e26ccf03b2fd26c249cbe8e70fa733493df",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/17-SESSION-STATE-MACHINE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/17-SESSION-STATE-MACHINE.md"
         },
         {
           "path": "docs/18-SECURITY-MODEL.md",
           "sha": "13c8e9986370ac91ee16b7113dd589580ab5c5af",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/18-SECURITY-MODEL.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/18-SECURITY-MODEL.md"
         },
         {
           "path": "docs/19-FEATURE-MATRIX.md",
           "sha": "ef5d0a2569712b8b8e86826f8038ab3a083a0218",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/19-FEATURE-MATRIX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/19-FEATURE-MATRIX.md"
         },
         {
           "path": "docs/20-GLOSSARY.md",
           "sha": "1f1c98a896a8aad02d1b2a2f7b212bc02ff05123",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/20-GLOSSARY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/20-GLOSSARY.md"
         },
         {
           "path": "docs/21-COSMOS-PARITY.md",
           "sha": "7cec65269909cff2d7cdc8d96c991ba389f8b9be",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/21-COSMOS-PARITY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/21-COSMOS-PARITY.md"
         },
         {
           "path": "docs/22-CLI-REFERENCE.md",
           "sha": "925dccd4f8e1617c6545bfeaa9209735c8165a48",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/22-CLI-REFERENCE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/22-CLI-REFERENCE.md"
         },
         {
           "path": "docs/23-INSTRUCTION-COVERAGE.md",
           "sha": "00d013fbfc0fe831b738cb353e48218b25af47af",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/23-INSTRUCTION-COVERAGE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/23-INSTRUCTION-COVERAGE.md"
         },
         {
           "path": "docs/24-GO-SDK-REFERENCE.md",
           "sha": "a73387a7eb9f5506b51cfa1e9a8a75a52efb48f5",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/24-GO-SDK-REFERENCE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/24-GO-SDK-REFERENCE.md"
         },
         {
           "path": "docs/25-BUILDING-AN-APP.md",
           "sha": "9fc2a5a84553e77554397dc59255c8212e9c1936",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/25-BUILDING-AN-APP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/25-BUILDING-AN-APP.md"
         },
         {
           "path": "docs/26-RUNNING-A-NODE.md",
           "sha": "826c925dad0d316bbe98905c289e1dda073d3095",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/26-RUNNING-A-NODE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/26-RUNNING-A-NODE.md"
         },
         {
           "path": "docs/27-DOC-RATING.md",
           "sha": "9340ea77770097cecafdd252d8488b833d57dd01",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/27-DOC-RATING.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/27-DOC-RATING.md"
         },
         {
           "path": "docs/28-RUST-CRATE-REFERENCE.md",
           "sha": "f4aee9486c8a4bb66be1bc2a257b981260cc25a5",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/28-RUST-CRATE-REFERENCE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/28-RUST-CRATE-REFERENCE.md"
         },
         {
           "path": "docs/29-UI-UX-GUIDE.md",
           "sha": "257cf0241a5942eb581e36b482aeeee1712c0dbb",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/29-UI-UX-GUIDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/29-UI-UX-GUIDE.md"
         },
         {
           "path": "docs/30-WINDOWS-MACOS-CLIENT.md",
           "sha": "d2b7fdfafabce0b5436065e367ece92028105a5d",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/30-WINDOWS-MACOS-CLIENT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/30-WINDOWS-MACOS-CLIENT.md"
         },
         {
           "path": "docs/31-LAUNCHPAD-RESEARCH.md",
           "sha": "974683f693d1c33d43d882b32c6fe66e6da9910a",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/31-LAUNCHPAD-RESEARCH.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/31-LAUNCHPAD-RESEARCH.md"
         },
         {
           "path": "docs/32-SOLANA-VS-COSMOS-TECHNICAL.md",
           "sha": "132782bded73eeeb06789b75183e4aec9157e73b",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/32-SOLANA-VS-COSMOS-TECHNICAL.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/32-SOLANA-VS-COSMOS-TECHNICAL.md"
         },
         {
           "path": "docs/33-COMMUNITY-GATED-LAUNCH.md",
           "sha": "7804c2fb7e10743238c68f4c0213398a8f0af4c5",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/33-COMMUNITY-GATED-LAUNCH.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/33-COMMUNITY-GATED-LAUNCH.md"
         },
         {
           "path": "docs/34-UPSTREAM-AUDIT.md",
           "sha": "19b9eb8e39eba95901be5e982bf0f8d56cd01ad6",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/34-UPSTREAM-AUDIT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/34-UPSTREAM-AUDIT.md"
         },
         {
           "path": "docs/35-BANDWIDTH-LAB-FINDINGS.md",
-          "sha": "b437dd6dc0350905151ea30fb6a6a737e7f9b189",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/35-BANDWIDTH-LAB-FINDINGS.md"
+          "sha": "c5e999eb0dc056d9ff51f10b53fdb29a47a1c616",
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/35-BANDWIDTH-LAB-FINDINGS.md"
         },
         {
           "path": "docs/36-BILLING-ACCURACY-EXPLAINED.md",
-          "sha": "12095e8c000e66b43fd212b465d6f05f8a8b69ce",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/36-BILLING-ACCURACY-EXPLAINED.md"
+          "sha": "790143e264208a6234cdca6871ff6320b5d5d922",
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/36-BILLING-ACCURACY-EXPLAINED.md"
         },
         {
           "path": "docs/37-STANDARDS-AUDIT.md",
           "sha": "95920e8ae38347fe948a9d97ee9fe9b36a2d53eb",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/37-STANDARDS-AUDIT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/37-STANDARDS-AUDIT.md"
         },
         {
           "path": "docs/38-BUILDER-HUB.md",
           "sha": "a9fc84be8851a75041f65fa4ce20c4ea00ebbd2d",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/38-BUILDER-HUB.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/38-BUILDER-HUB.md"
         },
         {
           "path": "docs/39-CLIENT-APP-GUIDE.md",
           "sha": "1fb96351941c01bba28fce87578b42579fbcd96e",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/39-CLIENT-APP-GUIDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/39-CLIENT-APP-GUIDE.md"
         },
         {
           "path": "docs/40-APP-FLOWS.md",
           "sha": "bd6c0b7c48b81b945a4b96178dc4bb63ac671f14",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/40-APP-FLOWS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/40-APP-FLOWS.md"
         },
         {
           "path": "docs/41-FRONTEND-SPEC.md",
           "sha": "b7aa7c6486df3a7a783bd3da5408b0e35012f6b0",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/41-FRONTEND-SPEC.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/41-FRONTEND-SPEC.md"
         },
         {
           "path": "docs/42-SETTINGS-SPEC.md",
           "sha": "23e8bb94a3aee209346f442b9e2473b6d6bed5c7",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/42-SETTINGS-SPEC.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/42-SETTINGS-SPEC.md"
         },
         {
           "path": "docs/43-ERRORS-AND-COPY.md",
           "sha": "7a2c6560ba2969452f2a556e515b2d975444b949",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/43-ERRORS-AND-COPY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/43-ERRORS-AND-COPY.md"
         },
         {
           "path": "docs/44-NETWORK-SAFETY.md",
           "sha": "91ef220e54064efb7eab0727c12ed4a44ab75610",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/44-NETWORK-SAFETY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/44-NETWORK-SAFETY.md"
         },
         {
           "path": "docs/45-PLATFORM-GUIDE.md",
           "sha": "8edde280a7fde79e1fceeb249388eab1acf8c0fb",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/45-PLATFORM-GUIDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/45-PLATFORM-GUIDE.md"
         },
         {
           "path": "docs/46-CLIENT-TESTING.md",
           "sha": "00bbc0e29f5a68c51076230b96b9b3fe48549b22",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/46-CLIENT-TESTING.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/46-CLIENT-TESTING.md"
         },
         {
           "path": "docs/47-OPERATOR-TOOLS-GUIDE.md",
           "sha": "7344de43bcc1bbf5347df453275d3e4ed182d8c0",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/47-OPERATOR-TOOLS-GUIDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/47-OPERATOR-TOOLS-GUIDE.md"
         },
         {
           "path": "docs/48-LESSONS.md",
           "sha": "cbb23b307378a5d7ce49cb5873f6a473f859e917",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/48-LESSONS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/48-LESSONS.md"
         },
         {
           "path": "docs/audit/FINDINGS.md",
           "sha": "a035e6bf0f4a563d596e764303ca77f9e21739ab",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/audit/FINDINGS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/audit/FINDINGS.md"
         },
         {
           "path": "docs/audit/FIX-QUEUES.md",
           "sha": "2675619d36aba8aa85e0d530dcc2f47622b579bf",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/f4f2556506924c09530024f172bb5b5e269b4bb2/docs/audit/FIX-QUEUES.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-solana/blob/b467c5d7a37eb63e99b0c9d47fde9e000e4eedda/docs/audit/FIX-QUEUES.md"
         }
       ],
       "changes": {
         "initial": false,
-        "added": 0,
-        "changed": 0,
+        "added": 57,
+        "changed": 30,
         "removed": 0,
-        "paths": []
+        "paths": [
+          ".gitattributes",
+          "lab/awgiso-ts36.sh",
+          "lab/build-bwlab-cb33.sh",
+          "lab/final33f/a7kill33f.sh",
+          "lab/final33f/bootstrap33f.sh",
+          "lab/final33f/clirerun33f.sh",
+          "lab/final33f/f33f-edit-b3.py",
+          "lab/final33f/full33f.sh",
+          "lab/final33f/go33f.sh",
+          "lab/final33f/hooks2-33e.py",
+          "lab/final33f/launch33f-stasis.sh",
+          "lab/final33f/prebuild33f.sh",
+          "lab/final33f/watch33f.sh",
+          "lab/final33g/a7kill33g-rr.sh",
+          "lab/final33g/a7kill33g.sh",
+          "lab/final33g/bootstrap33g.sh",
+          "lab/final33g/clirerun33g.sh",
+          "lab/final33g/full33g.sh",
+          "lab/final33g/go33g.sh",
+          "lab/final33g/launch33g-stasis.sh",
+          "lab/final33g/prebuild33g.sh",
+          "lab/final33g/rerun33g.sh",
+          "lab/final33g/watch33g.sh",
+          "lab/final33h/a7kill33h.sh",
+          "lab/final33h/bootstrap33h.sh",
+          "lab/final33h/clirerun33h.sh",
+          "lab/final33h/full33h.sh",
+          "lab/final33h/go33h.sh",
+          "lab/final33h/launch33h-stasis.sh",
+          "lab/final33h/prebuild33h.sh",
+          "lab/final33h/watch33h.sh",
+          "lab/fsamp-ts36.sh",
+          "lab/fwx14-ts36.sh",
+          "lab/g19ab-ts36.sh",
+          "lab/g23-ts36.sh",
+          "lab/g34row-ts36.sh",
+          "lab/g4x-ts36.sh",
+          "lab/g5d-ts36.sh",
+          "lab/g5f-ts36.sh",
+          "lab/g5f2-ts36.sh"
+        ]
       },
       "contract": {
         "status": "not-adopted"
@@ -1271,7 +1312,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
+      "checkedAt": "2026-11-09T07:56:51.648Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1302,7 +1343,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
+      "checkedAt": "2026-11-09T07:56:51.648Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1369,7 +1410,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
+      "checkedAt": "2026-11-09T07:56:51.648Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1421,7 +1462,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-09T07:50:12.450Z",
+      "checkedAt": "2026-11-09T07:56:51.648Z",
       "fileCount": 245,
       "documents": [
         {
@@ -1463,5 +1504,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "b60cfc7660ef32b06183c7d389ac835cff0227ee01a1ca72c6fcef4547de14c0"
+  "catalogueRevision": "4fe427000d1c4b436840b08ab0440a8dfce6bb00d68fef1d32a7d5fa7ddf5af2"
 }
