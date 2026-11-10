@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-10T13:35:36.686Z",
-  "lastSuccessfulSync": "2026-11-10T13:35:36.686Z",
+  "checkedAt": "2026-11-10T13:59:42.197Z",
+  "lastSuccessfulSync": "2026-11-10T13:59:42.197Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42825913300",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/42829631533",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-10T13:36:04.549Z"
+    "testedAt": "2026-11-10T14:00:06.617Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
+      "checkedAt": "2026-11-10T13:59:42.197Z",
       "fileCount": 2097,
       "documents": [
         {
@@ -340,7 +340,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
+      "checkedAt": "2026-11-10T13:59:42.197Z",
       "fileCount": 2198,
       "documents": [
         {
@@ -593,7 +593,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
+      "checkedAt": "2026-11-10T13:59:42.197Z",
       "fileCount": 535,
       "documents": [
         {
@@ -766,7 +766,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
+      "checkedAt": "2026-11-10T13:59:42.197Z",
       "fileCount": 1316,
       "documents": [
         {
@@ -938,7 +938,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
+      "checkedAt": "2026-11-10T13:59:42.197Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1230,7 +1230,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
+      "checkedAt": "2026-11-10T13:59:42.197Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1261,7 +1261,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
+      "checkedAt": "2026-11-10T13:59:42.197Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1328,7 +1328,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
+      "checkedAt": "2026-11-10T13:59:42.197Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1371,51 +1371,62 @@
       "kind": "tool",
       "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana",
       "private": true,
-      "revision": "5b05196beb0dd2406cca27976f9daf51cfacefaf",
-      "commitDate": "2026-11-10T13:35:08Z",
-      "pushedAt": "2026-11-10T13:35:19Z",
-      "indexedRevision": "5b05196beb0dd2406cca27976f9daf51cfacefaf",
+      "revision": "a62dbeec2f6547a749b2e2647f8ecc57888e3a9b",
+      "commitDate": "2026-11-10T13:59:17Z",
+      "pushedAt": "2026-11-10T13:59:25Z",
+      "indexedRevision": "a62dbeec2f6547a749b2e2647f8ecc57888e3a9b",
       "importedRevision": null,
-      "previousRevision": "4da0642519eb67cadd44eacdf7922f91a807ae38",
+      "previousRevision": "5b05196beb0dd2406cca27976f9daf51cfacefaf",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-10T13:35:36.686Z",
-      "fileCount": 249,
+      "checkedAt": "2026-11-10T13:59:42.197Z",
+      "fileCount": 254,
       "documents": [
         {
           "path": "CLAUDE.md",
           "sha": "e056230d790faa72bb3d3078b7682a3b8feb534f",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/5b05196beb0dd2406cca27976f9daf51cfacefaf/CLAUDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/a62dbeec2f6547a749b2e2647f8ecc57888e3a9b/CLAUDE.md"
         },
         {
           "path": "README.md",
           "sha": "3f8893e48fb7ec067d4d043227c2d5074b9aba33",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/5b05196beb0dd2406cca27976f9daf51cfacefaf/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/a62dbeec2f6547a749b2e2647f8ecc57888e3a9b/README.md"
+        },
+        {
+          "path": "docs/ASSETS.md",
+          "sha": "9b6759477a11dde6b66dbb72ccf3898f9810b6a9",
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/a62dbeec2f6547a749b2e2647f8ecc57888e3a9b/docs/ASSETS.md"
         },
         {
           "path": "docs/CB33-PORT-MAP.md",
           "sha": "616e242a67e170e2d01bf1521f9edceb0305300d",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/5b05196beb0dd2406cca27976f9daf51cfacefaf/docs/CB33-PORT-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/a62dbeec2f6547a749b2e2647f8ecc57888e3a9b/docs/CB33-PORT-MAP.md"
         },
         {
           "path": "docs/COVERAGE.md",
           "sha": "7a2d503f18515bb35f4bbca137993a7ff36280ef",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/5b05196beb0dd2406cca27976f9daf51cfacefaf/docs/COVERAGE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/a62dbeec2f6547a749b2e2647f8ecc57888e3a9b/docs/COVERAGE.md"
         },
         {
           "path": "docs/SOLANA-MAPPING.md",
           "sha": "d4ff5c1988e3754e28a30e9df9596dc38585ad9c",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/5b05196beb0dd2406cca27976f9daf51cfacefaf/docs/SOLANA-MAPPING.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/a62dbeec2f6547a749b2e2647f8ecc57888e3a9b/docs/SOLANA-MAPPING.md"
         }
       ],
       "changes": {
         "initial": false,
-        "added": 0,
-        "changed": 1,
+        "added": 5,
+        "changed": 2,
         "removed": 0,
         "paths": [
-          "build/installer.nsh"
+          "docs/ASSETS.md",
+          "src/renderer/public/brand/protocols/hysteria2.svg",
+          "src/renderer/public/brand/protocols/openvpn.svg",
+          "src/renderer/public/brand/protocols/xray.svg",
+          "tests/unit/protocol-logos.test.ts",
+          "CHANGELOG.md",
+          "src/renderer/src/screens/DeployLocal.tsx"
         ]
       },
       "contract": {
@@ -1424,5 +1435,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "20103186176e172df4bd45809409eff8bbcf92b88c87f11a4ed4b96fd66dd242"
+  "catalogueRevision": "c44d43f8ae7cc65a7441f1775f79cdc694f528f5e622a6de830f0bec4d73d5db"
 }
