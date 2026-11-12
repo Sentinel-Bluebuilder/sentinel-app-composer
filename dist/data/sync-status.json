@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-12T00:54:59.346Z",
-  "lastSuccessfulSync": "2026-11-12T00:54:59.346Z",
+  "checkedAt": "2026-11-12T01:03:49.440Z",
+  "lastSuccessfulSync": "2026-11-12T01:03:49.440Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43130770627",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43131817068",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-12T00:55:30.524Z"
+    "testedAt": "2026-11-12T01:04:14.918Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 2097,
       "documents": [
         {
@@ -340,7 +340,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 2198,
       "documents": [
         {
@@ -593,7 +593,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 535,
       "documents": [
         {
@@ -766,7 +766,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 1316,
       "documents": [
         {
@@ -938,7 +938,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1230,7 +1230,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1261,7 +1261,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1328,7 +1328,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1376,11 +1376,11 @@
       "pushedAt": "2026-11-12T00:54:44Z",
       "indexedRevision": "2b356b19546a42911510a7e281bc7ef6a43505a1",
       "importedRevision": null,
-      "previousRevision": "6a698cbb850a936a1b37c341fdebae8be6d1b171",
+      "previousRevision": "2b356b19546a42911510a7e281bc7ef6a43505a1",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T00:54:59.346Z",
+      "checkedAt": "2026-11-12T01:03:49.440Z",
       "fileCount": 258,
       "documents": [
         {
@@ -1416,17 +1416,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
-        "changed": 5,
+        "added": 0,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "src/renderer/src/components/InfoTip.tsx",
-          "memory/handoff-node-manager-solana.md",
-          "src/renderer/src/components/HnsResolverControl.tsx",
-          "src/renderer/src/screens/DeployLocal.tsx",
-          "src/renderer/src/screens/DeploySsh.tsx",
-          "src/renderer/src/styles/index.css"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1434,5 +1427,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "eefce89bacb3ae369b880fe7aabfd2737c2648b9308426bb0a97f54e61f84e78"
+  "catalogueRevision": "58edd277488a4febc53fa246ff82f676cfff8e5348c6d72cc03304a7a21db415"
 }
