@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-12T15:21:09.299Z",
-  "lastSuccessfulSync": "2026-11-12T15:21:09.299Z",
+  "checkedAt": "2026-11-12T15:22:30.851Z",
+  "lastSuccessfulSync": "2026-11-12T15:22:30.851Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43246608377",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43247069011",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-12T15:21:36.054Z"
+    "testedAt": "2026-11-12T15:22:58.547Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 2097,
       "documents": [
         {
@@ -340,7 +340,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 2198,
       "documents": [
         {
@@ -593,7 +593,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 535,
       "documents": [
         {
@@ -762,11 +762,11 @@
       "pushedAt": "2026-11-12T15:19:40Z",
       "indexedRevision": "c4d6906c4198b1aadf557e4815b4a1ff889fed2b",
       "importedRevision": "c4d6906c4198b1aadf557e4815b4a1ff889fed2b",
-      "previousRevision": "5d845319af82ac35ada8928416f0be3f2782dc8d",
+      "previousRevision": "c4d6906c4198b1aadf557e4815b4a1ff889fed2b",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 1381,
       "documents": [
         {
@@ -913,14 +913,9 @@
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 4,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "docs/UI-CONTROLS.md",
-          "src/renderer/src/components/ConnectSheet.tsx",
-          "src/renderer/src/screens/Onboarding.tsx",
-          "src/renderer/src/screens/Settings.tsx"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -943,7 +938,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1235,7 +1230,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1266,7 +1261,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1333,7 +1328,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1376,68 +1371,62 @@
       "kind": "tool",
       "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana",
       "private": true,
-      "revision": "6c42dd6c6a89bc4daffe4c3036772ab06575ddea",
-      "commitDate": "2026-11-12T15:19:31Z",
-      "pushedAt": "2026-11-12T15:19:35Z",
-      "indexedRevision": "6c42dd6c6a89bc4daffe4c3036772ab06575ddea",
+      "revision": "590f5cb24231126d4e4c195696d3a66319fb26f9",
+      "commitDate": "2026-11-12T15:22:38Z",
+      "pushedAt": "2026-11-12T15:22:41Z",
+      "indexedRevision": "590f5cb24231126d4e4c195696d3a66319fb26f9",
       "importedRevision": null,
-      "previousRevision": "202bb417d232db05d70b9903f7fb3eacef2549fa",
+      "previousRevision": "6c42dd6c6a89bc4daffe4c3036772ab06575ddea",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-12T15:21:09.299Z",
+      "checkedAt": "2026-11-12T15:22:30.851Z",
       "fileCount": 273,
       "documents": [
         {
           "path": "CLAUDE.md",
           "sha": "e056230d790faa72bb3d3078b7682a3b8feb534f",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/6c42dd6c6a89bc4daffe4c3036772ab06575ddea/CLAUDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/590f5cb24231126d4e4c195696d3a66319fb26f9/CLAUDE.md"
         },
         {
           "path": "README.md",
           "sha": "3f8893e48fb7ec067d4d043227c2d5074b9aba33",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/6c42dd6c6a89bc4daffe4c3036772ab06575ddea/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/590f5cb24231126d4e4c195696d3a66319fb26f9/README.md"
         },
         {
           "path": "docs/ASSETS.md",
           "sha": "df800b0542b0907afcce6610e845371cac836e3a",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/6c42dd6c6a89bc4daffe4c3036772ab06575ddea/docs/ASSETS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/590f5cb24231126d4e4c195696d3a66319fb26f9/docs/ASSETS.md"
         },
         {
           "path": "docs/CB33-PORT-MAP.md",
           "sha": "616e242a67e170e2d01bf1521f9edceb0305300d",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/6c42dd6c6a89bc4daffe4c3036772ab06575ddea/docs/CB33-PORT-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/590f5cb24231126d4e4c195696d3a66319fb26f9/docs/CB33-PORT-MAP.md"
         },
         {
           "path": "docs/COVERAGE.md",
           "sha": "7a2d503f18515bb35f4bbca137993a7ff36280ef",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/6c42dd6c6a89bc4daffe4c3036772ab06575ddea/docs/COVERAGE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/590f5cb24231126d4e4c195696d3a66319fb26f9/docs/COVERAGE.md"
         },
         {
           "path": "docs/SOLANA-MAPPING.md",
           "sha": "d4ff5c1988e3754e28a30e9df9596dc38585ad9c",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/6c42dd6c6a89bc4daffe4c3036772ab06575ddea/docs/SOLANA-MAPPING.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/590f5cb24231126d4e4c195696d3a66319fb26f9/docs/SOLANA-MAPPING.md"
         },
         {
           "path": "docs/UPSTREAM-HNSD.md",
-          "sha": "a71891d01c78b953b7cd6354a826201f5772eba2",
-          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/6c42dd6c6a89bc4daffe4c3036772ab06575ddea/docs/UPSTREAM-HNSD.md"
+          "sha": "595362542898679227c5ae7279cbd3b1b6a5cc58",
+          "url": "https://github.com/Sentinel-Bluebuilder/sentinel-node-manager-solana/blob/590f5cb24231126d4e4c195696d3a66319fb26f9/docs/UPSTREAM-HNSD.md"
         }
       ],
       "changes": {
         "initial": false,
         "added": 0,
-        "changed": 8,
+        "changed": 2,
         "removed": 0,
         "paths": [
-          "CHANGELOG.md",
-          "docker/dvpnd-hns.Dockerfile",
-          "docker/hnsd-supervisor.sh",
-          "src/main/services/node-manager.ts",
-          "src/main/services/prebuilt-image.ts",
-          "src/renderer/src/components/HnsResolverControl.tsx",
-          "tests/renderer/hns-state.test.tsx",
-          "tests/unit/prebuilt-image.test.ts"
+          "docs/UPSTREAM-HNSD.md",
+          "memory/handoff-node-manager-solana.md"
         ]
       },
       "contract": {
@@ -1446,5 +1435,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "c885af0a63e32d7782343eb545289524e3a7433c3eef6131a9a963723cda4ebf"
+  "catalogueRevision": "a3208c8496069d96e4700dc9c1a57a4bd7c4881a534884b75f0cd699fc6f6ae9"
 }
