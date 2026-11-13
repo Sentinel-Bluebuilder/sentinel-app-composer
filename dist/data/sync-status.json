@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-13T09:17:08.574Z",
-  "lastSuccessfulSync": "2026-11-13T09:17:08.574Z",
+  "checkedAt": "2026-11-13T11:09:09.499Z",
+  "lastSuccessfulSync": "2026-11-13T11:09:09.499Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43399853247",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43414702241",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-13T09:17:32.006Z"
+    "testedAt": "2026-11-13T11:09:40.575Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 2097,
       "documents": [
         {
@@ -340,7 +340,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 2198,
       "documents": [
         {
@@ -593,7 +593,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 535,
       "documents": [
         {
@@ -762,11 +762,11 @@
       "pushedAt": "2026-11-13T09:15:47Z",
       "indexedRevision": "75e8d5ccb49c1c3819b902248cc68e231673726b",
       "importedRevision": "75e8d5ccb49c1c3819b902248cc68e231673726b",
-      "previousRevision": "a467754cdd127bc836da4a4c6710a2ccb01e9703",
+      "previousRevision": "75e8d5ccb49c1c3819b902248cc68e231673726b",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 1443,
       "documents": [
         {
@@ -927,25 +927,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 4,
-        "changed": 10,
+        "added": 0,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "src/shared/kill-switch-start.ts",
-          "tests/unit/blocked-at-start-view.test.ts",
-          "tests/unit/kill-switch-start.test.ts",
-          "tests/unit/switch-reconnecting.test.ts",
-          "docs/UI-CONTROLS.md",
-          "memory/handoff-devnet-dvpn-android.md",
-          "src/core/session/state.ts",
-          "src/main/index.ts",
-          "src/main/services/connection.ts",
-          "src/renderer/src/App.tsx",
-          "src/renderer/src/screens/KillSwitch.tsx",
-          "src/renderer/src/screens/Settings.tsx",
-          "tests/unit/connect-held-block.test.ts",
-          "tests/unit/switch-not-admitted.test.ts"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -968,7 +953,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1260,7 +1245,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1291,7 +1276,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1358,7 +1343,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1410,7 +1395,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-13T09:17:08.574Z",
+      "checkedAt": "2026-11-13T11:09:09.499Z",
       "fileCount": 273,
       "documents": [
         {
@@ -1462,5 +1447,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "b75e50317022bffc2844c15a7e157c56e30ec84e7799454228d9e90eba96b0f8"
+  "catalogueRevision": "389949cb63565cd39c10aeb972cb996a9041ca95e897a4346e391e8a35e2904b"
 }
