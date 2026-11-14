@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-14T08:37:04.452Z",
-  "lastSuccessfulSync": "2026-11-14T08:37:04.452Z",
+  "checkedAt": "2026-11-14T08:40:59.573Z",
+  "lastSuccessfulSync": "2026-11-14T08:40:59.573Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43576658283",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43576961935",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-14T08:37:35.809Z"
+    "testedAt": "2026-11-14T08:41:34.548Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 2097,
       "documents": [
         {
@@ -340,7 +340,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 2198,
       "documents": [
         {
@@ -593,7 +593,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 669,
       "documents": [
         {
@@ -762,207 +762,201 @@
       "os": "android",
       "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android",
       "private": true,
-      "revision": "2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6",
-      "commitDate": "2026-11-14T08:36:41Z",
-      "pushedAt": "2026-11-14T08:36:44Z",
-      "indexedRevision": "2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6",
-      "importedRevision": "2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6",
-      "previousRevision": "2b68885c306f8bda531de33535de60b13a66a8e5",
+      "revision": "1321d9b5a2d9f7df6301ea38354be349e8dd326d",
+      "commitDate": "2026-11-14T08:40:35Z",
+      "pushedAt": "2026-11-14T08:40:41Z",
+      "indexedRevision": "1321d9b5a2d9f7df6301ea38354be349e8dd326d",
+      "importedRevision": "1321d9b5a2d9f7df6301ea38354be349e8dd326d",
+      "previousRevision": "2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 1495,
       "documents": [
         {
           "path": "CLAUDE.md",
           "sha": "075bb173c0d835721c2643a233d8fef5badf5251",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/CLAUDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/CLAUDE.md"
         },
         {
           "path": "README.md",
           "sha": "b8cc62e5b71b9b9340fdb6e5d6fa4cbfd4cccb70",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/README.md"
         },
         {
           "path": "docs/ANDROID-PARITY.md",
           "sha": "1e2472daa4a7e1caca8d055baedee488e617a6f1",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/ANDROID-PARITY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/ANDROID-PARITY.md"
         },
         {
           "path": "docs/ANDROID-PLAN.md",
           "sha": "5e9fa4f588c6cd3936c48ed2a9067667f11080bf",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/ANDROID-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/ANDROID-PLAN.md"
         },
         {
           "path": "docs/ANDROID-PORT.md",
           "sha": "553c2459fc18346f55ccaa1fdb4b479143a72fff",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/ANDROID-PORT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/ANDROID-PORT.md"
         },
         {
           "path": "docs/ARCHITECTURE.md",
           "sha": "509798e14418f4733c6dc7e5b4cf5c08a3bafc4f",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/ARCHITECTURE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/ARCHITECTURE.md"
         },
         {
           "path": "docs/ASSETS.md",
           "sha": "3ff92a87a6c24746fbf1654768af6e3c75e565e7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/ASSETS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/ASSETS.md"
         },
         {
           "path": "docs/BOX-RIG.md",
           "sha": "3da52156116cf0fa82d6ecab7e2018b03d9b7dd3",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/BOX-RIG.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/BOX-RIG.md"
         },
         {
           "path": "docs/CLI.md",
           "sha": "0410cd3824da17eddd1893e437494a1e5fe1d4b7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/CLI.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/CLI.md"
         },
         {
           "path": "docs/DESIGN.md",
           "sha": "021d1d7c5bdb21c72f0ee4d0a67250bb895e378d",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/DESIGN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/DESIGN.md"
         },
         {
           "path": "docs/ERROR-INVENTORY.md",
           "sha": "f5477f47d9c68c1c914619521c7e70383338f9ae",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/ERROR-INVENTORY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/ERROR-INVENTORY.md"
         },
         {
           "path": "docs/ERROR-STANDARDS.md",
           "sha": "3fadad4af44c6a6821c20689dcef23ab5be72e1b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/ERROR-STANDARDS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/ERROR-STANDARDS.md"
         },
         {
           "path": "docs/FEATURE-PLAN.md",
           "sha": "2047016469b22b8d4b5437f2f75bf075ac3868d1",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/FEATURE-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/FEATURE-PLAN.md"
         },
         {
           "path": "docs/FINAL-PASS-ANDROID.md",
           "sha": "69a1948f602e4254992e262637731c2a72c77833",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/FINAL-PASS-ANDROID.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/FINAL-PASS-ANDROID.md"
         },
         {
           "path": "docs/INSTALLER.md",
           "sha": "a2cc3fb24d13d2be3f4445477f029ee28c57b0ff",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/INSTALLER.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/INSTALLER.md"
         },
         {
           "path": "docs/MANIFESTO.md",
           "sha": "d4f0d7e2232ff56ca731ec6dcdcd12059f66ec3b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/MANIFESTO.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/MANIFESTO.md"
         },
         {
           "path": "docs/NETWORK-SAFETY.md",
           "sha": "41d5db71ef904b01ae44f9c1a842228b204fd973",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/NETWORK-SAFETY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/NETWORK-SAFETY.md"
         },
         {
           "path": "docs/PROTOCOL-MATRIX.md",
           "sha": "ea320d6ed77ea709033c7b192c8d729e68617dee",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/PROTOCOL-MATRIX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/PROTOCOL-MATRIX.md"
         },
         {
           "path": "docs/RELEASE-TEST-PLAN.md",
           "sha": "381a1d460e4be31540485c7c6f41f267360e4425",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/RELEASE-TEST-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/RELEASE-TEST-PLAN.md"
         },
         {
           "path": "docs/REUSE-MAP.md",
           "sha": "1cd83e4aa5e17d96b92d1321b910a6c232333fb7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/REUSE-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/REUSE-MAP.md"
         },
         {
           "path": "docs/SETTINGS-MAP.md",
           "sha": "8c58a6907889c20cc84cd5947fd81238002d379f",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/SETTINGS-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/SETTINGS-MAP.md"
         },
         {
           "path": "docs/STACK-DECISION.md",
           "sha": "bb79b7a46b9b9f094b68a63ae158b2a77a478067",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/STACK-DECISION.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/STACK-DECISION.md"
         },
         {
           "path": "docs/STANDARDS-TRACE.md",
           "sha": "90a8898951fc3f9b4ebcc488474f8987130a317f",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/STANDARDS-TRACE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/STANDARDS-TRACE.md"
         },
         {
           "path": "docs/TEST-PLAN.md",
           "sha": "2144018c2362bc0ece23268f3cabf79ef3a6eb76",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/TEST-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/TEST-PLAN.md"
         },
         {
           "path": "docs/UI-CONTROLS.md",
           "sha": "d342743f0318041f5f65b747b67536dd64b0c537",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/UI-CONTROLS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/UI-CONTROLS.md"
         },
         {
           "path": "docs/UI-STANDARDS-RESEARCH.md",
           "sha": "3427b96ed2eaf02bbfc4545deabc47acf9afcbf1",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/UI-STANDARDS-RESEARCH.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/UI-STANDARDS-RESEARCH.md"
         },
         {
           "path": "docs/UPSTREAM-GAPS.md",
           "sha": "430137008a2271ba7b08bb52c6b11981edaafc0e",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/UPSTREAM-GAPS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/UPSTREAM-GAPS.md"
         },
         {
           "path": "docs/evidence/INDEX.md",
           "sha": "ff701ced71ab65a5b0358a1462cbd62226fa1895",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/evidence/INDEX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/evidence/INDEX.md"
         },
         {
           "path": "docs/evidence/android/fresh-install-starting/README.md",
           "sha": "c687fab592d02e3c0fa1416bdfd5c0e3270dc572",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/evidence/android/fresh-install-starting/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/evidence/android/fresh-install-starting/README.md"
         },
         {
           "path": "docs/evidence/android/rc1/engine613/README.md",
           "sha": "6a4ae3aed4ddb1313ade4deebbb164a95cbeb1c2",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/evidence/android/rc1/engine613/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/evidence/android/rc1/engine613/README.md"
         },
         {
           "path": "docs/evidence/android/rc1/engine614/README.md",
           "sha": "870a98f1ea896d643d6e0becafe7f40da8ffa603",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/evidence/android/rc1/engine614/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/evidence/android/rc1/engine614/README.md"
         },
         {
           "path": "docs/evidence/android/rc1/ksm/README.md",
           "sha": "504c34279cc859d62edce778cc654830b9d78cb3",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/evidence/android/rc1/ksm/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/evidence/android/rc1/ksm/README.md"
         },
         {
           "path": "docs/evidence/android/rc2-vc93/README.md",
           "sha": "f1a3b0cdf912e2b853e693d3b81cf3b483215976",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/evidence/android/rc2-vc93/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/evidence/android/rc2-vc93/README.md"
         },
         {
           "path": "docs/evidence/android/rc2/README.md",
           "sha": "127299f6f205304c9e2992a34806927612dd4702",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/evidence/android/rc2/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/evidence/android/rc2/README.md"
         },
         {
           "path": "docs/evidence/android/upgrade-014-to-rc2/README.md",
           "sha": "15b2682903d35ef0b54190e8fa0e244402f20b5c",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/2584cc0f7557b3ce0063d14d4c8c46b9462ad1c6/docs/evidence/android/upgrade-014-to-rc2/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-android/blob/1321d9b5a2d9f7df6301ea38354be349e8dd326d/docs/evidence/android/upgrade-014-to-rc2/README.md"
         }
       ],
       "changes": {
         "initial": false,
-        "added": 6,
+        "added": 0,
         "changed": 1,
         "removed": 0,
         "paths": [
-          "docs/evidence/android/fresh-install-starting/README.md",
-          "docs/evidence/android/fresh-install-starting/fresh-vc93-1.png",
-          "docs/evidence/android/fresh-install-starting/fresh-vc93-slow.png",
-          "docs/evidence/android/fresh-install-starting/fresh.sh",
-          "docs/evidence/android/fresh-install-starting/logcat-vc93-slow-ddv.txt",
-          "docs/evidence/android/fresh-install-starting/vc93-declined-starting.png",
-          "memory/handoff-devnet-dvpn-android.md"
+          "android/app/build.gradle.kts"
         ]
       },
       "contract": {
@@ -986,7 +980,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1278,7 +1272,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1309,7 +1303,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1376,7 +1370,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1428,7 +1422,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T08:37:04.452Z",
+      "checkedAt": "2026-11-14T08:40:59.573Z",
       "fileCount": 273,
       "documents": [
         {
@@ -1480,5 +1474,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "1aad5a2efbca34a4558d31c807c610864383fe5eea6a2b5239519e3be6af908d"
+  "catalogueRevision": "870e3c76ad1a9be6b5518d9798f53411d8cbbe5a540ee1a1ec3789c995d5ae75"
 }
