@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-14T13:33:44.432Z",
-  "lastSuccessfulSync": "2026-11-14T13:33:44.432Z",
+  "checkedAt": "2026-11-14T13:35:01.706Z",
+  "lastSuccessfulSync": "2026-11-14T13:35:01.706Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43600371764",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43600380041",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-14T13:34:12.836Z"
+    "testedAt": "2026-11-14T13:35:24.732Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
+      "checkedAt": "2026-11-14T13:35:01.706Z",
       "fileCount": 2097,
       "documents": [
         {
@@ -340,7 +340,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
+      "checkedAt": "2026-11-14T13:35:01.706Z",
       "fileCount": 2198,
       "documents": [
         {
@@ -584,170 +584,176 @@
       "os": "macos",
       "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac",
       "private": true,
-      "revision": "18a5c04cb466d65175ab1a8872b4261719c79385",
-      "commitDate": "2026-11-14T11:48:56Z",
-      "pushedAt": "2026-11-14T11:49:00Z",
-      "indexedRevision": "18a5c04cb466d65175ab1a8872b4261719c79385",
-      "importedRevision": "18a5c04cb466d65175ab1a8872b4261719c79385",
+      "revision": "b3004e84d4204fc94846969437c1c9327c372555",
+      "commitDate": "2026-11-14T13:34:16Z",
+      "pushedAt": "2026-11-14T13:34:20Z",
+      "indexedRevision": "b3004e84d4204fc94846969437c1c9327c372555",
+      "importedRevision": "b3004e84d4204fc94846969437c1c9327c372555",
       "previousRevision": "18a5c04cb466d65175ab1a8872b4261719c79385",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
-      "fileCount": 674,
+      "checkedAt": "2026-11-14T13:35:01.706Z",
+      "fileCount": 675,
       "documents": [
         {
           "path": "CLAUDE.md",
           "sha": "f7f9e8564abb28fbd9bcc58fbd4b51b033d72089",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/CLAUDE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/CLAUDE.md"
         },
         {
           "path": "README.md",
           "sha": "33f2dc1c818aa4040444eac6a09f378db61f0526",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/README.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/README.md"
         },
         {
           "path": "docs/ARCHITECTURE.md",
           "sha": "2b471d43154ea041931418466afdac71deec49c1",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/ARCHITECTURE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/ARCHITECTURE.md"
         },
         {
           "path": "docs/ASSETS.md",
           "sha": "3ff92a87a6c24746fbf1654768af6e3c75e565e7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/ASSETS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/ASSETS.md"
         },
         {
           "path": "docs/BOX-RIG.md",
           "sha": "403562917c8947ce83f529baf981a10df2a50c10",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/BOX-RIG.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/BOX-RIG.md"
         },
         {
           "path": "docs/CLI.md",
           "sha": "0410cd3824da17eddd1893e437494a1e5fe1d4b7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/CLI.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/CLI.md"
         },
         {
           "path": "docs/DESIGN.md",
           "sha": "640cbb3ffdc75710b21ac486bae69d6f35b24cf3",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/DESIGN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/DESIGN.md"
         },
         {
           "path": "docs/ERROR-INVENTORY.md",
           "sha": "369c27c998da38d6fcd9a2baf9a54aff429d2a42",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/ERROR-INVENTORY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/ERROR-INVENTORY.md"
         },
         {
           "path": "docs/ERROR-STANDARDS.md",
           "sha": "2551d9e1e34db38dab32d515cca890413838568e",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/ERROR-STANDARDS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/ERROR-STANDARDS.md"
         },
         {
           "path": "docs/FEATURE-PLAN.md",
           "sha": "f92442d656a195f532519338220ff87f34d06bd9",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/FEATURE-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/FEATURE-PLAN.md"
         },
         {
           "path": "docs/FINAL-PASS-MAC.md",
           "sha": "f9f0b257a32d1ba6aed35f10d225ae21a7b37eb2",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/FINAL-PASS-MAC.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/FINAL-PASS-MAC.md"
         },
         {
           "path": "docs/INSTALLER.md",
           "sha": "ad27ad620f37878ea0e32d18f6b35d56711e58ba",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/INSTALLER.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/INSTALLER.md"
         },
         {
           "path": "docs/LINUX-PARITY.md",
           "sha": "17995fb9c078e5e74adbe6f5ed4818ad65f0ba11",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/LINUX-PARITY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/LINUX-PARITY.md"
         },
         {
           "path": "docs/LINUX-PORT.md",
           "sha": "4bfda57012aacf8316039b65c795a6c937de13d2",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/LINUX-PORT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/LINUX-PORT.md"
         },
         {
           "path": "docs/MAC-PARITY.md",
           "sha": "9ad58198c40c610b52ced9b5dd414c2f21639957",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/MAC-PARITY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/MAC-PARITY.md"
         },
         {
           "path": "docs/MAC-PORT.md",
           "sha": "8cb90497fcbe21116406a5ef78106376e9099372",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/MAC-PORT.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/MAC-PORT.md"
         },
         {
           "path": "docs/MANIFESTO.md",
           "sha": "d4f0d7e2232ff56ca731ec6dcdcd12059f66ec3b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/MANIFESTO.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/MANIFESTO.md"
         },
         {
           "path": "docs/NETWORK-SAFETY.md",
           "sha": "e66872fb95c64c6fe8f39de30863d74d9a06094a",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/NETWORK-SAFETY.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/NETWORK-SAFETY.md"
         },
         {
           "path": "docs/PORT-2026-11-12-MAC.md",
           "sha": "0164eea3b2aaf58c8e355073705f085900029ef3",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/PORT-2026-11-12-MAC.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/PORT-2026-11-12-MAC.md"
         },
         {
           "path": "docs/RELEASE-TEST-PLAN.md",
           "sha": "6b5de2fce03f3d233a98113cd076b7d1a0da62f7",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/RELEASE-TEST-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/RELEASE-TEST-PLAN.md"
         },
         {
           "path": "docs/REUSE-MAP.md",
           "sha": "9497de952a7f87d334da897583c35fe38d65822e",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/REUSE-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/REUSE-MAP.md"
         },
         {
           "path": "docs/SETTINGS-MAP.md",
           "sha": "5d04c184f25bf5ebc8e82d1a9ed89c9c6b416657",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/SETTINGS-MAP.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/SETTINGS-MAP.md"
         },
         {
           "path": "docs/STACK-DECISION.md",
           "sha": "72bdfdcf00c8d6bdcfab8d194a4874318a0d1c7f",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/STACK-DECISION.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/STACK-DECISION.md"
         },
         {
           "path": "docs/STANDARDS-TRACE.md",
           "sha": "d9938a5f41a29a35961e2d57e2519540f4939259",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/STANDARDS-TRACE.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/STANDARDS-TRACE.md"
         },
         {
           "path": "docs/TEST-PLAN.md",
           "sha": "34f0d2fb66519bbfeaaf64eb166030768370d0e0",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/TEST-PLAN.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/TEST-PLAN.md"
         },
         {
           "path": "docs/UI-CONTROLS.md",
           "sha": "b30a4bc576f0a2880b134108718e30643261a798",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/UI-CONTROLS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/UI-CONTROLS.md"
         },
         {
           "path": "docs/UI-STANDARDS-RESEARCH.md",
           "sha": "6f660371d56afa1000da55ba38a4efa7d260ced1",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/UI-STANDARDS-RESEARCH.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/UI-STANDARDS-RESEARCH.md"
         },
         {
           "path": "docs/UPSTREAM-GAPS.md",
           "sha": "59777eae2667e00e8ae94ffaf4ed3bb018974d5b",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/UPSTREAM-GAPS.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/UPSTREAM-GAPS.md"
         },
         {
           "path": "docs/evidence/INDEX.md",
           "sha": "b35506f6f9ec77317ec4deeed80d11554e5a1c28",
-          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/18a5c04cb466d65175ab1a8872b4261719c79385/docs/evidence/INDEX.md"
+          "url": "https://github.com/Sentinel-Bluebuilder/devnet-dvpn-mac/blob/b3004e84d4204fc94846969437c1c9327c372555/docs/evidence/INDEX.md"
         }
       ],
       "changes": {
         "initial": false,
-        "added": 0,
-        "changed": 0,
+        "added": 1,
+        "changed": 4,
         "removed": 0,
-        "paths": []
+        "paths": [
+          "tests/unit/service-off-banner.test.ts",
+          "memory/handoff-devnet-dvpn-mac.md",
+          "src/core/session/setup-gate.ts",
+          "src/renderer/src/App.tsx",
+          "tests/unit/install-service-button.test.ts"
+        ]
       },
       "contract": {
         "status": "not-adopted"
@@ -771,7 +777,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
+      "checkedAt": "2026-11-14T13:35:01.706Z",
       "fileCount": 1517,
       "documents": [
         {
@@ -989,7 +995,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
+      "checkedAt": "2026-11-14T13:35:01.706Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1281,7 +1287,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
+      "checkedAt": "2026-11-14T13:35:01.706Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1312,7 +1318,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
+      "checkedAt": "2026-11-14T13:35:01.706Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1379,7 +1385,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
+      "checkedAt": "2026-11-14T13:35:01.706Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1431,7 +1437,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-14T13:33:44.432Z",
+      "checkedAt": "2026-11-14T13:35:01.706Z",
       "fileCount": 273,
       "documents": [
         {
@@ -1483,5 +1489,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "49f90fbeaec7b6e86ea2760c68c59465072056fccc876a703e21550d487398b6"
+  "catalogueRevision": "4616ec4fcdca905b4aec2fe408d9538183817759a9ed5a01db9b6fa930134b8d"
 }
