@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-15T16:14:15.654Z",
-  "lastSuccessfulSync": "2026-11-15T16:14:15.654Z",
+  "checkedAt": "2026-11-15T17:14:35.757Z",
+  "lastSuccessfulSync": "2026-11-15T17:14:35.757Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43734324564",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43739973253",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-15T16:14:52.370Z"
+    "testedAt": "2026-11-15T17:15:13.093Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 2288,
       "documents": [
         {
@@ -345,7 +345,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 2335,
       "documents": [
         {
@@ -608,7 +608,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 675,
       "documents": [
         {
@@ -782,11 +782,11 @@
       "pushedAt": "2026-11-15T16:13:59Z",
       "indexedRevision": "e283e14afb916e366d739b973688efe4328842b4",
       "importedRevision": "e283e14afb916e366d739b973688efe4328842b4",
-      "previousRevision": "71232088b93ea623bac216693bca4072a8bb17c8",
+      "previousRevision": "e283e14afb916e366d739b973688efe4328842b4",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 1524,
       "documents": [
         {
@@ -982,15 +982,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 1,
-        "changed": 3,
+        "added": 0,
+        "changed": 0,
         "removed": 0,
-        "paths": [
-          "tests/unit/cli-confirm.test.ts",
-          "docs/AGENT-COMMANDS.md",
-          "src/cli/agent-cmd.ts",
-          "tests/unit/agent-cmd.test.ts"
-        ]
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1013,7 +1008,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1305,7 +1300,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1336,7 +1331,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1403,7 +1398,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1455,7 +1450,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-15T16:14:15.654Z",
+      "checkedAt": "2026-11-15T17:14:35.757Z",
       "fileCount": 273,
       "documents": [
         {
@@ -1507,5 +1502,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "c99f50787d799b753503818b2ed935aff7806df5d2884e990055e77bfc8dec04"
+  "catalogueRevision": "3815453b9a8eda43cfabc3feae90d8b352d390e312bc86ad992cdd733a1d76f8"
 }
