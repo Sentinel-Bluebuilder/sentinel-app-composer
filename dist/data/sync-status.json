@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checkedAt": "2026-11-16T01:25:43.882Z",
-  "lastSuccessfulSync": "2026-11-16T01:25:43.882Z",
+  "checkedAt": "2026-11-16T02:13:09.859Z",
+  "lastSuccessfulSync": "2026-11-16T02:13:09.859Z",
   "status": "synced",
   "intervalMinutes": 30,
   "builderUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync",
   "workflowUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/workflows/sync.yml",
-  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43786204620",
+  "runUrl": "https://github.com/Sentinel-Bluebuilder/sentinel-builder-sync/actions/runs/43790793893",
   "composition": {
     "status": "passed",
     "platforms": [
@@ -16,7 +16,7 @@
       "android-device"
     ],
     "scope": "Composition and source-tree integrity",
-    "testedAt": "2026-11-16T01:26:12.648Z"
+    "testedAt": "2026-11-16T02:13:39.599Z"
   },
   "sources": [
     {
@@ -37,7 +37,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 2288,
       "documents": [
         {
@@ -345,7 +345,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 2335,
       "documents": [
         {
@@ -604,11 +604,11 @@
       "pushedAt": "2026-11-16T00:55:12Z",
       "indexedRevision": "b90a23c275828f5cbf4b9388515aafbd439bad1c",
       "importedRevision": "b90a23c275828f5cbf4b9388515aafbd439bad1c",
-      "previousRevision": "27d11fd8401bcd60c71693ddf899b03f266e0ff4",
+      "previousRevision": "b90a23c275828f5cbf4b9388515aafbd439bad1c",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 789,
       "documents": [
         {
@@ -764,51 +764,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 116,
-        "changed": 136,
-        "removed": 2,
-        "paths": [
-          "CHANGELOG.md",
-          "CREDITS.md",
-          "PLATFORM-EXCEPTIONS.txt",
-          "docs/AGENT-COMMANDS.md",
-          "scripts/i18n-banned.d.mts",
-          "scripts/i18n-banned.mjs",
-          "scripts/i18n-extract.d.mts",
-          "scripts/i18n-extract.mjs",
-          "scripts/i18n-terms.d.mts",
-          "scripts/i18n-terms.mjs",
-          "scripts/parity.mjs",
-          "src/cli/agent-cmd.ts",
-          "src/core/app/help-copy.ts",
-          "src/core/app/notify-rules.ts",
-          "src/core/app/tip-place.ts",
-          "src/core/daemon/service-state.ts",
-          "src/core/nodes/census.ts",
-          "src/core/nodetest/connect-codes.ts",
-          "src/core/nodetest/fixtures.ts",
-          "src/core/nodetest/plan.ts",
-          "src/core/nodetest/runner.ts",
-          "src/core/nodetest/stages.ts",
-          "src/core/nodetest/steady.ts",
-          "src/core/nodetest/text.ts",
-          "src/core/quality/pinned-origin.ts",
-          "src/core/quality/speed-origin.ts",
-          "src/core/quality/steady-download.ts",
-          "src/core/session/connect-stage.ts",
-          "src/core/session/status-card.ts",
-          "src/main/services/agent-marker.ts",
-          "src/renderer/src/assets/brand/sentinel-shield.svg",
-          "src/renderer/src/components/BuiltOnSentinel.tsx",
-          "src/renderer/src/components/Gallery.tsx",
-          "src/renderer/src/components/Icon.tsx",
-          "src/renderer/src/components/LanguageSelector.tsx",
-          "src/renderer/src/components/RestoreNetworkButton.tsx",
-          "src/renderer/src/components/SentinelMark.tsx",
-          "src/renderer/src/components/SessionCard.tsx",
-          "src/renderer/src/components/SidebarFooter.tsx",
-          "src/renderer/src/components/Term.tsx"
-        ]
+        "added": 0,
+        "changed": 0,
+        "removed": 0,
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -828,11 +787,11 @@
       "pushedAt": "2026-11-16T01:25:29Z",
       "indexedRevision": "eeb71e064f573fa383489bcae19e5ecd8963293e",
       "importedRevision": "eeb71e064f573fa383489bcae19e5ecd8963293e",
-      "previousRevision": "5d5dc618d0474933bd458fd8d2cdf5b08f984bc5",
+      "previousRevision": "eeb71e064f573fa383489bcae19e5ecd8963293e",
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "imported",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 1661,
       "documents": [
         {
@@ -1043,51 +1002,10 @@
       ],
       "changes": {
         "initial": false,
-        "added": 138,
-        "changed": 112,
-        "removed": 2,
-        "paths": [
-          "PLATFORM-EXCEPTIONS.txt",
-          "docs/i18n/RULES-CODE.md",
-          "docs/i18n/RULES.md",
-          "docs/i18n/TERMS.md",
-          "docs/i18n/terms/am.json",
-          "docs/i18n/terms/ar.json",
-          "docs/i18n/terms/az.json",
-          "docs/i18n/terms/bn.json",
-          "docs/i18n/terms/ckb.json",
-          "docs/i18n/terms/de.json",
-          "docs/i18n/terms/es.json",
-          "docs/i18n/terms/fa.json",
-          "docs/i18n/terms/fr.json",
-          "docs/i18n/terms/hi.json",
-          "docs/i18n/terms/id.json",
-          "docs/i18n/terms/it.json",
-          "docs/i18n/terms/ja.json",
-          "docs/i18n/terms/ko.json",
-          "docs/i18n/terms/nl.json",
-          "docs/i18n/terms/pl.json",
-          "docs/i18n/terms/ps.json",
-          "docs/i18n/terms/pt.json",
-          "docs/i18n/terms/ro.json",
-          "docs/i18n/terms/ru.json",
-          "docs/i18n/terms/sw.json",
-          "docs/i18n/terms/tr.json",
-          "docs/i18n/terms/uk.json",
-          "docs/i18n/terms/ur.json",
-          "docs/i18n/terms/uz.json",
-          "docs/i18n/terms/vi.json",
-          "docs/i18n/terms/zh-Hans.json",
-          "docs/i18n/terms/zh-Hant.json",
-          "scripts/i18n-banned.d.mts",
-          "scripts/i18n-banned.mjs",
-          "scripts/i18n-extract.d.mts",
-          "scripts/i18n-extract.mjs",
-          "scripts/i18n-terms.d.mts",
-          "scripts/i18n-terms.mjs",
-          "scripts/parity.mjs",
-          "scripts/ui-audit.js"
-        ]
+        "added": 0,
+        "changed": 0,
+        "removed": 0,
+        "paths": []
       },
       "contract": {
         "status": "not-adopted"
@@ -1110,7 +1028,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 435,
       "documents": [
         {
@@ -1402,7 +1320,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 859,
       "documents": [],
       "changes": {
@@ -1433,7 +1351,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 274,
       "documents": [
         {
@@ -1500,7 +1418,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 73,
       "documents": [
         {
@@ -1552,7 +1470,7 @@
       "reviewedRevision": null,
       "reviewStatus": "review-required",
       "syncStatus": "indexed",
-      "checkedAt": "2026-11-16T01:25:43.882Z",
+      "checkedAt": "2026-11-16T02:13:09.859Z",
       "fileCount": 273,
       "documents": [
         {
@@ -1604,5 +1522,5 @@
     }
   ],
   "failures": [],
-  "catalogueRevision": "6fbb7c2c2c3984b089a4e859edea0124ce8c46254e1c2697bfb18032eb2dd6e0"
+  "catalogueRevision": "0b2ba6b3d1e384ade43865f8ae5fffc610b72bfa908a705da1800171ef9033cc"
 }
